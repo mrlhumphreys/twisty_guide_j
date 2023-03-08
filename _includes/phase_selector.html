@@ -1,0 +1,11 @@
+<ul class="tab_selector">
+  {% for phase in include.phases %}
+  <li>
+    {% if phase.number == 1 %}
+      <a class="tab_select active" href="#{{phase.number}}">{{phase.number}}</a>
+    {% else %}
+      <a class="tab_select" href="#{{phase.number}}">{{phase.number}}</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

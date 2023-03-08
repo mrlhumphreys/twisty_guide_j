@@ -1,0 +1,16 @@
+{% if phase.number == 1 %}
+  <div class="tab active" id="tab-{{include.number}}">
+{% else %}
+  <div class="tab" id="tab-{{include.number}}">
+{% endif %}
+  <a name="{{include.number}}">
+    {% if include.title %}
+      <h2 class="phase_header">Phase {{ include.number }} - {{ include.title }}</h2>
+    {% else %}
+      <h2 class="phase_header">Phase {{ include.number }}</h2>
+    {% endif %}
+  </a>
+  {% for section in include.sections %}
+    {% include section.html title=section.title phase_number=phase.number number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</div>

@@ -1,0 +1,502 @@
+---
+layout: default
+permalink: /guides/3x3x3-cfop-fridrich
+name: '3x3x3-cfop-fridrich'
+puzzle: '3x3x3'
+title: '3x3 - CFOP/Fridrich Method'
+description: ''
+phases_count: 4 
+phases:
+  - number: 1
+    title: 'Cross'
+    sections:
+      - number: 'a'
+        title: 'Solve Cross'
+        description: 'Make a solved cross shape for the bottom layer.'
+        cases:
+          - number: null 
+            description: 'Rotate faces until a cross is formed.'
+            algorithm: "Combination of R, L, F, B, U and/or D."
+  - number: 2
+    title: 'First 2 Layers'
+    sections:
+      - number: 'a'
+        title: 'Corner Correct'
+        description: 'Match the edge with the corner.'
+        cases:
+          - number: 1 
+            description: 'Edge placed but not oriented correctly.'
+            algorithm: "(R U' R') Dw (R' U<sup>2</sup>) (R U<sup>2</sup>) (R' U R)"
+          - number: 2 
+            description: 'Rotate edge clackwise to match corner.'
+            algorithm: "(U R U' R') Dw' (L' U L)"
+          - number: 3 
+            description: 'Rotate edge anti-clackwise to match corner.'
+            algorithm: "Dw' (L' U L) Dw (R U' R')"
+      - number: 'b'
+        title: 'Edge Correct'
+        description: 'Match the corner with the edge.'
+        cases: 
+          - number: 1 
+            description: 'Corner with bottom facing up.'
+            algorithm: "(R U R' U') (R U R' U') (R U R')"
+          - number: 2 
+            description: 'Corner with bottom facing right.'
+            algorithm: "Dw (R' U) (R U<sup>2</sup>) (R' U R)"
+          - number: 3 
+            description: 'Corner with bottom facing front.'
+            algorithm: "U' (R U') (R' U<sup>2</sup>) (R U' R')"
+      - number: 'c'
+        title: 'Corner in correct position with bottom facing front.'
+        description: 'Rotate corner and match with edge.'
+        cases:
+          - number: 1 
+            description: 'Edge correctly positioned and oriented.'
+            algorithm: "(R<sup>2</sup> U<sup>2</sup>) (R' U' R U') (R' U<sup>2</sup> R')"
+          - number: 2 
+            description: 'Edge correctly positioned, but flipped.'
+            algorithm: "(R U' R U) y (R U') (R' F<sup>2</sup>)"
+          - number: 3 
+            description: 'Slot edge in place clockwise and rotate corner.'
+            algorithm: "U<sup>2</sup> (R U' R') y (L' U' L)"
+          - number: 4 
+            description: 'Slot edge in place anti-clockwise and rotate corner.'
+            algorithm: "(R U') (R' U) (R U' R')"
+      - number: 'd'
+        title: 'Corner in correct position with bottom facing right.'
+        description: 'Rotate corner and match with edge.'
+        cases:
+          - number: 1 
+            description: 'Rotate corner.'
+            algorithm: "(R U<sup>2</sup>) (R U R' U) (R U<sup>2</sup> R<sup>2</sup>)"
+          - number: 2 
+            description: 'Flip edge and rotate corner.'
+            algorithm: "(R U' R') (F' L' U<sup>2</sup>) (L F)"
+          - number: 3 
+            description: 'Slot edge in place clockwise and rotate corner.'
+            algorithm: "(R U<sup>2</sup> R') y' (R' U<sup>2</sup> R)"
+          - number: 4 
+            description: 'Slot edge in place anti-clockwise and rotate corner.'
+            algorithm: "(R U R' U') (R U R')"
+      - number: 'e'
+        title: 'Corner in top layer with bottom facing up.'
+        description: 'Match with edge and slot into position.'
+        cases:
+          - number: 1 
+            description: 'Move already matched up pair into position.'
+            algorithm: "(R U' R' Dw) (R' U R)"
+          - number: 2 
+            description: 'Break up and match pair together, then slot in.'
+            algorithm: "L' U<sup>2</sup> L U) (L' U' L)"
+          - number: 3 
+            description: 'Break up and match pair together, then slot in.'
+            algorithm: "U<sup>2</sup> (R<sup>2</sup> U<sup>2</sup>) (R' U' R U' R<sup>2</sup>)"
+          - number: 4 
+            description: 'Match up pair and slot into position.'
+            algorithm: "Dw' (L' U<sup>2</sup> L U') (L' U L)"
+          - number: 5 
+            description: 'Match up pair and slot into position.'
+            algorithm: "U<sup>2</sup> (R U R' U) (R U' R')"
+          - number: 6 
+            description: 'Break up pair and match up, then slot into position.'
+            algorithm: "(R U<sup>2</sup> R' U') (R U R')"
+          - number: 7 
+            description: 'Break up pair and match up, then slot into position.'
+            algorithm: "U<sup>2</sup> (L<sup>2</sup> U<sup>2</sup>) (L U L' U L<sup>2</sup>)"
+          - number: 8 
+            description: 'Match up pair and slot into position.'
+            algorithm: "U (R U<sup>2</sup> R' U) (R U' R')"
+          - number: 9 
+            description: 'Match up pair and slot into position.'
+            algorithm: "(F' L' U<sup>2</sup>) (L F)"
+      - number: 'f'
+        title: 'Corner in top layer with bottom facing right.'
+        description: 'Match with edge and slot into position.'
+        cases:
+          - number: 1 
+            description: 'Break Pair, then match up and slot into position.'
+            algorithm: "Dw (R' U' R Dw') (R U R')"
+          - number: 2 
+            description: 'Pair matched, move and slot into position.'
+            algorithm: "Dw' (L' U L)"
+          - number: 3 
+            description: 'Break Pair, then match up and slot into position.'
+            algorithm: "Dw (R' U<sup>2</sup> R Dw') (R U R')"
+          - number: 4 
+            description: 'Match up pair and slot into position.'
+            algorithm: "Dw (R' U' R U<sup>2</sup>) (R' U R)"
+          - number: 5 
+            description: 'Match up pair and slot into position.'
+            algorithm: "Dw (R' U R Dw') (R U R')"
+          - number: 6 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "U' (R U' R' U) (R U R')"
+          - number: 7 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "(R U') (R' U<sup>2</sup>) y' (R' U' R)"
+          - number: 8 
+            description: 'Match up pair and slot into position.'
+            algorithm: "(R U R')"
+          - number: 9 
+            description: 'Match up pair and slot into position.'
+            algorithm: "Dw (R' U<sup>2</sup> R U<sup>2</sup>) (R' U R)"
+      - number: 'g'
+        title: 'Corner in top layer with bottom facing front.'
+        description: 'Match with edge and slot into position.'
+        cases:
+          - number: 1 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "U' (R U R' Dw) (R' U' R)"
+          - number: 2 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "Dw (R' U R U') (R' U' R)"
+          - number: 3 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "Lw U L F') (L' U' Lw')"
+          - number: 4 
+            description: 'Match up pair and slot into position.'
+            algorithm: "(L' U' L)"
+          - number: 5 
+            description: 'Match up pair and slot into position.'
+            algorithm: "U' (R U<sup>2</sup> R' U<sup>2</sup>) (R U' R')"
+          - number: 6 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "U (R U' R')"
+          - number: 7 
+            description: 'Break pair, then match up and slot into position.'
+            algorithm: "U' (R U<sup>2</sup> R' Dw) (R' U' R)"
+          - number: 8 
+            description: 'Match up pair and slot into position.'
+            algorithm: "U' (R U R' U<sup>2</sup>) (R U' R')"
+          - number: 9 
+            description: 'Match up pair and slot into position.'
+            algorithm: "U' (R U' R' Dw) (R' U' R)"
+  - number: 3
+    title: 'Orientation of Last Layer'
+    sections:
+      - number: 'a'
+        title: 'Corners are correct, but edges are flipped.'
+        description: 'Flip edges.'
+        cases:
+          - number: 1 
+            description: 'Flip left and back edges.'
+            algorithm: "(M' U M) U<sup>2</sup> (M' U M)"
+          - number: 2 
+            description: 'Flip front and back edges.'
+            algorithm: "(R U R' U') (M' U R U') Rw'"
+          - number: 3 
+            description: 'Flip all edges.'
+            algorithm: "Rw' (R U) (R U R' U' Rw<sup>2</sup>) (R<sup>2</sup>) U) (R U') Rw'"
+      - number: 'b'
+        title: "Edges are correct, but corners aren't facing up."
+        description: 'Flip edges.'
+        cases:
+          - number: 1 
+            description: 'Two corners facing front.'
+            algorithm: "(R<sup>2</sup> D) (R' U<sup>2</sup>) (R D') (R' U<sup>2</sup> R')"
+          - number: 2 
+            description: 'Two corners facing out.'
+            algorithm: "(Lw' U') (L U) (R U') (Rw' F)"
+          - number: 3 
+            description: 'Two opposite corners facing out.'
+            algorithm: "(R' F) (R B') (R' F') (R B)"
+          - number: 4 
+            description: 'Three corners facing out.'
+            algorithm: "(R U R' U) (R U<sup>2</sup> R')"
+          - number: 5 
+            description: 'Three corners facing out.'
+            algorithm: "(R U<sup>2</sup>) (R' U' R U' R')"
+          - number: 6 
+            description: 'Two corners facing left, two corners facing out.'
+            algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> U') (R<sup>2</sup> U') (R<sup>2</sup> U<sup>2</sup> R)"
+          - number: 7 
+            description: 'Two corners facing back, two corners facing front.'
+            algorithm: "(R U<sup>2</sup>) (R' U' R U R' U' R U' R')"
+      - number: 'c'
+        title: "All edges flipped."
+        description: 'Flip edges.'
+        cases:
+          - number: 1 
+            description: 'Only one corner facing up.'
+            algorithm: "Fw (R U R' U') Fw' U' F (R U R' U') F'"
+          - number: 2 
+            description: 'Only one corner facing up.'
+            algorithm: "Fw (R U R' U') Fw' U F (R U R' U') F'"
+          - number: 3 
+            description: 'Two opposite corners facing up.'
+            algorithm: "(R U R' U) (R' F R F') U<sup>2</sup> (R' F R F')"
+          - number: 4 
+            description: 'Two corners on one side facing up.'
+            algorithm: "Rw' (R U) (R U R' U' Rw) x (R<sup>2</sup> U) (R U')"
+          - number: 5 
+            description: 'Two corners on one side facing up.'
+            algorithm: "F (R U R' U) y' (R' U<sup>2</sup>) (R' F R F')"
+          - number: 6 
+            description: 'No corners facing up.'
+            algorithm: "F (R U R' U') S (R U R' U') Fw'"
+          - number: 7 
+            description: 'No corners facing up.'
+            algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> F R F') U<sup>2</sup> (R' F R F')"
+      - number: 'd'
+        title: "T Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Incorrect pieces facing front and back.'
+            algorithm: "(R U R' U') (R' F R F')"
+          - number: 2 
+            description: 'Incorrect pieces facing front, back and side.'
+            algorithm: "F (R U R' U') F'"
+      - number: 'e'
+        title: "P Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'd shape on right, opposite side pieces facing left.' 
+            algorithm: "Fw (R U R' U') Fw'"
+          - number: 2 
+            description: 'b shape on left, opposite side pieces facing right.' 
+            algorithm: "Fw' (L' U' L U) Fw"
+          - number: 3 
+            description: 'd shape on right, only one piece opposite facing left.' 
+            algorithm: "(R Dw) (L' Dw') (R' U) (Lw U Lw')"
+          - number: 4 
+            description: 'q shape on right, only one piece opposite facing left.' 
+            algorithm: "(R' U') F (U R U' R') F' R"
+      - number: 'f'
+        title: "W Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Two pieces on the side facing right on the front.' 
+            algorithm: "(R U R' U) (R U' R' U') (R' F R F')"
+          - number: 2 
+            description: 'Two pieces on the side facing left on the front.' 
+            algorithm: "(L' U' L U') (L' U L U) (L F' L' F)"
+      - number: 'g'
+        title: "L Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Left side pieces facing left. Right side pieces facing right.' 
+            algorithm: "(Rw U) (R' U) (R U') (R' U) (R U<sup>2</sup> Rw')"
+          - number: 2 
+            description: 'Left side pieces facing left. Right side pieces facing right.' 
+            algorithm: "(Rw' U') (R U') (R' U) (R U') (R' U<sup>2</sup> Rw)"
+          - number: 3 
+            description: 'Left side pieces facing left. Two pieces facing back.' 
+            algorithm: "(R B' R B R<sup>2</sup>) U<sup>2</sup> (F R' F' R)"
+          - number: 4 
+            description: 'Left side pieces facing left. Two pieces facing front.' 
+            algorithm: "(R' F R' F' R<sup>2</sup>) U<sup>2</sup> y (R' F R F')"
+          - number: 5 
+            description: 'Two pieces facing left. Two pieces facing front.' 
+            algorithm: "F (R U R' U') (R U R' U') F'"
+          - number: 6 
+            description: 'Two pieces facing right. Two pieces facing front.' 
+            algorithm: "F' (L' U' L U) (L' U' L U) F"
+      - number: 'h'
+        title: "Big S/Z Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Two pieces facing back on the back left.' 
+            algorithm: "(L F') (L' U' L U) F U' L'"
+          - number: 2 
+            description: 'Two pieces facing back on the back right.' 
+            algorithm: "(R' F) (R U R' U') F' U R"
+      - number: 'i'
+        title: "C Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Three pieces on one side facing different directions.' 
+            algorithm: "(R U R<sup>2</sup> U') (R' F) (R U) (R U') F'"
+          - number: 2 
+            description: 'Three pieces on one side facing the same directions' 
+            algorithm: "(R' U') (R' F R F') (U R)"
+      - number: 'j'
+        title: "Square Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Opposite corner of square shape facing back.' 
+            algorithm: "(Rw' U<sup>2</sup>) (R U R' U Rw)"
+          - number: 2 
+            description: 'Opposite corner of square shape facing front.' 
+            algorithm: "(Rw U<sup>2</sup>) (R' U' R U' Rw')"
+      - number: 'k'
+        title: "Small S/Z Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Two pieces facing right and two pieces facing front.' 
+            algorithm: "(Rw U R' U) (R U<sup>2</sup> Rw')"
+          - number: 2 
+            description: 'Two pieces facing back on the left.' 
+            algorithm: "(M U<sup>2</sup>) (R' U' R U') (R' U<sup>2</sup> R) U M'"
+          - number: 3 
+            description: 'Two pieces facing right and two pieces facing back.' 
+            algorithm: "(Rw' U' R U') (R' U<sup>2</sup> Rw)"
+          - number: 4 
+            description: 'Two pieces facing back on the right.' 
+            algorithm: "Rw' (R<sup>2</sup> U R' U R U<sup>2</sup> R') U M'"
+      - number: 'l'
+        title: "Fish Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Big square with pairs of pieces facing out.' 
+            algorithm: "F (R U') (R' U' R U) (R' F')"
+          - number: 2 
+            description: 'Big square with individual pieces facing out.' 
+            algorithm: "(R U<sup>2</sup>) (R<sup>2</sup>) F) (R F' R U<sup>2</sup> R')"
+          - number: 3 
+            description: 'L shape on the left with two pieces facing back.' 
+            algorithm: "(R U R' U) (R' F R F') (R U<sup>2</sup> R')"
+          - number: 4 
+            description: 'L shape on the left with two pieces facing front.' 
+            algorithm: "(R U R' U' R' F) (R<sup>2</sup> U R' U' F')"
+      - number: 'm'
+        title: "I Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'Two pieces facing back and two pieces facing front.' 
+            algorithm: "Fw (R U R' U') (R U R' U') Fw'"
+          - number: 2 
+            description: 'Three pieces facing right, one piece facing left.' 
+            algorithm: "(R U R' U R Dw') (R U' R' F')"
+          - number: 3 
+            description: 'No pairs of pieces facing out.' 
+            algorithm: "Fw (R U R' U') Fw' F (R U R' U') (R U R' U') F'"
+          - number: 4 
+            description: 'Three pieces facing left and three pieces facing right.' 
+            algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> U' R U' R' U<sup>2</sup>) (F R F')"
+      - number: 'n'
+        title: "Knight Move Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'L Shape with two pieces facing front and two pieces facing back.' 
+            algorithm: "(Rw U' Rw' U') (Rw U Rw') y' (R' U R)"
+          - number: 2 
+            description: 'L Shape with two pieces facing front.' 
+            algorithm: "(Rw U Rw') (R U R' U') (Rw U' Rw')"
+          - number: 3 
+            description: 'Backwards L Shape with two pieces facing front and back.' 
+            algorithm: "(R' F) (R U R' F' R) y' (R U' R')"
+          - number: 4 
+            description: 'Backwards L Shape with two pieces facing front.' 
+            algorithm: "(Lw' U' Lw) (L' U' L U) (Lw' U Lw)"
+      - number: 'o'
+        title: "Glider Shape"
+        description: 'Flip corners and edges.'
+        cases:
+          - number: 1 
+            description: 'S shape with pieces facing out.' 
+            algorithm: "(R U') (R' U<sup>2</sup>) (R U) y (R U') (R' U' F')"
+          - number: 2 
+            description: 'S shape with two pieces facing left.' 
+            algorithm: "(R<sup>2</sup> U R' B') (R U') (R<sup>2</sup> U) (Lw U Lw')"
+          - number: 3 
+            description: 'Z shape with pieces facing out.' 
+            algorithm: "(L' U) (L U<sup>2</sup>) (L' U') y' (L' U) (L U F)"
+          - number: 4 
+            description: 'Z shape with two pieces facing right.' 
+            algorithm: "(L<sup>2</sup> U' L B) (L' U) (L<sup>2</sup> U') (Rw' U' Rw)"
+  - number: 4
+    title: 'Permutatation of Last Layer'
+    sections:
+      - number: 'a'
+        title: "Only corners not oriented."
+        description: 'Rotate corners around.'
+        cases:
+          - number: 1 
+            description: 'Cycle 3 corners clockwise' 
+            algorithm: "x (R' U R') D<sup>2</sup> (R U' R') D<sup>2</sup> R<sup>2</sup>"
+          - number: 2 
+            description: 'Cycle 3 corners anti-clockwise' 
+            algorithm: "x R<sup>2</sup> D<sup>2</sup> (R U R') D<sup>2</sup> (R U' R)"
+          - number: 3 
+            description: 'Cycle 2 pairs of corners parallel' 
+            algorithm: "x' (R U') (R' D) (R U R' D') (R U R' D) (R U') (R' D')"
+      - number: 'b'
+        title: "Only edges not oriented."
+        description: 'Rotate edges around.'
+        cases:
+          - number: 1 
+            description: 'Cycle 3 edges anti-clockwise.' 
+            algorithm: "(R U' R U) (R U) (R U') (R' U' R<sup>2</sup>)"
+          - number: 2 
+            description: 'Cycle 3 edges clockwise.' 
+            algorithm: "(R<sup>2</sup> U) (R U R' U') (R' U') (R' U R')"
+          - number: 3 
+            description: 'Swap opposite edges.' 
+            algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U<sup>2</sup>) (M<sup>2</sup> U) (M<sup>2</sup>)"
+          - number: 4 
+            description: 'Swap adjacent edges in parallel.' 
+            algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U) (M' U<sup>2</sup>) (M<sup>2</sup> U<sup>2</sup>) (M' U<sup>2</sup>)"
+      - number: 'c'
+        title: "Four pieces not oriented."
+        description: 'Swap two edges and two corners.'
+        cases:
+          - number: 1 
+            description: 'Swap two corners on the back and swap left and back edges.' 
+            algorithm: "(R' U L') U<sup>2</sup> (R U' R') U<sup>2</sup> (L R U')"
+          - number: 2 
+            description: 'Swap two corners on the right and swap right and front edges.' 
+            algorithm: "(R U R' F') (R U R' U') (R' F) (R<sup>2</sup> U') (R' U')"
+          - number: 3 
+            description: 'Swap two corners on the right and swap right and left edges.' 
+            algorithm: "(R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
+          - number: 4 
+            description: 'Swap two corners on the back and swap right and front edges.' 
+            algorithm: "(R' U<sup>2</sup>) (R U<sup>2</sup>) (R' F R U R' U') (R' F' R<sup>2</sup> U')"
+          - number: 5 
+            description: 'Swap two corners on the right and swap left and back edges.' 
+            algorithm: "(R U R' F') (R U<sup>2</sup> R' U<sup>2</sup>) (R' F) (R U) (R U<sup>2</sup> R' U')"
+          - number: 6 
+            description: 'Swap two corners on the right and swap front and back edges.' 
+            algorithm: "R' U' F' (R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' U R)"
+      - number: 'd'
+        title: "Only two pieces oriented."
+        description: 'Cycle three corners and three edges.'
+        cases:
+          - number: 1 
+            description: 'Cycle corners clockwise and edges anticlockwise.' 
+            algorithm: "(R<sup>2</sup> Uw) (R' U R' U' R Uw') R<sup>2</sup> y' (R' U R)"
+          - number: 2 
+            description: 'Cycle corners anticlockwise and edges clockwise.' 
+            algorithm: "(R' U' R) y (R<sup>2</sup> Uw R' U) (R U' R Uw' R<sup>2</sup>)"
+          - number: 3 
+            description: 'Cycle corners anticlockwise and edges clockwise.' 
+            algorithm: "(R<sup>2</sup> Uw' R U') (R U R' Uw R<sup>2</sup>) (Fw R' Fw')"
+          - number: 4 
+            description: 'Cycle corners anticlockwise and edges clockwise.' 
+            algorithm: "(R U R') y' (R<sup>2</sup> Uw' R U') (R' U R' Uw R<sup>2</sup>)"
+      - number: 'e'
+        title: "Diagonal corner swap."
+        description: 'Swap two diagonal corners and two edges.'
+        cases:
+          - number: 1 
+            description: 'Swap two edges and corners parallel diagonally.' 
+            algorithm: "(R' U R' Dw') (R' F' R<sup>2</sup> U') (R' U R' F) (R F)"
+          - number: 2 
+            description: 'Swap two corners diagonally. Swap two opposite edges.' 
+            algorithm: "z U (R' D) (R<sup>2</sup> U' R D' U) (R' D) (R<sup>2</sup> U' R D') R"
+          - number: 3 
+            description: 'Swap two corners diagonally. Swap two opposite edges.' 
+            algorithm: "z D' (R U') (R<sup>2</sup> D R' U D') (R U') (R<sup>2</sup> D R' U) R'"
+          - number: 4 
+            description: 'Swap two edges and corners perpendicular diagonally.' 
+            algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% include phase_selector.html phases=page.phases %}
+  {% for phase in page.phases %}
+    {% include phase.html number=phase.number title=phase.title sections=phase.sections %}
+  {% endfor %}
+</article>
+

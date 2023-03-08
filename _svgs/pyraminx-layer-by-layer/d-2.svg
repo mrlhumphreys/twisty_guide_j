@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 172 
+height: 188
+---
+{% pyraminx_face 12|28|50|B\nB,B,G\nB,B,G,B,B|0.75|0.666 %}
+{% pyraminx_face 12|28|50|R\nB,R,R\nR,R,B,R,R|0.25|0.333 %}
+

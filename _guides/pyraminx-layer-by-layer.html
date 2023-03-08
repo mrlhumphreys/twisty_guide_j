@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /guides/pyraminx-layer-by-layer/
+name: 'pyraminx-layer-by-layer'
+puzzle: 'pyraminx'
+title: 'Pyraminx - Layer by Layer'
+description: ''
+phase_count: 1
+sections:
+  - number: 'a'
+    title: 'Solve Tips'
+    description: 'Rotate tips until they line up with the piece next to them.'
+    cases:
+      - number: null
+        description: ''
+        algorithm: 'r, l, u and/or b'
+  - number: 'b'
+    title: 'Solve Centers'
+    description: 'Rotate centers until each face has three matching centers.'
+    cases:
+      - number: null
+        description: ''
+        algorithm: 'R, L, U and/or B'
+  - number: 'c'
+    title: 'Solve First Layer'
+    description: 'Move three edge pieces into one layer.'
+    cases:
+      - number: 1 
+        description: 'Move edge to first layer.'
+        algorithm: "R' D R"
+      - number: 2 
+        description: 'Move edge to first layer.'
+        algorithm: "L D' L'"
+      - number: 3 
+        description: 'Rotate edge in first layer.'
+        algorithm: "L D L' D' R' D R"
+  - number: 'd'
+    title: 'Solve Last Layer'
+    description: 'Flip the puzzle. Then position and orient last layer edge pieces.'
+    cases:
+      - number: 1 
+        description: 'Swap two edges on last layer.'
+        algorithm: "R U' R' U R' L R L'"
+      - number: 2 
+        description: 'Cycle three edges on last layer anti-clockwise.'
+        algorithm: "R U R' U R U R'"
+      - number: 3 
+        description: 'Cycle three edges on last layer clockwise.'
+        algorithm: "R U' R' U' R U' R'"
+      - number: 4 
+        description: 'Cycle three edges and rotate two edges on last layer anti-clockwise.'
+        algorithm: "L R U R' U' L'"
+      - number: 5 
+        description: 'Cycle three edges and rotate two edges on last layer clockwise.'
+        algorithm: "R' L' U' L U R"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
+
+

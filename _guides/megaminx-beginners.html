@@ -1,0 +1,137 @@
+---
+layout: default
+permalink: /guides/megaminx-beginners
+name: 'megaminx-beginners'
+puzzle: 'megaminx'
+title: "Megaminx - Beginner's Method"
+description: ''
+phases_count: 4
+phases:
+  - number: 1
+    title: 'First Two Layers'
+    sections:
+      - number: 'a'
+        title: "Star Shape"
+        description: 'Match up the five edges with one center piece to form a star.'
+        cases:
+          - number: null 
+            description: 'Move edges to down layer to make a star shape.'
+            algorithm: '-'
+      - number: 'b'
+        title: "First Layer"
+        description: 'Slot the corners into the first layer.'
+        cases:
+          - number: 1 
+            description: 'Down edge facing right.'
+            algorithm: "R U R'"
+          - number: 2 
+            description: 'Down edge facing front.'
+            algorithm: "F' U' F"
+          - number: 3 
+            description: 'Down edge facing up.'
+            algorithm: "R U' R' U<sup>2</sup> R U R'"
+      - number: 'c'
+        title: "Second Layer"
+        description: 'Slot the edges into the second layer.'
+        cases:
+          - number: 1 
+            description: 'Edge needs to be rotated clockwise around center.'
+            algorithm: "(U R U' R') (U' F' U F)" 
+          - number: 2 
+            description: 'Edge needs to be rotated anti-clockwise around center.'
+            algorithm: "(U' F' U F) (U R U' R')" 
+  - number: 2
+    title: 'Third Layer'
+    sections:
+      - number: 'a'
+        title: "Third Layer Corners"
+        description: 'Move the matching corners above the previously inserted edges.'
+        cases:
+          - number: null 
+            description: 'Move corners in place without disturbing first two layers.'
+            algorithm: '-'
+      - number: 'b'
+        title: "Third Layer Edges"
+        description: 'Position the edges around each of the previously inserted corners.'
+        cases:
+          - number: 1 
+            description: 'Move edge to the right of the corner.'
+            algorithm: "F L F<sup>2</sup> L' F'"
+          - number: 2 
+            description: 'Move edge to the left of the corner.'
+            algorithm: "F' R' F'<sup>2</sup> R F" 
+  - number: 3
+    title: 'Fourth Layer'
+    sections:
+      - number: 'a'
+        title: "Third Layer Corners"
+        description: 'Slot the remaining corners in the third layer, similar to the first layer.'
+        cases:
+          - number: 1 
+            description: 'Down edge facing right.'
+            algorithm: "R U R'"
+          - number: 2 
+            description: 'Down edge facing front.'
+            algorithm: "F' U' F" 
+          - number: 3 
+            description: 'Down edge facing up.'
+            algorithm: "R U' R' U<sup>2</sup> R U R'" 
+      - number: 'b'
+        title: "Fourth Layer Edges"
+        description: 'Slot the edges in the fourth layer, similar to the second layer.'
+        cases:
+          - number: 1 
+            description: 'Edge needs to be rotated clockwise around center.'
+            algorithm: "(U R U' R') (U' F' U F)"
+          - number: 2 
+            description: 'Edge needs to be rotated anti-clockwise around center.'
+            algorithm: "(U' F' U F) (U R U' R')" 
+  - number: 4
+    title: 'Fifth Layer'
+    sections:
+      - number: 'a'
+        title: "Fifth Layer Orient Edges"
+        description: 'Match up the edges on the last layer and make a star shape.'
+        cases:
+          - number: 1 
+            description: 'Two adjacent edges facing out.'
+            algorithm: "F (U R U' R') F'" 
+          - number: 2 
+            description: 'Two opposite edges facing out.'
+            algorithm: "F (R U R' U') F'" 
+      - number: 'b'
+        title: "Fifth Layer Position Edges"
+        description: 'Cycle the edges around until they are in the right place.'
+        cases:
+          - number: 1 
+            description: 'Cycle three edges clockwise.'
+            algorithm: "(R U R' U) (R U<sup>3</sup> R' U)" 
+          - number: 2 
+            description: 'Cycle three edges anti-clockwise.'
+            algorithm: "(U' R U<sup>2</sup> R') (U' R U' R')" 
+      - number: 'c'
+        title: "Fifth Layer Position Corners"
+        description: 'Cycle the corners around until they are in the right place.'
+        cases:
+          - number: 1 
+            description: 'Cycle three corners clockwise.'
+            algorithm: "(L' U<sup>2</sup> R U'<sup>2</sup>) (L U<sup>2</sup> R' U'<sup>2</sup>)" 
+          - number: 2 
+            description: 'Cycle three corners anti-clockwise.'
+            algorithm: "(R U'<sup>2</sup> L' U<sup>2</sup>) (R' U'<sup>2</sup> L U<sup>2</sup>)" 
+      - number: 'd'
+        title: "Fifth Layer Orient Corners"
+        description: 'Run an algorithm to rotate each of the corners until they face the right way.'
+        cases:
+          - number: null 
+            description: 'Corner rotating algorithm.'
+            algorithm: "R' D' R D"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% include phase_selector.html phases=page.phases %}
+  {% for phase in page.phases %}
+    {% include phase.html number=phase.number title=phase.title sections=phase.sections %}
+  {% endfor %}
+</article>
+

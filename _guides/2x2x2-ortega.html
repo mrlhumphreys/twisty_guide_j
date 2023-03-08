@@ -1,0 +1,83 @@
+---
+layout: default
+permalink: /guides/2x2x2-ortega/
+name: '2x2x2-ortega'
+puzzle: '2x2x2'
+title: '2x2 - Ortega Method'
+description: ''
+phases_count: 1
+sections: 
+  - number: 'a'
+    title: 'Orient First Layer'
+    description: 'Pick a colour and move all pieces so that the bottom face has that colour.'
+    cases:
+      - number: 1
+        description: 'Corner facing front. Move to bottom right corner facing down.'
+        algorithm: "F' U' F"
+      - number: 2
+        description: 'Corner facing right. Move to bottom right corner facing down.'
+        algorithm: "R U R'"
+      - number: 3
+        description: 'Corner facing up. Move to bottom right corner facing down.'
+        algorithm: "U R<sup>2</sup> U' R<sup>2</sup>"
+  - number: 'b'
+    title: 'Orient Last Layer'
+    description: 'Do the same for the top face with the opposite colour.'
+    cases:
+      - number: 1
+        description: ''
+        algorithm: "F (R U R' U') F'"
+      - number: 2
+        description: ''
+        algorithm: "(R U R' U') (R' F R F')"
+      - number: 3
+        description: ''
+        algorithm: "F (R U') (R' U' R U) (R' F')"
+      - number: 4
+        description: ''
+        algorithm: "(R U R' U) (R U<sup>2</sup> R')"
+      - number: 5
+        description: ''
+        algorithm: "(R U<sup>2</sup> R' U') (R U' R')"
+      - number: 6
+        description: ''
+        algorithm: "F (R U R' U') (R U R' U') F'"
+      - number: 7
+        description: ''
+        algorithm: "R<sup>2</sup> U<sup>2</sup> R U<sup>2</sup> R<sup>2</sup>"
+  - number: 'c'
+    title: 'Permutate Both Layers'
+    description: 'Move the pieces of both layers into their proper positions.'
+    cases:
+      - number: 1
+        description: ''
+        algorithm: "(R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
+      - number: 2
+        description: ''
+        algorithm: "x<sup>2</sup> (R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
+      - number: 3
+        description: ''
+        algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
+      - number: 4
+        description: ''
+        algorithm: "z2y (F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
+      - number: 5
+        description: ''
+        algorithm: "(R<sup>2</sup> U' R<sup>2</sup>) (U<sup>2</sup> y) (R<sup>2</sup> U' R<sup>2</sup>)"
+      - number: 6
+        description: ''
+        algorithm: "(R U' R) F<sup>2</sup> (R' U R')"
+      - number: 7
+        description: ''
+        algorithm: "(L D' L) F<sup>2</sup> (L' D L')"
+      - number: 8
+        description: ''
+        algorithm: "R<sup>2</sup> F<sup>2</sup> R<sup>2</sup>"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
+

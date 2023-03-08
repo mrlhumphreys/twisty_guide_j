@@ -1,0 +1,42 @@
+---
+layout: svg
+width: 220
+height: 200
+---
+<!-- Right Squares -->
+{% square 60|60|right|40|FR %}
+
+<!-- Top Squares -->
+{% square 60|100|top|40|FU %}
+
+<!-- Front Squares -->
+{% square 20|60|front|40|FF %}
+{% square 20|100|front|40|FF %}
+
+{% square 80|70|front|20|FF %}
+{% square 100|80|front|20|FF %}
+{% square 80|90|front|20|FF %}
+{% square 100|100|front|20|FF %}
+
+{% square 60|120|front|40|FF %}
+
+<!-- Right Squares -->
+{% square 120|80|right|20|FR %}
+{% square 140|70|right|20|FR %}
+{% square 120|100|right|20|FR %}
+{% square 140|90|right|20|FR %}
+
+{% square 160|50|right|40|FR %}
+{% square 100|120|right|40|FR %}
+{% square 140|100|right|40|FR %}
+
+<!-- Top Squares -->
+{% square 60|20|top|40|FU %}
+{% square 20|40|top|40|FU %}
+{% square 120|30|top|40|FU %}
+
+{% square 100|50|top|20|FU %}
+{% square 120|60|top|20|FU %}
+{% square 80|60|top|20|FU %}
+{% square 100|70|top|20|FU %}
+

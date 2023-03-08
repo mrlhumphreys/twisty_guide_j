@@ -1,0 +1,611 @@
+- guide: '2x2x2-ortega'
+  phase: null
+  number: 'a'
+  title: 'Orient First Layer' 
+  description: 'Pick a colour and move all pieces so that the bottom face has that colour.' 
+- guide: '2x2x2-ortega'
+  phase: null
+  number: 'b'
+  title: 'Orient Last Layer' 
+  description: 'Do the same for the top face with the opposite colour.' 
+- guide: '2x2x2-ortega'
+  phase: null
+  number: 'c'
+  title: 'Permutate Both Layers' 
+  description: 'Move the pieces of both layers into their proper positions.' 
+- guide: 'pyraminx-layer-by-layer'
+  phase: null
+  number: 'a'
+  title: 'Solve Tips'
+  description: 'Rotate tips until they line up with the piece next to them.'
+- guide: 'pyraminx-layer-by-layer'
+  phase: null
+  number: 'b'
+  title: 'Solve Centers'
+  description: 'Rotate centers until each face has three matching centers.'
+- guide: 'pyraminx-layer-by-layer'
+  phase: null
+  number: 'c'
+  title: 'Solve First Layer'
+  description: 'Move three edge pieces into one layer.'
+- guide: 'pyraminx-layer-by-layer'
+  phase: null
+  number: 'd'
+  title: 'Solve Last Layer'
+  description: 'Flip the puzzle. Then position and orient last layer edge pieces.'
+- guide: 'skewb-layer-by-layer'
+  phase: null
+  number: 'a'
+  title: 'Solve First Layer'
+  description: 'Pick a face and match corners with it.'
+- guide: 'skewb-layer-by-layer'
+  phase: null
+  number: 'b'
+  title: 'Solve Remaining Faces'
+  description: 'Cycle three faces at a time until faces are positioned right.'
+- guide: 'skewb-layer-by-layer'
+  phase: null
+  number: 'c'
+  title: 'Solve Last Layer Corners'
+  description: 'Cycle and rotate corners until fully solved.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'a'
+  title: 'Gather small pieces together.'
+  description: 'Move all the small pieces to the top layer.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'b'
+  title: 'Restore Cubic Shape'
+  description: 'Restore the puzzle to a cubic shape.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'c'
+  title: 'Useful Algorithms'
+  description: 'During the next few steps, it may be necessary to perform these algorithms.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'd'
+  title: 'Corner Orientation'
+  description: 'Move corners onto their correct faces.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'e'
+  title: 'Edge Orientation'
+  description: 'Move edges onto their correct faces.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'f'
+  title: 'Corner Permutation'
+  description: 'Swap corners into their right position.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'g'
+  title: 'Edge Permutation'
+  description: 'Swap edges into their right position.'
+- guide: 'square-1-vanderbergh'
+  phase: null
+  number: 'h'
+  title: 'Edge Parity'
+  description: 'Cycle edges so that three edges are incorrect instead of just two. Then repeat the previous step.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 1 
+  number: 'a'
+  title: 'Solve Cross'
+  description: 'Make a solved cross shape for the bottom layer.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'a'
+  title: 'Corner Correct'
+  description: 'Match the edge with the corner.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'b'
+  title: 'Edge Correct'
+  description: 'Match the corner with the edge.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'c'
+  title: 'Corner in correct position with bottom facing front.'
+  description: 'Rotate corner and match with edge.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'd'
+  title: 'Corner in correct position with bottom facing right.'
+  description: 'Rotate corner and match with edge.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'e'
+  title: 'Corner in top layer with bottom facing up.'
+  description: 'Match with edge and slot into position.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'f'
+  title: 'Corner in top layer with bottom facing right.'
+  description: 'Match with edge and slot into position.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 2 
+  number: 'g'
+  title: 'Corner in top layer with bottom facing front.'
+  description: 'Match with edge and slot into position.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'a'
+  title: 'Corners are correct, but edges are flipped.'
+  description: 'Flip edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'b'
+  title: "Edges are correct, but corners aren't facing up."
+  description: 'Flip edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'c'
+  title: "All edges flipped."
+  description: 'Flip edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'd'
+  title: "T Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'e'
+  title: "P Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'f'
+  title: "W Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'g'
+  title: "L Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'h'
+  title: "Big S/Z Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'i'
+  title: "C Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'j'
+  title: "Square Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'k'
+  title: "Small S/Z Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'l'
+  title: "Fish Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'm'
+  title: "I Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'n'
+  title: "Knight Move Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 3 
+  number: 'o'
+  title: "Glider Shape"
+  description: 'Flip corners and edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 4 
+  number: 'a'
+  title: "Only corners not oriented."
+  description: 'Rotate corners around.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 4 
+  number: 'b'
+  title: "Only edges not oriented."
+  description: 'Rotate edges around.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 4 
+  number: 'c'
+  title: "Four pieces not oriented."
+  description: 'Swap two edges and two corners.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 4 
+  number: 'd'
+  title: "Only two pieces oriented."
+  description: 'Cycle three corners and three edges.'
+- guide: '3x3x3-cfop-fridrich'
+  phase: 4 
+  number: 'e'
+  title: "Diagonal corner swap."
+  description: 'Swap two diagonal corners and two edges.'
+- guide: '4x4x4-reduction'
+  phase: 1 
+  number: 'a'
+  title: "Solve First Two Centers"
+  description: 'Solve the center pieces for two opposite faces.'
+- guide: '4x4x4-reduction'
+  phase: 1 
+  number: 'b'
+  title: "Solve Second Two Centers"
+  description: 'Solve the center pieces for two other adjacent faces.'
+- guide: '4x4x4-reduction'
+  phase: 1 
+  number: 'c'
+  title: "Solve Last Two Centers"
+  description: 'Solve the center pieces for the last two faces.'
+- guide: '4x4x4-reduction'
+  phase: 2 
+  number: 'a'
+  title: "Pair up an edge."
+  description: 'Pair up one set of edge pieces.'
+- guide: '4x4x4-reduction'
+  phase: 2 
+  number: 'b'
+  title: "Store the edge."
+  description: 'Move the pair into the up or down layer. Then repeat pairing and storing for first eight edges.'
+- guide: '4x4x4-reduction'
+  phase: 2 
+  number: 'c'
+  title: "Solve Last Four Edges"
+  description: 'Pair up the last edge pieces using some algorithms.'
+- guide: '4x4x4-reduction'
+  phase: 3 
+  number: 'a'
+  title: "Solve like a 3x3 rubik's cube"
+  description: 'Treat the paired edges as a singular edge when solving.'
+- guide: '4x4x4-reduction'
+  phase: 4 
+  number: 'a'
+  title: "Parity issues"
+  description: 'Sometimes some odd cases can appear. Edges might need twisted around.'
+- guide: 'megaminx-beginners'
+  phase: 1 
+  number: 'a'
+  title: "Star Shape"
+  description: 'Match up the five edges with one center piece to form a star.'
+- guide: 'megaminx-beginners'
+  phase: 1 
+  number: 'b'
+  title: "First Layer"
+  description: 'Slot the corners into the first layer.'
+- guide: 'megaminx-beginners'
+  phase: 1 
+  number: 'c'
+  title: "Second Layer"
+  description: 'Slot the edges into the second layer.'
+- guide: 'megaminx-beginners'
+  phase: 2 
+  number: 'a'
+  title: "Third Layer Corners"
+  description: 'Move the matching corners above the previously inserted edges.'
+- guide: 'megaminx-beginners'
+  phase: 2 
+  number: 'b'
+  title: "Third Layer Edges"
+  description: 'Position the edges around each of the previously inserted corners.'
+- guide: 'megaminx-beginners'
+  phase: 3 
+  number: 'a'
+  title: "Third Layer Corners"
+  description: 'Slot the remaining corners in the third layer, similar to the first layer.'
+- guide: 'megaminx-beginners'
+  phase: 3 
+  number: 'b'
+  title: "Fourth Layer Edges"
+  description: 'Slot the edges in the fourth layer, similar to the second layer.'
+- guide: 'megaminx-beginners'
+  phase: 4 
+  number: 'a'
+  title: "Fifth Layer Orient Edges"
+  description: 'Match up the edges on the last layer and make a star shape.'
+- guide: 'megaminx-beginners'
+  phase: 4 
+  number: 'b'
+  title: "Fifth Layer Position Edges"
+  description: 'Cycle the edges around until they are in the right place.'
+- guide: 'megaminx-beginners'
+  phase: 4 
+  number: 'c'
+  title: "Fifth Layer Position Corners"
+  description: 'Cycle the corners around until they are in the right place.'
+- guide: 'megaminx-beginners'
+  phase: 4 
+  number: 'd'
+  title: "Fifth Layer Orient Corners"
+  description: 'Run an algorithm to rotate each of the corners until they face the right way.'
+- guide: '2x2x3-cuboid'
+  phase: null
+  number: 'a'
+  title: 'Orient Top and Bottom Faces' 
+  description: 'Orienting one face will solve the other'
+- guide: '2x2x3-cuboid'
+  phase: null
+  number: 'b'
+  title: 'Permutate Top and Bottom Layers' 
+  description: 'Putting the top and bottom corners in the right place.'
+- guide: '2x2x3-cuboid'
+  phase: null
+  number: 'c'
+  title: 'Solve Middle Layer' 
+  description: 'Puttin the middle edge pieces in the right place.'
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'f'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'g'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'h'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'i'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'j'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'k'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'l'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'm'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'n'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'o'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 1 
+  number: 'p'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'f'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 2 
+  number: 'g'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 3 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 3 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 3 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 3 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 3 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 4 
+  number: 'f'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 5 
+  number: 'f'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 6 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 6 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'a'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'b'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'c'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'd'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'e'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'f'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'g'
+  title: null
+  description: null 
+- guide: '3x4x5-cuboid'
+  phase: 7 
+  number: 'h'
+  title: null
+  description: null 
+- guide: 'pocket-cube'
+  phase: null
+  number: 'a'
+  title: 'Form Cube Shape'
+  description: 'Make moves to return the puzzle to a cube shape.'
+- guide: 'pocket-cube'
+  phase: null
+  number: 'b'
+  title: 'Orient Corner'
+  description: 'Orient the corner to match the centers.'
+- guide: 'pocket-cube'
+  phase: null
+  number: 'c'
+  title: 'Orient One Edge'
+  description: 'Orient one edge to match the corner and centers.'
+- guide: 'pocket-cube'
+  phase: null
+  number: 'd'
+  title: 'Orient Last Two Edges'
+  description: 'Orient last two edges to solve.'
+

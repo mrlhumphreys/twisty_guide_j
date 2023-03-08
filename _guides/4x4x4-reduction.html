@@ -1,0 +1,110 @@
+---
+layout: default
+permalink: /guides/4x4x4-reduction/
+name: '4x4x4-reduction'
+puzzle: '4x4x4'
+title: '4x4 - Reduction Method'
+description: ''
+phases_count: 4
+phases:
+  - number: 1
+    title: 'Centers'
+    sections:
+      - number: 'a'
+        title: 'Solve First Two Centers'
+        description: 'Solve the center pieces for two opposite faces.'
+        cases: 
+          - number: null 
+            description: 'Move center pieces around.' 
+            algorithm: "-"
+      - number: 'b'
+        title: "Solve Second Two Centers"
+        description: 'Solve the center pieces for two other adjacent faces.'
+        cases: 
+          - number: null 
+            description: 'Move center pieces around.' 
+            algorithm: "-"
+      - number: 'c'
+        title: "Solve Last Two Centers"
+        description: 'Solve the center pieces for the last two faces.'
+        cases: 
+          - number: 1 
+            description: 'Move one center piece.' 
+            algorithm: "d' F' d"
+          - number: 2 
+            description: 'Move two adjacent center pieces.' 
+            algorithm: "d' F<sup>2</sup> d"
+          - number: 3 
+            description: 'Move two diagonal center pieces.' 
+            algorithm: "d' F' d F<sup>2</sup> d' F' d"
+  - number: 2 
+    title: 'Edges'
+    sections: 
+      - number: 'a'
+        title: "Pair up an edge."
+        description: 'Pair up one set of edge pieces.'
+        cases: 
+          - number: 1 
+            description: 'Pair up edges in same layer.' 
+            algorithm: "d R F' U R' F d'"
+          - number: 2 
+            description: 'Pair up edges in different layer.' 
+            algorithm: "u'"
+      - number: 'b'
+        title: "Store the edge."
+        description: 'Move the pair into the up or down layer. Then repeat pairing and storing for first eight edges.'
+        cases:
+          - number: null 
+            description: 'Store pair in up layer.' 
+            algorithm: "R U' R'"
+      - number: 'c'
+        title: "Solve Last Four Edges"
+        description: 'Pair up the last edge pieces using some algorithms.'
+        cases: 
+          - number: 1 
+            description: 'Pair up edge in same layer.' 
+            algorithm: "d R F' U R' F d'"
+          - number: 2 
+            description: 'Pair up edge in different layer.' 
+            algorithm: "(R F' U R' F) (d R F' U R' F d')"
+  - number: 3
+    title: '3x3 Solve'
+    sections: 
+      - number: 'a'
+        title: "Solve like a 3x3 rubik's cube"
+        description: 'Treat the paired edges as a singular edge when solving.'
+        cases:
+          - number: null 
+            description: 'Use any method of solving a 3x3 cube.' 
+            algorithm: "-"
+  - number: 4
+    title: 'Parity'
+    sections: 
+      - number: 'a'
+        title: "Parity issues"
+        description: 'Sometimes some odd cases can appear. Edges might need twisted around.'
+        cases: 
+          - number: 1 
+            description: 'Only one pair of edges not oriented correctly.' 
+            algorithm: "(r<sup>2</sup> B<sup>2</sup> U<sup>2</sup> l) (U<sup>2</sup> r' U<sup>2</sup> r) (U<sup>2</sup> F<sup>2</sup> r F<sup>2</sup>) (l' B2 r<sup>2</sup>)"
+          - number: 2 
+            description: 'Two opposite edge pairs not oriented correctly.' 
+            algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup>"
+          - number: 3 
+            description: 'Two adjacent edge pairs not oriented correctly.' 
+            algorithm: "L<sup>2</sup> D Fw<sup>2</sup> Lw<sup>2</sup> F<sup>2</sup> l<sup>2</sup> F<sup>2</sup> Lw<sup>2</sup> Fw<sup>2</sup> D' L<sup>2</sup>"
+          - number: 4 
+            description: 'Two adjacent corners not oriented correctly.' 
+            algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup> F' U' F U F R' F<sup>2</sup> U F U F' U' F R"
+          - number: 5 
+            description: 'Two opposite corners not oriented correctly.' 
+            algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup> R U' L U<sup>2</sup> R' U R L' U' L U<sup>2</sup> R' U L' U"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% include phase_selector.html phases=page.phases %}
+  {% for phase in page.phases %}
+    {% include phase.html number=phase.number title=phase.title sections=phase.sections %}
+  {% endfor %}
+</article>
+

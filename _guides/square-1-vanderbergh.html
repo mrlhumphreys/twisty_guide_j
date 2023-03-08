@@ -1,0 +1,98 @@
+---
+layout: default
+permalink: /guides/square-1-vanderbergh/
+name: 'square-1-vanderbergh'
+puzzle: 'square-1'
+title: 'Square-1 - Vanderbergh Method'
+description: ''
+phases_count: 1
+sections:
+  - number: 'a'
+    title: 'Gather small pieces together.'
+    description: 'Move all the small pieces to the top layer.'
+    cases:
+      - number: 1 
+        description: 'Move all small pieces to the top layer.'
+        algorithm: "-"
+  - number: 'b'
+    title: 'Restore Cubic Shape'
+    description: 'Restore the puzzle to a cubic shape.'
+    cases:
+      - number: 1 
+        description: 'All 8 edges next to each other.'
+        algorithm: "/ 2,4 / 1,2 / -3,-3 /"
+      - number: 2 
+        description: '7 edges next to each other.'
+        algorithm: "/ -2,0 / 3,-4 / -2,0 / 3,0 / 2,4 / 1,2 / -3,-3 /"
+      - number: 3 
+        description: '6 edges next to each other.'
+        algorithm: "/ 0,2 / 4,0 / 2,4 / 1,2 / -3,-3 /"
+      - number: 4 
+        description: '5 edges next to each other.'
+        algorithm: "/ -2,0 / 2,0 / -2,0 / 3,-4 / -2,0 / 3,0 / 2,4 / 1,2 / -3,-3 /"
+      - number: 5 
+        description: '4 edges next to each other.'
+        algorithm: "/ 2,2 / 1,2 / -3,-3 /"
+  - number: 'c'
+    title: 'Useful Algorithms'
+    description: 'During the next few steps, it may be necessary to perform these algorithms.'
+    cases:
+      - number: 1 
+        description: 'Swap top layer with bottom layer.'
+        algorithm: "/ 6,6 /"
+      - number: 2 
+        description: 'Restore middle layer to square shape.'
+        algorithm: "/ 6,0 / 6,0 /"
+  - number: 'd'
+    title: 'Corner Orientation'
+    description: 'Move corners onto their correct faces.'
+    cases:
+      - number: 1 
+        description: 'Swap corner from top layer with bottom layer.'
+        algorithm: "1,0 / 0,3 / -1,0"
+      - number: 2 
+        description: 'Swap two adjacent corners from top layer with bottom layer.'
+        algorithm: "1,0 / -1,0"
+      - number: 3 
+        description: 'Swap two diagonal corners from top layer with bottom layer.'
+        algorithm: "1,0 / 3,3 / -1,0"
+  - number: 'e'
+    title: 'Edge Orientation'
+    description: 'Move edges onto their correct faces.'
+    cases:
+      - number: 1 
+        description: 'Swap right facing edge on top layer with back facing edge on bottom layer. Repeat for other swapped corners.'
+        algorithm: "1,0 / 3,0 / 3,0 / -1,-1 / -2,1 / -3,0 /"
+      - number: 2 
+        description: 'Swap opposite edges on top with opposite edges on bottom.'
+        algorithm: "1,0 / -1,-1 / 0,1"
+  - number: 'f'
+    title: 'Corner Permutation'
+    description: 'Swap corners into their right position.'
+    cases:
+      - number: 1 
+        description: 'Swap two corners on the front of the down layer. Repeat for other swapped corners.'
+        algorithm: "/ 3,-3 / 0,3 / -3,0 / 3,0 / -3,0 /"
+  - number: 'g'
+    title: 'Edge Permutation'
+    description: 'Swap edges into their right position.'
+    cases:
+      - number: 1 
+        description: 'Swap back facing edge with right facing edge on both layers. Repeat for other swapped corners.'
+        algorithm: "-2,0 / 3,0 / -1,-1 / -2,1 / 2,0"
+  - number: 'h'
+    title: 'Edge Parity'
+    description: 'Cycle edges so that three edges are incorrect instead of just two. Then repeat the previous step.'
+    cases:
+      - number: 1 
+        description: 'Only two swapped edges remain. Perfom algorithm, to cycle top layer edges, then repeat the previous step until solved.'
+        algorithm: "/ 3,3 / 1,0 / -2,-2 / 2,0 / 2,2 / -1,0 / -3,-3 / 0,2 / -2,-2 / 2,0"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
+
+

@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /guides/skewb-layer-by-layer/
+name: 'skewb-layer-by-layer'
+puzzle: 'skewb'
+title: 'Skewb - Layer by Layer'
+description: ''
+phase_count: 1
+sections:
+  - number: 'a'
+    title: 'Solve First Layer'
+    description: 'Pick a face and match corners with it.'
+    cases:
+      - number: 1 
+        description: 'Rotate last corner clockwise.'
+        algorithm: "L' F' L F"
+      - number: 2 
+        description: 'Rotate last corner anti-clockwise.'
+        algorithm: "R F R' F'"
+  - number: 'b'
+    title: 'Solve Remaining Faces'
+    description: 'Cycle three faces at a time until faces are positioned right.'
+    cases:
+      - number: 1 
+        description: 'Rotate three faces (Left, Right & Down) clockwise.'
+        algorithm: "(R' B' R B) (L B L' B')"
+      - number: 2 
+        description: 'Rotate three faces (Right, Left & Down) anti-clockwise.'
+        algorithm: "(L B L' B') (R' B' R B)"
+  - number: 'c'
+    title: 'Solve Last Layer Corners'
+    description: 'Cycle and rotate corners until fully solved.'
+    cases:
+      - number: 1 
+        description: 'Two corners are correctly facing down and two corners are facing back. Rotate other corners.'
+        algorithm: "(L' D L D') x 4"
+      - number: 2 
+        description: 'Two corners are incorrectly facing right. Rotate all corners.'
+        algorithm: "(L' D L D') x 2"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
+

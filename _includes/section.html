@@ -1,0 +1,19 @@
+<div class="section">
+  {% if include.title %}
+    <h3 class="section_header">{{ include.title }}</h2> 
+  {% else %}
+    <h3 class="section_header">Step {{ include.number | upcase }}</h2> 
+  {% endif %}
+  {% if include.description %}
+    <p class="section_description">{{ include.description }}</p>
+  {% endif %}
+  {% if include.cases.size > 1 %}
+    <div class="cases">
+  {% endif %}
+  {% for case in include.cases %}
+    {% include case.html number=case.number description=case.description guide_name=include.guide_name phase_number=include.phase_number section_number=include.number algorithm=case.algorithm %}
+  {% endfor %}
+  {% if include.cases.size > 1 %}
+    </div>
+  {% endif %}
+</div>

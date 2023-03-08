@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 190
+height: 100
+---
+{% facing_grid 20|20|30|Y,Y\nY,Y %}
+{% facing_grid 110|20|30|W,W\nW,W %}
+{% diagonal_down_arrow 30|30|30|bi %}

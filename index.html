@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article>
+  <h1>Twisty Puzzle Guide</h1>
+
+  <p class="subtitle">Guides to solving Twisty Puzzles</p>
+
+  <div class="puzzles">
+    {% for puzzle in site.data.puzzles %}
+      <div class="puzzle">
+        <h2>{{ puzzle.title }}</h2>
+        <img src="/svgs/puzzle/{{ puzzle.image_name }}.svg" class="diagram" />
+        <ul class="guide">
+          {% assign guides = site.data.guides | where_exp:"g", "g.puzzle == puzzle.name" %}
+          {% for guide in guides %}
+              <a href="guides/{{ guide.name }}">{{ guide.title}}</a>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+

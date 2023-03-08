@@ -1,0 +1,13 @@
+<polygon points="{{ include.points_string }}" style="fill:{{ site.data.colours.fill }};stroke:{{ site.data.colours.stroke}};stroke-width:1" />
+
+{% for row in include.rows %}
+  <line x1="{{ row.x1 }}" y1="{{ row.y1 }}" x2="{{ row.x2 }}" y2="{{ row.y2 }}" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+{% endfor %}
+
+{% for col in include.columns %}
+  <line x1="{{ col.x1 }}" y1="{{ col.y1 }}" x2="{{ col.x2 }}" y2="{{ col.y2 }}" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+{% endfor %}
+
+{% for shape in include.element_shapes %}
+  {% include square.svg points_string=shape.points_string colour=shape.colour opacity=shape.opacity %}
+{% endfor %}

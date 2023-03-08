@@ -1,0 +1,27 @@
+---
+layout: svg
+width: 144
+height: 144
+---
+<polygon points="72,20 124,46 72,72 20,46" style="fill:{{ site.data.colours.yellow }};stroke:{{ site.data.colours.stroke }};stroke-width:1"  />
+<line x1="52" y1="30" x2="92" y2="62" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="40" y1="36" x2="104" y2="56" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="92" y1="30" x2="52" y2="62" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="104" y1="36" x2="40" y2="56" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<polygon points="20,46 72,72 72,124 20,98" style="fill:{{ site.data.colours.orange }};stroke:{{ site.data.colours.stroke }};stroke-width:1"  />
+<line x1="20" y1="63" x2="72" y2="90" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="20" y1="81" x2="72" y2="108" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<line x1="40" y1="56" x2="40" y2="108" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="52" y1="62" x2="52" y2="79" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="52" y1="97" x2="52" y2="114" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<polygon points="72,72 124,46 124,98 72,124" style="fill:{{ site.data.colours.green }};stroke:{{ site.data.colours.stroke }};stroke-width:1"  />
+<line x1="72" y1="90" x2="124" y2="63" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="72" y1="108" x2="124" y2="81" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="92" y1="62" x2="92" y2="79" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="104" y1="91" x2="104" y2="108" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="104" y1="56" x2="104" y2="73" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<line x1="92" y1="97" x2="92" y2="114" style="stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+

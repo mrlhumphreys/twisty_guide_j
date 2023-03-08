@@ -1,0 +1,5 @@
+collections:
+  guides:
+    output: true
+  svgs:
+    output: true

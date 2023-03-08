@@ -1,0 +1,9 @@
+---
+layout: svg
+width: 200
+height: 200
+---
+{% right_skewb_grid 20|20|20|r,-,r\n-,r,-\nY,-,B %} 
+{% left_skewb_grid 100|20|20|b,-,b\n-,b,-\nY,-,Y %} 
+{% top_skewb_grid 20|100|20|R,-,O\n-,y,-\nG,-,G %} 
+

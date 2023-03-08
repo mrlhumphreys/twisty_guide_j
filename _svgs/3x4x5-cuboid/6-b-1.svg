@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 180
+height: 120
+---
+{% facing_grid 20|20|20|o,o,o\no,O,o\no,O,o\no,o,o %}
+{% facing_grid 100|20|20|r,r,r\nr,R,r\nr,R,r\nr,r,r %}
+

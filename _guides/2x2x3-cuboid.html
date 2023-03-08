@@ -1,0 +1,59 @@
+---
+layout: default
+permalink: /guides/2x2x3-cuboid/
+name: '2x2x3-cuboid'
+puzzle: '2x2x3'
+title: '2x2x3 Cuboid'
+description: ''
+phases_count: 1
+sections: 
+  - number: 'a'
+    title: 'Orient Top and Bottom Faces' 
+    description: 'Orienting one face will solve the other'
+    cases: 
+      - number: 1
+        description: 'Faces Solved. Move to next step.'
+        algorithm: '-'
+      - number: 2 
+        description: 'Swap one corner.'
+        algorithm: "D' R<sup>2</sup> D R<sup>2</sup>"
+      - number: 3 
+        description: 'Swap two adjacent corners.'
+        algorithm: 'R<sup>2</sup>'
+      - number: 4 
+        description: 'Swap two diagonal corners.'
+        algorithm: 'R<sup>2</sup> y D<sup>2</sup> R<sup>2</sup>'
+  - number: 'b'
+    title: 'Permutate Top and Bottom Layers' 
+    description: 'Putting the top and bottom corners in the right place.'
+    cases: 
+      - number: 1 
+        description: 'Swap 2 pairs of adjacent corners.'
+        algorithm: "(R<sup>2</sup> U' R<sup>2</sup>) (U<sup>2</sup> y) (R<sup>2</sup> U' R<sup>2</sup>)"
+      - number: 2 
+        description: 'Swap 2 pairs of diagonal corners.'
+        algorithm: 'R<sup>2</sup> F<sup>2</sup> R<sup>2</sup>'
+      - number: 3 
+        description: 'Swap 1 pair of adjacent corners.'
+        algorithm: "(R<sup>2</sup> U R<sup>2</sup> U') (R<sup>2</sup> F<sup>2</sup>) (U' F<sup>2</sup> U F<sup>2</sup>)"
+  - number: 'c'
+    title: 'Solve Middle Layer' 
+    description: 'Puttin the middle edge pieces in the right place.'
+    cases:
+      - number: 1 
+        description: 'Flip middle layer.'
+        algorithm: 'R<sup>2</sup> H<sup>2</sup> R<sup>2</sup>'
+      - number: 2 
+        description: 'Swap two adjacent edges.'
+        algorithm: 'R<sup>2</sup> Uw<sup>2</sup> R<sup>2</sup> U<sup>2</sup> R<sup>2</sup> D<sup>2</sup>'
+      - number: 3 
+        description: 'Swap two diagonal edges.'
+        algorithm: 'R<sup>2</sup> H<sup>2</sup> R<sup>2</sup>'
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
+

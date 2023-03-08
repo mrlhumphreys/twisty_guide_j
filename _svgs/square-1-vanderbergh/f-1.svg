@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 160
+height: 300
+---
+{% square_one_face 20|20|40|e0w,c0w,e3w,c3w,e6w,c6w,e9w,c9w %}
+{% square_one_face 20|160|40|e0y,c0Y,e3y,c3y,e6y,c6y,e9y,c9Y|back %}
+

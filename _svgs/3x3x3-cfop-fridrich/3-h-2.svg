@@ -1,0 +1,7 @@
+---
+layout: svg
+width: 152
+height: 152
+---
+{% bordered_grid 20|20|32|-,-,Y,Y,-\n-,Y,-,-,-\n-,Y,Y,Y,-\nY,-,-,Y,-\n-,-,Y,-,- %}
+

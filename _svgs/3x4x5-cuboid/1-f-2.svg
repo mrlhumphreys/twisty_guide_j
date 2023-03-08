@@ -1,0 +1,16 @@
+---
+layout: svg
+width: 200
+height: 200
+---
+<!-- Up face -->
+<polygon points="80,20 120,40 140,30 160,40 140,50 180,70 120,100 20,50" style="fill:#f0f0f0;stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<!-- Front face -->
+<polygon points="20,50 120,100 120,180 20,130" style="fill:#d0d0d0;stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<polygon points="160,160 160,140 140,150" style="fill:#d0d0d0;stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<!-- Right face -->
+<polygon points="180,70 180,150 160,160 160,140 140,150 140,170 120,180 120,100" style="fill:#b0b0b0;stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+<polygon points="160,40 160,60 140,50" style="fill:#b0b0b0;stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+

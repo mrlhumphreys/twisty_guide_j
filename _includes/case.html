@@ -1,0 +1,25 @@
+<div class="case">
+  {% if include.number %}
+    <h3>Case {{ include.number }}</h3> 
+  {% else %}
+    <h3>Only Case</h3> 
+  {% endif %}
+  <p class="description">{{ include.description }}</p>
+  {% if include.phase_number %}
+    {% if include.number %}
+      <img src="/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}-{{ include.number }}.svg" class="diagram" />
+    {% else %}
+      <img src="/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}.svg" class="diagram" />
+    {% endif %}
+  {% else %}
+    {% if include.number %}
+      <img src="/svgs/{{include.guide_name}}/{{include.section_number}}-{{include.number}}.svg" class="diagram" />
+    {% else %}
+      <img src="/svgs/{{include.guide_name}}/{{include.section_number}}.svg" class="diagram" />
+    {% endif %}
+  {% endif %}
+  <p class="algorithm">
+    <span class="text">{{ include.algorithm }}</span>
+    <span class="show hidden">Show</span>
+  </p>
+</div>

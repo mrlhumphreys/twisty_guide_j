@@ -1,0 +1,6 @@
+---
+layout: svg
+width: 235
+height: 240 
+---
+{% megaminx_face_projection 20|20|20|PI,BR,-,-,PI,PI,PI,-,-,-,-|BR,-,-,BR,BR,-,-,PI,-,-,-|R,R,R,R,R,R,R,-,R,R,R|B,B,B,B,B,-,B,B,B,B,B|G,-,-,-,-,-,-,-,G,G,-|-,-,-,-,-,R,-,-,-,-,-|0.1 %}

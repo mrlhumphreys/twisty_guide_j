@@ -1,0 +1,59 @@
+---
+layout: default
+permalink: /guides/pocket-cube/
+name: 'pocket-cube'
+puzzle: 'pocket-cube'
+title: 'Pocket Cube'
+description: ''
+phases_count: 1
+sections:
+  - number: 'a'
+    title: 'Form Cube Shape'
+    description: 'Make moves to return the puzzle to a cube shape.'
+    cases:
+      - number: 1 
+        description: 'Cube in cube shape. Move to next step.'
+        algorithm: "-"
+      - number: 2 
+        description: 'Shift a block back into place.'
+        algorithm: "(R F R' F') (R' D R D') (F D R')"
+      - number: 3 
+        description: 'Shift a block back into place.'
+        algorithm: "(L' F' L' F) (L D' L' D) (F' D' L)"
+  - number: 'b'
+    title: 'Orient Corner'
+    description: 'Orient the corner to match the centers.'
+    cases:
+      - number: 1 
+        description: 'Corner matches centers. Move to the next step.'
+        algorithm: "-"
+      - number: 2 
+        description: 'Rotate a corner to match the centers. Repeat until corner matches centers.'
+        algorithm: "(L B' U' L') (B D L' F') (D' L B D') R' y (R F R' F') (R' D R D') (F D R')"
+  - number: 'c'
+    title: 'Orient One Edge'
+    description: 'Orient one edge to match the corner and centers.'
+    cases: 
+      - number: 1 
+        description: 'One edge matches corner. Move to the next step.'
+        algorithm: "-"
+      - number: 2 
+        description: 'No Edge matches corner. Perform until at least one edge matches center.'
+        algorithm: "(L B' U' B) (L<sup>2</sup> D F<sup>2</sup> D') (L D L' F') (L' F' L F) (L D' L' D) (F' D' L')"
+  - number: 'd'
+    title: 'Orient Last Two Edges'
+    description: 'Orient last two edges to solve.'
+    cases:
+      - number: 1 
+        description: 'Cube is solved.'
+        algorithm: "-"
+      - number: 2 
+        description: 'Flip two edge pieces. Perform algorithm two times.'
+        algorithm: "(L B' U' L ') (B D L' F') (D' L B D') (R' B' D)"
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% for section in page.sections %}
+    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
+  {% endfor %}
+</article>
