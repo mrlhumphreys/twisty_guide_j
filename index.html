@@ -11,11 +11,10 @@ layout: default
     {% for puzzle in site.data.puzzles %}
       <div class="puzzle">
         <h2>{{ puzzle.title }}</h2>
-        <img src="/svgs/puzzle/{{ puzzle.image_name }}.svg" class="diagram" />
+        <img src="{{ puzzle.image_url | relative_url }}" class="diagram" />
         <ul class="guide">
-          {% assign guides = site.data.guides | where_exp:"g", "g.puzzle == puzzle.name" %}
-          {% for guide in guides %}
-              <a href="guides/{{ guide.name }}">{{ guide.title}}</a>
+          {% for guide in puzzle.guides %}
+              <a href="{{ guide.url | relative_url }}">{{ guide.title }}</a>
           {% endfor %}
         </ul>
       </div>
