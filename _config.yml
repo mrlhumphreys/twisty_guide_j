@@ -1,5 +1,7 @@
 collections:
   guides:
     output: true
+  notations:
+    output: true
   svgs:
     output: true

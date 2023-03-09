@@ -232,6 +232,45 @@ footer p {
   display: none;
 }
 
+.moves {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.move {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  margin: 1em 10px;
+  background-color: $background-secondary;
+}
+
+.move .letter {
+  background-color: $background-focus;
+  color: $content-main;
+  font-size: 2em;
+  height: 1em;
+  padding: 0.5em 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.notation_link {
+  display: block;
+  margin: 0em auto 1em;
+  padding: 1em 0;
+  width: 300px;
+  text-align: center;
+  color: $content-focus;
+  background-color: $background-main;
+  color: $content-focus;
+}
+
 .next_page {
   display: block;
   margin: 2em auto;

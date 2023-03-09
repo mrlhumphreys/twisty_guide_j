@@ -1,1 +1,0 @@
-<polygon points="{{ include.points_string }}" style="stroke:black;fill:{{ include.colour }};" />

@@ -1,3 +1,0 @@
-{% include grid.svg points_string=include.top.points_string rows=include.top.rows columns=include.top.columns element_shapes=include.top.element_shapes %}
-{% include grid.svg points_string=include.front.points_string rows=include.front.rows columns=include.front.columns element_shapes=include.front.element_shapes %}
-{% include grid.svg points_string=include.right.points_string rows=include.right.rows columns=include.right.columns element_shapes=include.right.element_shapes %}
