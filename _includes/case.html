@@ -7,15 +7,15 @@
   <p class="description">{{ include.description }}</p>
   {% if include.phase_number %}
     {% if include.number %}
-      <img src="/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}-{{ include.number }}.svg" class="diagram" />
+      <img src="{{ base_url }}/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}-{{ include.number }}.svg" class="diagram" />
     {% else %}
-      <img src="/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}.svg" class="diagram" />
+      <img src="{{ base_url }}/svgs/{{ include.guide_name }}/{{ include.phase_number }}-{{ include.section_number }}.svg" class="diagram" />
     {% endif %}
   {% else %}
     {% if include.number %}
-      <img src="/svgs/{{include.guide_name}}/{{include.section_number}}-{{include.number}}.svg" class="diagram" />
+      <img src="{{ base_url }}/svgs/{{include.guide_name}}/{{include.section_number}}-{{include.number}}.svg" class="diagram" />
     {% else %}
-      <img src="/svgs/{{include.guide_name}}/{{include.section_number}}.svg" class="diagram" />
+      <img src="{{ base_url }}/svgs/{{include.guide_name}}/{{include.section_number}}.svg" class="diagram" />
     {% endif %}
   {% endif %}
   <p class="algorithm">

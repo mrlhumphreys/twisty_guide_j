@@ -6,6 +6,7 @@ $content-main: #400000;
 $content-secondary: #606060;
 $content-focus: #ff4500;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -92,32 +93,6 @@ nav.top_level a:hover {
 }
 
 // Remove nav page_links
-nav.page_links {
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1em 10px;
-}
-
-nav.page_links a {
-  color: $content-focus;
-  padding: 0.5em 10px;
-  margin: 0 10px;
-  border-top: solid 1px $content-focus;
-  border-bottom: solid 1px $content-focus;
-}
-
-nav.page_links a.current {
-  background-color: $content-focus;
-  color: $background-main;
-}
-
-nav.page_links a:hover {
-  color: $background-main;
-  background-color: $content-focus;
-}
-
 article {
   padding: 0;
 }
@@ -188,7 +163,10 @@ footer p {
 }
 
 .phase_header {
-  padding: 0.5em 10px;
+  background-color: $content-secondary; 
+  color: $background-main; 
+  padding: 0.5em 0em;
+  margin: 0.5em 10px;
   text-align: center;
 }
 
