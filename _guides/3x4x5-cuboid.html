@@ -634,12 +634,5 @@ phases:
             description: 'back down right correct and front up right incorrect. Swap it for correct center.'
             algorithm: "F Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r F"
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <a href="{{ page.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
-  {% include phase_selector.html phases=page.phases %}
-  {% for phase in page.phases %}
-    {% include phase.html number=phase.number title=phase.title sections=phase.sections %}
-  {% endfor %}
-</article>
+{% include guide_phased.html title=page.title notation_url=page.notation_url phases=page.phases %} 
 

@@ -100,12 +100,4 @@ phases:
             description: 'Two opposite corners not oriented correctly.' 
             algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup> R U' L U<sup>2</sup> R' U R L' U' L U<sup>2</sup> R' U L' U"
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <a href="{{ page.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
-  {% include phase_selector.html phases=page.phases %}
-  {% for phase in page.phases %}
-    {% include phase.html number=phase.number title=phase.title sections=phase.sections %}
-  {% endfor %}
-</article>
-
+{% include guide_phased.html title=page.title notation_url=page.notation_url phases=page.phases %} 

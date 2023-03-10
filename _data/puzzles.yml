@@ -2,6 +2,8 @@
   title: "3x3 Cube"
   image_url: 'svgs/puzzle/3x3x3.svg'
   guides: 
+    - title: "3x3 - Beginner's Method"
+      url: 'guides/3x3x3-beginners'
     - title: '3x3 - CFOP/Fridrich Method'
       url: 'guides/3x3x3-cfop-fridrich'
 - name: "2x2x2"

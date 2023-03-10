@@ -38,11 +38,4 @@ sections:
         description: 'Two corners are incorrectly facing right. Rotate all corners.'
         algorithm: "(L' D L D') x 2"
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <a href="{{ page.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
-  {% for section in page.sections %}
-    {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
-  {% endfor %}
-</article>
-
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
