@@ -1,15 +1,33 @@
+- name: '3x3x3'
+  title: "3x3 Cube"
+  image_url: 'svgs/puzzle/3x3x3.svg'
+  guides: 
+    - title: '3x3 - CFOP/Fridrich Method'
+      url: 'guides/3x3x3-cfop-fridrich'
 - name: "2x2x2"
-  title: "2x2 Rubik's Pocket"
+  title: "2x2 Cube"
   image_url: 'svgs/puzzle/2x2x2.svg'
   guides: 
     - title: '2x2 - Ortega Method'
       url: 'guides/2x2x2-ortega'
+- name: '4x4x4'
+  title: "4x4 Cube"
+  image_url: 'svgs/puzzle/4x4x4.svg'
+  guides: 
+    - title: '4x4 - Reduction Method'
+      url: 'guides/4x4x4-reduction'
 - name: 'pyraminx'
   title: 'Pyraminx'
   image_url: 'svgs/puzzle/pyraminx.svg'
   guides: 
     - title: 'Pyraminx - Layer by Layer Method'
       url: 'guides/pyraminx-layer-by-layer'
+- name: 'megaminx'
+  title: 'Megaminx'
+  image_url: 'svgs/puzzle/megaminx.svg'
+  guides: 
+    - title: "Megaminx - Beginner's Method"
+      url: 'guides/megaminx-beginners'
 - name: 'skewb'
   title: 'Skewb'
   image_url: 'svgs/puzzle/skewb.svg'
@@ -22,24 +40,6 @@
   guides: 
     - title: 'Square-1 - Vanderbergh Method'
       url: 'guides/square-1-vanderbergh'
-- name: '3x3x3'
-  title: "3x3 Rubik's Cube"
-  image_url: 'svgs/puzzle/3x3x3.svg'
-  guides: 
-    - title: '3x3 - CFOP/Fridrich Method'
-      url: 'guides/3x3x3-cfop-fridrich'
-- name: '4x4x4'
-  title: "4x4 Rubik's Revenge"
-  image_url: 'svgs/puzzle/4x4x4.svg'
-  guides: 
-    - title: '4x4 - Reduction Method'
-      url: 'guides/4x4x4-reduction'
-- name: 'megaminx'
-  title: 'Megaminx'
-  image_url: 'svgs/puzzle/megaminx.svg'
-  guides: 
-    - title: "Megaminx - Beginner's Method"
-      url: 'guides/megaminx-beginners'
 - name: '2x2x3'
   title: '2x2x3 Cuboid'
   image_url: 'svgs/puzzle/2x2x3.svg'

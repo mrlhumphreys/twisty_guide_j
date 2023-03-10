@@ -1,0 +1,7 @@
+---
+layout: svg
+width: 190
+height: 170 
+---
+{% pyraminx_face 20|20|50|Y\nR,Y,Y\nR,R,R,Y,Y|0|0.333 %}
+B{% pyraminx_face 20|20|50|B\nB,B,Y\nB,B,Y,Y,Y|0.5|0.666 %}

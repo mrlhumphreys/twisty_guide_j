@@ -5,7 +5,7 @@ name: 'square-1-vanderbergh'
 puzzle: 'square-1'
 title: 'Square-1 - Vanderbergh Method'
 description: ''
-phases_count: 1
+notation_url: 'notations/square-1'
 sections:
   - number: 'a'
     title: 'Gather small pieces together.'
@@ -90,6 +90,7 @@ sections:
 ---
 <article>
   <h1>{{ page.title }}</h1>
+  <a href="{{ page.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
   {% for section in page.sections %}
     {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=page.name %}
   {% endfor %}

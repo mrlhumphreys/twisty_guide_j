@@ -1,0 +1,7 @@
+---
+layout: svg
+width: 180 
+height: 180
+---
+{% square_one_face 30|30|40|e1Y,c1Y,e4Y,c4Y,e7Y,c7Y,e10Y,c10Y|back %}
+

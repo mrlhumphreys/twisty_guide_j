@@ -1,66 +1,64 @@
 ---
-layout: default
+layout: default 
 title: "Cubic Notation"
 sections:
   - title: 'Faces'
     moves:
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/r.svg'
         letter: 'R'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/l.svg'
         letter: 'L'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/u.svg'
         letter: 'U'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/d.svg'
         letter: 'D'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/f.svg'
         letter: 'F'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/b.svg'
         letter: 'B'
   - title: 'Clockwise and Anti-clockwise'
     moves: 
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/r.svg'
         letter: 'R'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/r-prime.svg'
         letter: "R'"
   - title: 'Number of Quarter Turns'
     moves:
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/r.svg'
         letter: "R"
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/r-2.svg'
         letter: "R<sup>2</sup>"
   - title: 'Multiple Layers'
     moves: 
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/rw.svg'
         letter: 'Rw'
   - title: 'Whole Puzzle Rotation'
     moves:
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/x.svg'
         letter: 'x'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/y.svg'
         letter: 'y'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/z.svg'
         letter: 'z'
   - title: 'Middle Layers' 
     moves:
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/m.svg'
         letter: 'M'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/e.svg'
         letter: 'E'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/s.svg'
         letter: 'S'
   - title: 'Bigger Puzzle Layers'
     moves:
-      - image_url: 'svgs/puzzle/default.svg'
-        letter: 'R'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/small-r.svg'
         letter: 'r'
-      - image_url: 'svgs/puzzle/default.svg'
+      - image_url: 'svgs/notations-cubic/3r.svg'
         letter: '3R'
 
 ---
 <article>
   <h1>{{ page.title }}</h1>
-
+  <a href="javascript:history.back()" class="notation_link">Back</a>
   {% for section in page.sections %}
     <div class="section">
       <h2 class="section_header">{{ section.title }}</h2>

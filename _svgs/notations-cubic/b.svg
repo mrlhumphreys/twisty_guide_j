@@ -1,0 +1,7 @@
+---
+layout: svg
+width: 160
+height: 160
+---
+{% iso_view 20|20|20|R,R,R\nY,Y,Y\nY,Y,Y|B,B,B\nB,B,B\nB,B,B|R,R,W\nR,R,W\nR,R,W %}
+

@@ -241,7 +241,7 @@ footer p {
 .move {
   flex: 0 0 280px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   flex-grow: 1;
   align-items: center;
@@ -250,15 +250,18 @@ footer p {
 }
 
 .move .letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $background-focus;
   color: $content-main;
   font-size: 2em;
-  height: 1em;
-  padding: 0.5em 0;
+  height: 100%;
   width: 100%;
   text-align: center;
   font-weight: bold;
 }
+
 
 .notation_link {
   display: block;
