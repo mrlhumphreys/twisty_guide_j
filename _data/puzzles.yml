@@ -18,6 +18,12 @@
   guides: 
     - title: '4x4 - Reduction Method'
       url: 'guides/4x4x4-reduction'
+- name: '5x5x5'
+  title: "5x5 Cube"
+  image_url: 'svgs/puzzle/5x5x5.svg'
+  guides: 
+    - title: '5x5 - Reduction Method'
+      url: 'guides/5x5x5-reduction'
 - name: 'pyraminx'
   title: 'Pyraminx'
   image_url: 'svgs/puzzle/pyraminx.svg'
