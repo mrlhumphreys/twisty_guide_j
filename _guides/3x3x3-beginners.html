@@ -7,69 +7,69 @@ title: "3x3 - Beginner's Method"
 description: ''
 notation_url: 'notations/cubic'
 sections: 
-    - number: 'a'
-      title: 'Solve Cross'
-      description: 'Make a solved cross shape for the bottom layer.'
-      cases:
-        - number: null 
-          description: 'Rotate faces until a cross is formed.'
-          algorithm: "Combination of R, L, F, B, U and/or D."
-    - number: 'b'
-      title: 'First Layer'
-      description: 'Put the corners in the first layer.'
-      cases: 
-        - number: 1 
-          description: 'Down edge facing right.'
-          algorithm: "R U R'"
-        - number: 2 
-          description: 'Down edge facing front.'
-          algorithm: "F' U' F"
-        - number: 3 
-          description: 'Down edge facing up.'
-          algorithm: "R U' R' U<sup>2</sup> R U R'"
-    - number: 'c'
-      title: 'Second Layer'
-      description: 'Put the edges in the second layer.'
-      cases:
-        - number: 1 
-          description: 'Edge needs to be rotated clockwise around center.'
-          algorithm: "(U R U' R') (U' F' U F)" 
-        - number: 2 
-          description: 'Edge needs to be rotated anti-clockwise around center.'
-          algorithm: "(U' F' U F) (U R U' R')" 
-    - number: 'd'
-      title: 'Last Layer Cross'
-      description: 'Form a cross on the last layer.'
-      cases: 
-        - number: 1 
-          description: 'No edges facing up.'
-          algorithm: "F (R U R' U') F' Fw (R U R' U') Fw'" 
-        - number: 2 
-          description: 'Two adjacent edges facing up.'
-          algorithm: "Fw (R U R' U') Fw'" 
-        - number: 3 
-          description: 'Two opposite edges facing up.'
-          algorithm: "F (R U R' U') F'" 
-    - number: 'e'
-      title: 'Last Layer Edges'
-      description: 'Put the edges in the right place in the last layer.'
-      cases:
-        - number: null 
-          description: 'Swap two edges. Repeat as necessary.'
-          algorithm: "R U R' U R U<sup>2</sup> R' U" 
-    - number: 'f'
-      title: 'Last Layer Corner Orientation'
-      description: 'Put the corner in the right place in the last layer.'
-      cases: 
-        - number: null 
-          description: 'Cycle 3 edges. Repeat as necessary.'
-          algorithm: "U R U' L' U R' U' L" 
-    - number: 'g'
-      title: 'Last Layer Corner Permutation'
-      description: 'Rotate corners until they are correct.'
-      cases:
-        - number: null 
-          description: "Rotate corners. Repeat until a corner is oriented correctly and move an incorrectly oriented corner in it's place. Repeat."
-          algorithm: "R' D' R D" 
+  - number: 'a'
+    title: 'Solve Cross'
+    description: 'Make a solved cross shape for the bottom layer.'
+    cases:
+      - number: null 
+        description: 'Rotate faces until a cross is formed.'
+        algorithm: "Combination of R, L, F, B, U and/or D."
+  - number: 'b'
+    title: 'First Layer'
+    description: 'Put the corners in the first layer.'
+    cases: 
+      - number: 1 
+        description: 'Down edge facing right.'
+        algorithm: "R U R'"
+      - number: 2 
+        description: 'Down edge facing front.'
+        algorithm: "F' U' F"
+      - number: 3 
+        description: 'Down edge facing up.'
+        algorithm: "R U' R' U<sup>2</sup> R U R'"
+  - number: 'c'
+    title: 'Second Layer'
+    description: 'Put the edges in the second layer.'
+    cases:
+      - number: 1 
+        description: 'Edge needs to be rotated clockwise around center.'
+        algorithm: "(U R U' R') (U' F' U F)" 
+      - number: 2 
+        description: 'Edge needs to be rotated anti-clockwise around center.'
+        algorithm: "(U' F' U F) (U R U' R')" 
+  - number: 'd'
+    title: 'Last Layer Cross'
+    description: 'Form a cross on the last layer.'
+    cases: 
+      - number: 1 
+        description: 'No edges facing up.'
+        algorithm: "F (R U R' U') F' Fw (R U R' U') Fw'" 
+      - number: 2 
+        description: 'Two adjacent edges facing up.'
+        algorithm: "Fw (R U R' U') Fw'" 
+      - number: 3 
+        description: 'Two opposite edges facing up.'
+        algorithm: "F (R U R' U') F'" 
+  - number: 'e'
+    title: 'Last Layer Edges'
+    description: 'Put the edges in the right place in the last layer.'
+    cases:
+      - number: null 
+        description: 'Swap two edges. Repeat as necessary.'
+        algorithm: "R U R' U R U<sup>2</sup> R' U" 
+  - number: 'f'
+    title: 'Last Layer Corner Orientation'
+    description: 'Put the corner in the right place in the last layer.'
+    cases: 
+      - number: null 
+        description: 'Cycle 3 edges. Repeat as necessary.'
+        algorithm: "U R U' L' U R' U' L" 
+  - number: 'g'
+    title: 'Last Layer Corner Permutation'
+    description: 'Rotate corners until they are correct.'
+    cases:
+      - number: null 
+        description: "Rotate corners. Repeat until a corner is oriented correctly and move an incorrectly oriented corner in it's place. Repeat."
+        algorithm: "R' D' R D" 
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

@@ -42,6 +42,12 @@
   guides: 
     - title: 'Square-1 - Vanderbergh Method'
       url: 'guides/square-1-vanderbergh'
+- name: '3x3x3-shapemod'
+  title: '3x3 Shapemod'
+  image_url: 'svgs/puzzle/3x3x3-shapemod.svg'
+  guides: 
+    - title: '3x3x3 Shapemod'
+      url: 'guides/3x3x3-shapemod'
 - name: '2x2x3'
   title: '2x2x3 Cuboid'
   image_url: 'svgs/puzzle/2x2x3.svg'

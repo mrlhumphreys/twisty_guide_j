@@ -1,0 +1,36 @@
+---
+layout: svg
+width: 160
+height: 160
+---
+<!-- +60 -->
+<polygon points="80,80 140,110 80,140 20,110" style="fill:{{ site.data.colours.yellow }};stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<line x1="35" y1="103" x2="125" y2="103" style="stroke:#404040;stroke-width:1"/>
+<line x1="35" y1="117" x2="125" y2="117" style="stroke:#404040;stroke-width:1"/>
+
+<line x1="65" y1="88" x2="65" y2="133" style="stroke:#404040;stroke-width:1"/>
+<line x1="95" y1="88" x2="95" y2="133" style="stroke:#404040;stroke-width:1"/>
+
+<!-- -30 -->
+<!-- + 60 -->
+<polygon points="80,20 140,50 140,110 80,80 80,60 95,67 95,48 80,40" style="fill:{{ site.data.colours.blue }};stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<line x1="80" y1="40" x2="140" y2="70" style="stroke:#404040;stroke-width:1"/>
+<line x1="80" y1="60" x2="140" y2="90" style="stroke:#404040;stroke-width:1"/>
+
+<line x1="95" y1="27" x2="95" y2="87" style="stroke:#404040;stroke-width:1"/>
+<line x1="125" y1="43" x2="125" y2="103" style="stroke:#404040;stroke-width:1"/>
+
+<!-- -60 -->
+<polygon points="20,50 80,20 80,40 65,48 65,67 80,60 80,80 20,110" style="fill:{{ site.data.colours.red }};stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<line x1="20" y1="70" x2="80" y2="40" style="stroke:#404040;stroke-width:1"/>
+<line x1="20" y1="90" x2="80" y2="60" style="stroke:#404040;stroke-width:1"/>
+
+<line x1="35" y1="43" x2="35" y2="103" style="stroke:#404040;stroke-width:1"/>
+<line x1="65" y1="27" x2="65" y2="87" style="stroke:#404040;stroke-width:1"/>
+
+<polygon points="80,40 95,48 95,67 80,60" style="fill:{{ site.data.colours.red }};stroke:{{ site.data.colours.stroke }};stroke-width:1" />
+
+<polygon points="80,40 80,60 65,67 65,48" style="fill:{{ site.data.colours.blue }};stroke:{{ site.data.colours.stroke }};stroke-width:1" />

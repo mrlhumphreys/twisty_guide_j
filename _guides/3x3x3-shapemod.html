@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: /guides/3x3x3-shapemod
+name: '3x3x3-shapemod'
+puzzle: '3x3x3'
+title: "3x3 Shapemod (Fisher Cube, Picture Cube, Mastermorphix, etc.)"
+description: ''
+notation_url: 'notations/cubic'
+sections: 
+  - number: 'a'
+    title: 'Solve as a 3x3 cube'
+    description: ''
+    cases:
+      - number: null 
+        description: 'Use any 3x3 method to solve the cube.'
+        algorithm: "-"
+  - number: 'b'
+    title: 'Rotate centers'
+    description: 'Rotate centers until oriented correctly.'
+    cases:
+      - number: 1 
+        description: 'Rotate top center 180 degrees.'
+        algorithm: "(U R L U<sup>2</sup> R' L') (U R L U<sup>2</sup> R' L')"
+      - number: 2 
+        description: 'Rotate top center anti-clockwise and left center clockwise.'
+        algorithm: "(M E' M' U) (M' E M U')"
+  - number: 'c'
+    title: 'Rotational Equivalency'
+    description: 'False parity case where only 1 edge appears flipped.'
+    cases:
+      - number: null 
+        description: 'Flip an edge that looks the same flipped.'
+        algorithm: "(R U<sup>2</sup> R' U) (R U<sup>2</sup> R' U) F' U' F"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
