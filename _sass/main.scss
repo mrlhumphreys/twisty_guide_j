@@ -282,3 +282,17 @@ footer p {
   pointer-events: none;
 }
 
+.fab_link {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+}
+
+.fab_link a {
+  display: block;
+  color: $content-focus;
+  background-color: $background-main;
+  padding: 1em 10px;
+}
+
