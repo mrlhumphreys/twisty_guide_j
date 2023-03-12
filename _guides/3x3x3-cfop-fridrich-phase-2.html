@@ -1,0 +1,173 @@
+---
+layout: default
+permalink: /guides/3x3x3-cfop-fridrich-phase-2
+name: '3x3x3-cfop-fridrich-phase-2'
+puzzle: '3x3x3'
+title: '3x3 - CFOP/Fridrich Method'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 2 
+phases:
+  - number: 1
+    url: 'guides/3x3x3-cfop-fridrich-phase-1'
+  - number: 2 
+    url: 'guides/3x3x3-cfop-fridrich-phase-2'
+  - number: 3 
+    url: 'guides/3x3x3-cfop-fridrich-phase-3'
+  - number: 4 
+    url: 'guides/3x3x3-cfop-fridrich-phase-4'
+sections:
+  - number: 'a'
+    title: 'Corner Correct'
+    description: 'Match the edge with the corner.'
+    cases:
+      - number: 1 
+        description: 'Edge placed but not oriented correctly.'
+        algorithm: "(R U' R') Dw (R' U<sup>2</sup>) (R U<sup>2</sup>) (R' U R)"
+      - number: 2 
+        description: 'Rotate edge clackwise to match corner.'
+        algorithm: "(U R U' R') Dw' (L' U L)"
+      - number: 3 
+        description: 'Rotate edge anti-clackwise to match corner.'
+        algorithm: "Dw' (L' U L) Dw (R U' R')"
+  - number: 'b'
+    title: 'Edge Correct'
+    description: 'Match the corner with the edge.'
+    cases: 
+      - number: 1 
+        description: 'Corner with bottom facing up.'
+        algorithm: "(R U R' U') (R U R' U') (R U R')"
+      - number: 2 
+        description: 'Corner with bottom facing right.'
+        algorithm: "Dw (R' U) (R U<sup>2</sup>) (R' U R)"
+      - number: 3 
+        description: 'Corner with bottom facing front.'
+        algorithm: "U' (R U') (R' U<sup>2</sup>) (R U' R')"
+  - number: 'c'
+    title: 'Corner in correct position with bottom facing front.'
+    description: 'Rotate corner and match with edge.'
+    cases:
+      - number: 1 
+        description: 'Edge correctly positioned and oriented.'
+        algorithm: "(R<sup>2</sup> U<sup>2</sup>) (R' U' R U') (R' U<sup>2</sup> R')"
+      - number: 2 
+        description: 'Edge correctly positioned, but flipped.'
+        algorithm: "(R U' R U) y (R U') (R' F<sup>2</sup>)"
+      - number: 3 
+        description: 'Slot edge in place clockwise and rotate corner.'
+        algorithm: "U<sup>2</sup> (R U' R') y (L' U' L)"
+      - number: 4 
+        description: 'Slot edge in place anti-clockwise and rotate corner.'
+        algorithm: "(R U') (R' U) (R U' R')"
+  - number: 'd'
+    title: 'Corner in correct position with bottom facing right.'
+    description: 'Rotate corner and match with edge.'
+    cases:
+      - number: 1 
+        description: 'Rotate corner.'
+        algorithm: "(R U<sup>2</sup>) (R U R' U) (R U<sup>2</sup> R<sup>2</sup>)"
+      - number: 2 
+        description: 'Flip edge and rotate corner.'
+        algorithm: "(R U' R') (F' L' U<sup>2</sup>) (L F)"
+      - number: 3 
+        description: 'Slot edge in place clockwise and rotate corner.'
+        algorithm: "(R U<sup>2</sup> R') y' (R' U<sup>2</sup> R)"
+      - number: 4 
+        description: 'Slot edge in place anti-clockwise and rotate corner.'
+        algorithm: "(R U R' U') (R U R')"
+  - number: 'e'
+    title: 'Corner in top layer with bottom facing up.'
+    description: 'Match with edge and slot into position.'
+    cases:
+      - number: 1 
+        description: 'Move already matched up pair into position.'
+        algorithm: "(R U' R' Dw) (R' U R)"
+      - number: 2 
+        description: 'Break up and match pair together, then slot in.'
+        algorithm: "L' U<sup>2</sup> L U) (L' U' L)"
+      - number: 3 
+        description: 'Break up and match pair together, then slot in.'
+        algorithm: "U<sup>2</sup> (R<sup>2</sup> U<sup>2</sup>) (R' U' R U' R<sup>2</sup>)"
+      - number: 4 
+        description: 'Match up pair and slot into position.'
+        algorithm: "Dw' (L' U<sup>2</sup> L U') (L' U L)"
+      - number: 5 
+        description: 'Match up pair and slot into position.'
+        algorithm: "U<sup>2</sup> (R U R' U) (R U' R')"
+      - number: 6 
+        description: 'Break up pair and match up, then slot into position.'
+        algorithm: "(R U<sup>2</sup> R' U') (R U R')"
+      - number: 7 
+        description: 'Break up pair and match up, then slot into position.'
+        algorithm: "U<sup>2</sup> (L<sup>2</sup> U<sup>2</sup>) (L U L' U L<sup>2</sup>)"
+      - number: 8 
+        description: 'Match up pair and slot into position.'
+        algorithm: "U (R U<sup>2</sup> R' U) (R U' R')"
+      - number: 9 
+        description: 'Match up pair and slot into position.'
+        algorithm: "(F' L' U<sup>2</sup>) (L F)"
+  - number: 'f'
+    title: 'Corner in top layer with bottom facing right.'
+    description: 'Match with edge and slot into position.'
+    cases:
+      - number: 1 
+        description: 'Break Pair, then match up and slot into position.'
+        algorithm: "Dw (R' U' R Dw') (R U R')"
+      - number: 2 
+        description: 'Pair matched, move and slot into position.'
+        algorithm: "Dw' (L' U L)"
+      - number: 3 
+        description: 'Break Pair, then match up and slot into position.'
+        algorithm: "Dw (R' U<sup>2</sup> R Dw') (R U R')"
+      - number: 4 
+        description: 'Match up pair and slot into position.'
+        algorithm: "Dw (R' U' R U<sup>2</sup>) (R' U R)"
+      - number: 5 
+        description: 'Match up pair and slot into position.'
+        algorithm: "Dw (R' U R Dw') (R U R')"
+      - number: 6 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "U' (R U' R' U) (R U R')"
+      - number: 7 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "(R U') (R' U<sup>2</sup>) y' (R' U' R)"
+      - number: 8 
+        description: 'Match up pair and slot into position.'
+        algorithm: "(R U R')"
+      - number: 9 
+        description: 'Match up pair and slot into position.'
+        algorithm: "Dw (R' U<sup>2</sup> R U<sup>2</sup>) (R' U R)"
+  - number: 'g'
+    title: 'Corner in top layer with bottom facing front.'
+    description: 'Match with edge and slot into position.'
+    cases:
+      - number: 1 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "U' (R U R' Dw) (R' U' R)"
+      - number: 2 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "Dw (R' U R U') (R' U' R)"
+      - number: 3 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "Lw U L F') (L' U' Lw')"
+      - number: 4 
+        description: 'Match up pair and slot into position.'
+        algorithm: "(L' U' L)"
+      - number: 5 
+        description: 'Match up pair and slot into position.'
+        algorithm: "U' (R U<sup>2</sup> R' U<sup>2</sup>) (R U' R')"
+      - number: 6 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "U (R U' R')"
+      - number: 7 
+        description: 'Break pair, then match up and slot into position.'
+        algorithm: "U' (R U<sup>2</sup> R' Dw) (R' U' R)"
+      - number: 8 
+        description: 'Match up pair and slot into position.'
+        algorithm: "U' (R U R' U<sup>2</sup>) (R U' R')"
+      - number: 9 
+        description: 'Match up pair and slot into position.'
+        algorithm: "U' (R U' R' Dw) (R' U' R)"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

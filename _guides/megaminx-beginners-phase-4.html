@@ -1,0 +1,58 @@
+---
+layout: default
+permalink: /guides/megaminx-beginners-phase-4
+name: 'megaminx-beginners-phase-4'
+puzzle: 'megaminx'
+title: "Megaminx - Beginner's Method"
+description: ''
+notation_url: 'notations/dodecahedral'
+current_phase: 4 
+phases:
+  - number: 1
+    url: 'guides/megaminx-beginners-phase-1'
+  - number: 2 
+    url: 'guides/megaminx-beginners-phase-2'
+  - number: 3 
+    url: 'guides/megaminx-beginners-phase-3'
+  - number: 4 
+    url: 'guides/megaminx-beginners-phase-4'
+sections:
+  - number: 'a'
+    title: "Fifth Layer Orient Edges"
+    description: 'Match up the edges on the last layer and make a star shape.'
+    cases:
+      - number: 1 
+        description: 'Two adjacent edges facing out.'
+        algorithm: "F (U R U' R') F'" 
+      - number: 2 
+        description: 'Two opposite edges facing out.'
+        algorithm: "F (R U R' U') F'" 
+  - number: 'b'
+    title: "Fifth Layer Position Edges"
+    description: 'Cycle the edges around until they are in the right place.'
+    cases:
+      - number: 1 
+        description: 'Cycle three edges clockwise.'
+        algorithm: "(R U R' U) (R U<sup>3</sup> R' U)" 
+      - number: 2 
+        description: 'Cycle three edges anti-clockwise.'
+        algorithm: "(U' R U<sup>2</sup> R') (U' R U' R')" 
+  - number: 'c'
+    title: "Fifth Layer Position Corners"
+    description: 'Cycle the corners around until they are in the right place.'
+    cases:
+      - number: 1 
+        description: 'Cycle three corners clockwise.'
+        algorithm: "(L' U<sup>2</sup> R U'<sup>2</sup>) (L U<sup>2</sup> R' U'<sup>2</sup>)" 
+      - number: 2 
+        description: 'Cycle three corners anti-clockwise.'
+        algorithm: "(R U'<sup>2</sup> L' U<sup>2</sup>) (R' U'<sup>2</sup> L U<sup>2</sup>)" 
+  - number: 'd'
+    title: "Fifth Layer Orient Corners"
+    description: 'Run an algorithm to rotate each of the corners until they face the right way.'
+    cases:
+      - number: null 
+        description: 'Corner rotating algorithm.'
+        algorithm: "R' D' R D"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

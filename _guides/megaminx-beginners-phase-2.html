@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /guides/megaminx-beginners-phase-2
+name: 'megaminx-beginners-phase-2'
+puzzle: 'megaminx'
+title: "Megaminx - Beginner's Method"
+description: ''
+notation_url: 'notations/dodecahedral'
+current_phase: 2 
+phases:
+  - number: 1
+    url: 'guides/megaminx-beginners-phase-1'
+  - number: 2 
+    url: 'guides/megaminx-beginners-phase-2'
+  - number: 3 
+    url: 'guides/megaminx-beginners-phase-3'
+  - number: 4 
+    url: 'guides/megaminx-beginners-phase-4'
+sections:
+  - number: 'a'
+    title: "Third Layer Corners"
+    description: 'Move the matching corners above the previously inserted edges.'
+    cases:
+      - number: null 
+        description: 'Move corners in place without disturbing first two layers.'
+        algorithm: '-'
+  - number: 'b'
+    title: "Third Layer Edges"
+    description: 'Position the edges around each of the previously inserted corners.'
+    cases:
+      - number: 1 
+        description: 'Move edge to the right of the corner.'
+        algorithm: "F L F<sup>2</sup> L' F'"
+      - number: 2 
+        description: 'Move edge to the left of the corner.'
+        algorithm: "F' R' F'<sup>2</sup> R F" 
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

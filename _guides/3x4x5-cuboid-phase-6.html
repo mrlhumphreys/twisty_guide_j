@@ -1,0 +1,60 @@
+---
+layout: default
+permalink: /guides/3x4x5-cuboid-phase-6/
+name: '3x4x5-cuboid-phase-6'
+puzzle: '3x4x5'
+title: '3x4x5 Cuboid'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 6 
+phases:
+  - number: 1
+    url: 'guides/3x4x5-cuboid-phase-1'
+  - number: 2 
+    url: 'guides/3x4x5-cuboid-phase-2'
+  - number: 3 
+    url: 'guides/3x4x5-cuboid-phase-3'
+  - number: 4 
+    url: 'guides/3x4x5-cuboid-phase-4'
+  - number: 5 
+    url: 'guides/3x4x5-cuboid-phase-5'
+  - number: 6 
+    url: 'guides/3x4x5-cuboid-phase-6'
+  - number: 7 
+    url: 'guides/3x4x5-cuboid-phase-7'
+sections:
+  - number: 'a'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'Both up left and up right centers are correct. Go to Step B.'
+        algorithm: "-"
+      - number: 2  
+        description: 'both up left and up right centers are not correct. Swap centers.'
+        algorithm: "r F B l F B"
+      - number: 3  
+        description: 'up left and down right centers are not correct. Swap centers.'
+        algorithm: "F r F U<sup>2</sup> F r F U<sup>2</sup>"
+      - number: 4  
+        description: 'up right and down right centers are not correct. Swap centers.'
+        algorithm: "U<sup>2</sup> F r F U<sup>2</sup> F r F"
+  - number: 'b'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'both left centers and right centers are correct. Go to Phase 7.'
+        algorithm: "-"
+      - number: 2  
+        description: 'both left centers and right centers are not correct. Swap centers.'
+        algorithm: "u<sup>2</sup> F B d<sup>2</sup> F B"
+      - number: 3  
+        description: 'left up center and right up center are not correct. Swap centers.'
+        algorithm: "R F u<sup>2</sup> F R F u<sup>2</sup> F"
+      - number: 4  
+        description: 'left up center and right down center are not correct. Swap centers.'
+        algorithm: "F u<sup>2</sup> F R F u<sup>2</sup> F R"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

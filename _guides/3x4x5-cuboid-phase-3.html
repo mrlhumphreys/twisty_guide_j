@@ -1,0 +1,96 @@
+---
+layout: default
+permalink: /guides/3x4x5-cuboid-phase-3/
+name: '3x4x5-cuboid-phase-3'
+puzzle: '3x4x5'
+title: '3x4x5 Cuboid'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 3 
+phases:
+  - number: 1
+    url: 'guides/3x4x5-cuboid-phase-1'
+  - number: 2 
+    url: 'guides/3x4x5-cuboid-phase-2'
+  - number: 3 
+    url: 'guides/3x4x5-cuboid-phase-3'
+  - number: 4 
+    url: 'guides/3x4x5-cuboid-phase-4'
+  - number: 5 
+    url: 'guides/3x4x5-cuboid-phase-5'
+  - number: 6 
+    url: 'guides/3x4x5-cuboid-phase-6'
+  - number: 7 
+    url: 'guides/3x4x5-cuboid-phase-7'
+sections:
+  - number: 'a'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: "Up Back left Edge at Up Back left. Go to step B."
+        algorithm: '-'
+      - number: 2
+        description: "Up Back left Edge at Up Front right. Move to Up Back left."
+        algorithm: "r U<sup>2</sup> r U<sup>2</sup>"
+      - number: 3
+        description: "Up Back left Edge at Down Front Left. Move to Up Back left."
+        algorithm: 'l'
+      - number: 4
+        description: "Up Back left Edge at Down Back Right. Move to Up Back left." 
+        algorithm: "D<sup>2</sup> l D<sup>2</sup>"
+  - number: 'b'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: "Up Front left Edge at Up Front left. Go to step C."
+        algorithm: '-'
+      - number: 2
+        description: "Up Front left Edge at Up Back right. Move to Up Front left." 
+        algorithm: 'F r F'
+      - number: 3
+        description: "Up Front left Edge at Down Front right. Move to Up Front left." 
+        algorithm: 'r F r F'
+      - number: 4
+        description: "Up Front left Edge at Down Back Left. Move to Up Front left." 
+        algorithm: "D<sup>2</sup> r F r F D<sup>2</sup>"
+  - number: 'c'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: "Up Back right Edge at Up Back right. Go to Step D." 
+        algorithm: '-' 
+      - number: 2 
+        description: "Up Back right Edge at Down Front right. Move to Up Back right."
+        algorithm: 'r'
+      - number: 3
+        description: "Up Back right Edge at Down Back left. Move to Up Back right."
+        algorithm: "D<sup>2</sup> r D<sup>2</sup>"
+  - number: 'd'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: "Up Front right Edge at Up Front right. Go to Step E."
+        algorithm: '-'
+      - number: 2
+        description: "Up Front right Edge at Down Back right. Move to Up Front right." 
+        algorithm: "Lw D Rw U' Lw U Rw D' r D Rw U' Lw U Rw D' Lw r" 
+      - number: 3
+        description: "Up Front right Edge at Down Front left. Move to Up Front right." 
+        algorithm: "D<sup>2</sup> Lw D Rw U' Lw U Rw D' r D Rw U' Lw U Rw D' Lw r D<sup>2</sup>"
+  - number: 'e'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: "Down Layer Edges Correct. Go to Phase 4."
+        algorithm: '-'
+      - number: 2
+        description: "Down Layer Edges incorrect. Swap edges."
+        algorithm: "r D<sup>2</sup> r D<sup>2</sup> r"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

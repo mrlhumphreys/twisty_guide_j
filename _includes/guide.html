@@ -1,5 +1,8 @@
 <article>
   <h1>{{ include.title }}</h1>
+  {% if page.phases.size > 0 %}
+    {% include phase_selector.html phases=page.phases current_phase=page.current_phase %}
+  {% endif %}
   <a href="{{ include.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
   {% for section in include.sections %}
     {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=include.name %}

@@ -1,0 +1,111 @@
+---
+layout: default
+permalink: /guides/3x4x5-cuboid-phase-7/
+name: '3x4x5-cuboid-phase-7'
+puzzle: '3x4x5'
+title: '3x4x5 Cuboid'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 7 
+phases:
+  - number: 1
+    url: 'guides/3x4x5-cuboid-phase-1'
+  - number: 2 
+    url: 'guides/3x4x5-cuboid-phase-2'
+  - number: 3 
+    url: 'guides/3x4x5-cuboid-phase-3'
+  - number: 4 
+    url: 'guides/3x4x5-cuboid-phase-4'
+  - number: 5 
+    url: 'guides/3x4x5-cuboid-phase-5'
+  - number: 6 
+    url: 'guides/3x4x5-cuboid-phase-6'
+  - number: 7 
+    url: 'guides/3x4x5-cuboid-phase-7'
+sections:
+  - number: 'a'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'one or both of front and back middle centers are not correct. Go to Step B.'
+        algorithm: "-"
+      - number: 2  
+        description: 'Both front and back middle centers are incorrect. Swap centers.'
+        algorithm: "u<sup>2</sup> Rw Lw d<sup>2</sup> Rw Lw"
+  - number: 'b'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'back down middle center is correct. Go to Step C.'
+        algorithm: "-"
+      - number: 2  
+        description: 'back down middle center is incorrect. Rotate guide until it is correct.'
+        algorithm: "x<sup>2</sup> or y<sup>2</sup>"
+  - number: 'c'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'front up middle center is correct. Go to Step D.'
+        algorithm: "-"
+      - number: 2  
+        description: 'front up middle center is incorrect. Swap it for correct center.'
+        algorithm: "F Rw u<sup>2</sup> Rw F Rw u<sup>2</sup> Rw"
+  - number: 'd'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'front down middle center is correct. Go to Step E.'
+        algorithm: "-"
+      - number: 2  
+        description: 'front down middle center is incorrect. Swap it for correct center.'
+        algorithm: "Rw u<sup>2</sup> Rw F Rw u<sup>2</sup> Rw F"
+  - number: 'e'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'front up left center is correct. Go to Step F.'
+        algorithm: "-"
+      - number: 2  
+        description: 'front up left center is incorrect. Swap it for correct center.'
+        algorithm: "r u<sup>2</sup> r u<sup>2</sup> (1x or 2x)"
+  - number: 'f'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'front down right center is correct. Go to Step G.'
+        algorithm: "-"
+      - number: 2  
+        description: 'front down right center is incorrect. Swap it for correct center.'
+        algorithm: "r d<sup>2</sup> r d<sup>2</sup> (1x or 2x)"
+  - number: 'g'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'one or both of front up right center and front down left center are incorrect. Go to Step H.'
+        algorithm: "-"
+      - number: 2  
+        description: 'front up right center and front down left centers are both incorrect. Swap them for correct centers.'
+        algorithm: "F r u<sup>2</sup> r u<sup>2</sup> F r u<sup>2</sup> r u<sup>2</sup>"
+  - number: 'h'
+    title: null
+    description: null 
+    cases:
+      - number: 1  
+        description: 'All centers correct. Puzzle solved.'
+        algorithm: "-"
+      - number: 2  
+        description: 'back down right correct and front down left incorrect. Swap it for correct center.'
+        algorithm: "Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r"
+      - number: 3  
+        description: 'back down right correct and front up right incorrect. Swap it for correct center.'
+        algorithm: "F Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r F"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

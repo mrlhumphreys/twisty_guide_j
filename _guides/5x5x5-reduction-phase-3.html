@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /guides/5x5x5-reduction-phase-3/
+name: '5x5x5-reduction-phase-3'
+puzzle: '5x5x5'
+title: '5x5 - Reduction Method'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 3 
+phases:
+  - number: 1
+    url: 'guides/5x5x5-reduction-phase-1'
+  - number: 2 
+    url: 'guides/5x5x5-reduction-phase-2'
+  - number: 3 
+    url: 'guides/5x5x5-reduction-phase-3'
+sections: 
+  - number: 'a'
+    title: "Solve like a 3x3 cube"
+    description: 'Treat the paired edges as a singular edge when solving.'
+    cases:
+      - number: null 
+        description: 'Use any method of solving a 3x3 cube.' 
+        algorithm: "-"
+  - number: 'b'
+    title: "Parity"
+    description: 'Sometimes some odd cases can appear. Edges might need twisted around.'
+    cases: 
+      - number: null 
+        description: 'Solve parity issues using the same algorithms used for 4x4.' 
+        algorithm: "-"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

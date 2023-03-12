@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /guides/3x3x3-cfop-fridrich-phase-1
+name: '3x3x3-cfop-fridrich-phase-1'
+puzzle: '3x3x3'
+title: '3x3 - CFOP/Fridrich Method'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 1
+phases:
+  - number: 1
+    url: 'guides/3x3x3-cfop-fridrich-phase-1'
+  - number: 2 
+    url: 'guides/3x3x3-cfop-fridrich-phase-2'
+  - number: 3 
+    url: 'guides/3x3x3-cfop-fridrich-phase-3'
+  - number: 4 
+    url: 'guides/3x3x3-cfop-fridrich-phase-4'
+sections:
+  - number: 'a'
+    title: 'Solve Cross'
+    description: 'Make a solved cross shape for the bottom layer.'
+    cases:
+      - number: null 
+        description: 'Rotate faces until a cross is formed.'
+        algorithm: "Combination of R, L, F, B, U and/or D."
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

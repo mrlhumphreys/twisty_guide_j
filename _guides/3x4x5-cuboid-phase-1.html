@@ -1,0 +1,206 @@
+---
+layout: default
+permalink: /guides/3x4x5-cuboid-phase-1/
+name: '3x4x5-cuboid-phase-1'
+puzzle: '3x4x5'
+title: '3x4x5 Cuboid'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 1
+phases:
+  - number: 1
+    url: 'guides/3x4x5-cuboid-phase-1'
+  - number: 2 
+    url: 'guides/3x4x5-cuboid-phase-2'
+  - number: 3 
+    url: 'guides/3x4x5-cuboid-phase-3'
+  - number: 4 
+    url: 'guides/3x4x5-cuboid-phase-4'
+  - number: 5 
+    url: 'guides/3x4x5-cuboid-phase-5'
+  - number: 6 
+    url: 'guides/3x4x5-cuboid-phase-6'
+  - number: 7 
+    url: 'guides/3x4x5-cuboid-phase-7'
+sections: 
+  - number: 'a'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'No Up Corners sticking out. Move to step B.'
+        algorithm: '-'
+      - number: 2
+        description: 'One Corner Sticking Out of U Layer. Move to step B.'
+        algorithm: '-'
+      - number: 3
+        description: 'Two Corners Sticking Out of U Layer. Move to step B.'
+        algorithm: '-'
+      - number: 4
+        description: 'Three Corners Sticking Out of U Layer. Rotate U Layer.'
+        algorithm: 'U'
+      - number: 5 
+        description: 'Four Corners Sticking Out of U Layer. Rotate U Layer.'
+        algorithm: 'U'
+  - number: 'b'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'No Down Corners sticking out. Move to step E.'
+        algorithm: '-'
+      - number: 2 
+        description: 'One Corner Sticking Out of D Layer. Move to step C.'
+        algorithm: '-'
+      - number: 3 
+        description: 'Two Corners Sticking Out of D Layer. Move to step C.'
+        algorithm: '-'
+      - number: 4
+        description: 'Three Corners Sticking Out of D Layer. Rotate D Layer.'
+        algorithm: 'D'
+      - number: 5
+        description: 'Four Corners Sticking Out of D Layer. Rotate D Layer.'
+        algorithm: 'D'
+  - number: 'c'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'Two Corners Sticking out of U and D layers. Bring corners to U Layer, facing the front.'
+        algorithm: 'Combination of B, D, Lw'
+      - number: 2
+        description: 'Four Corners Stickout out of U and D Layers. Bring at least three corners to U Layer, then turn U. Then bring corners to the U Layer, facing the front.'
+        algorithm: 'Combination of B D Lw, then U'
+  - number: 'd'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Two Corners Sticking out of Front U layer. Perform algorithm so that they do not stick out.'
+        algorithm: "Rw U' B U B U"
+  - number: 'e'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'No edges sticking out. Go to step I.'
+        algorithm: '-'
+      - number: 2
+        description: 'Edge sticking out. Move edge to U Layer, facing the back.'
+        algorithm: 'F, U and/or B'
+  - number: 'f'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'Sunken edge on top left. Go to step G.'
+        algorithm: '-'
+      - number: 2
+        description: 'Sunken edge not on top left. Move edge to U Layer, facing the left.'
+        algorithm: 'Rw, Lw and/or D'
+  - number: 'g'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Edge sticking out of back and sunken on left. Swap Edges.'
+        algorithm: "Lw D' Lw F Rw U" 
+  - number: 'h'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Repeat steps E-G until no edges stick out of U and D Layers.'
+        algorithm: '-' 
+  - number: 'i'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'No u Corners sticking out. Go to step J.'
+        algorithm: '-'
+      - number: 2
+        description: 'One Corner Sticking Out of u Layer. Go to step J.'
+        algorithm: '-'
+      - number: 3
+        description: 'Two Corners Sticking Out of u Layer. Go to step J.'
+        algorithm: '-'
+      - number: 4
+        description: 'Three Corners Sticking Out of u Layer. Rotate u Layer.'
+        algorithm: 'u'
+      - number: 5
+        description: 'Four Corners Sticking Out of u Layer. Rotate u Layer.'
+        algorithm: 'u'
+  - number: 'j'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'No corners sticking out of d Layer. Go to step M.'
+        algorithm: '-'
+      - number: 2 
+        description: 'One Corner Sticking Out of d Layer. Go to step K.'
+        algorithm: '-'
+      - number: 3 
+        description: 'Two corners sticking out of d Layer. Go to step K.'
+        algorithm: '-'
+      - number: 4 
+        description: 'Three corners sticking out of d Layer. Rotate d Layer.'
+        algorithm: 'd'
+      - number: 5 
+        description: 'Four corners sticking out of d Layer. Rotate d Layer.'
+        algorithm: 'd'
+  - number: 'k'
+    title: null
+    description: null 
+    cases:
+      - number: 1
+        description: 'Two Corners Sticking out of u and d layers. Bring corners to u layer, facing the front.'
+        algorithm: 'Combination of B, d, Lw'
+      - number: 2
+        description: 'Four Corners Stickout out of u and d Layers. Bring at least three corners to u, then turn u. Then bring corners to the u layer, facing the front.'
+        algorithm: 'Combination of B d Lw, then u'
+  - number: 'l'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Two corners sticking out of u layer, facing the front. Perform algorithm so they do not stick out.' 
+        algorithm: "Rw u' B u B u"
+  - number: 'm'
+    title: null
+    description: null 
+    cases:
+      - number: 1 
+        description: 'No edges sticking out. Go to phase 2.'
+        algorithm: '-'
+      - number: 2 
+        description: 'Edge sticking out. Move edge to u Layer, facing the back.'
+        algorithm: 'F, u and/or B'
+  - number: 'n'
+    title: null
+    description: null 
+    cases:
+      - number: 1 
+        description: 'Sunken edge on u layer, facing left. Go to step O.'
+        algorithm: '-'
+      - number: 2
+        description: 'Sunken edge not on u layer, facing left. Rotate until sunken edge is on u layer, facing left.'
+        algorithm: 'Rw, Lw and/or d'
+  - number: 'o'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Edge sticking out of back and sunken edge on left. Swap edges.'
+        algorithm: "Lw d' Lw F Rw u"
+  - number: 'p'
+    title: null
+    description: null 
+    cases:
+      - number: null
+        description: 'Repeat steps M-O until no edges stick out of u and d Layers.'
+        algorithm: '-'
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

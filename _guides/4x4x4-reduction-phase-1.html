@@ -1,0 +1,48 @@
+---
+layout: default
+permalink: /guides/4x4x4-reduction-phase-1/
+name: '4x4x4-reduction-phase-1'
+puzzle: '4x4x4'
+title: '4x4 - Reduction Method'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 1
+phases:
+  - number: 1
+    url: 'guides/4x4x4-reduction-phase-1'
+  - number: 2 
+    url: 'guides/4x4x4-reduction-phase-2'
+  - number: 3 
+    url: 'guides/4x4x4-reduction-phase-3'
+  - number: 4 
+    url: 'guides/4x4x4-reduction-phase-4'
+sections:
+  - number: 'a'
+    title: 'Solve First Two Centers'
+    description: 'Solve the center pieces for two opposite faces.'
+    cases: 
+      - number: null 
+        description: 'Move center pieces around.' 
+        algorithm: "-"
+  - number: 'b'
+    title: "Solve Second Two Centers"
+    description: 'Solve the center pieces for two other adjacent faces.'
+    cases: 
+      - number: null 
+        description: 'Move center pieces around.' 
+        algorithm: "-"
+  - number: 'c'
+    title: "Solve Last Two Centers"
+    description: 'Solve the center pieces for the last two faces.'
+    cases: 
+      - number: 1 
+        description: 'Move one center piece.' 
+        algorithm: "d' F' d"
+      - number: 2 
+        description: 'Move two adjacent center pieces.' 
+        algorithm: "d' F<sup>2</sup> d"
+      - number: 3 
+        description: 'Move two diagonal center pieces.' 
+        algorithm: "d' F' d F<sup>2</sup> d' F' d"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

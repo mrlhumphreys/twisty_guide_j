@@ -1,0 +1,105 @@
+---
+layout: default
+permalink: /guides/3x3x3-cfop-fridrich-phase-4
+name: '3x3x3-cfop-fridrich-phase-4'
+puzzle: '3x3x3'
+title: '3x3 - CFOP/Fridrich Method'
+description: ''
+notation_url: 'notations/cubic'
+current_phase: 4 
+phases:
+  - number: 1
+    url: 'guides/3x3x3-cfop-fridrich-phase-1'
+  - number: 2 
+    url: 'guides/3x3x3-cfop-fridrich-phase-2'
+  - number: 3 
+    url: 'guides/3x3x3-cfop-fridrich-phase-3'
+  - number: 4 
+    url: 'guides/3x3x3-cfop-fridrich-phase-4'
+sections:
+  - number: 'a'
+    title: "Only corners not oriented."
+    description: 'Rotate corners around.'
+    cases:
+      - number: 1 
+        description: 'Cycle 3 corners clockwise' 
+        algorithm: "x (R' U R') D<sup>2</sup> (R U' R') D<sup>2</sup> R<sup>2</sup>"
+      - number: 2 
+        description: 'Cycle 3 corners anti-clockwise' 
+        algorithm: "x R<sup>2</sup> D<sup>2</sup> (R U R') D<sup>2</sup> (R U' R)"
+      - number: 3 
+        description: 'Cycle 2 pairs of corners parallel' 
+        algorithm: "x' (R U') (R' D) (R U R' D') (R U R' D) (R U') (R' D')"
+  - number: 'b'
+    title: "Only edges not oriented."
+    description: 'Rotate edges around.'
+    cases:
+      - number: 1 
+        description: 'Cycle 3 edges anti-clockwise.' 
+        algorithm: "(R U' R U) (R U) (R U') (R' U' R<sup>2</sup>)"
+      - number: 2 
+        description: 'Cycle 3 edges clockwise.' 
+        algorithm: "(R<sup>2</sup> U) (R U R' U') (R' U') (R' U R')"
+      - number: 3 
+        description: 'Swap opposite edges.' 
+        algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U<sup>2</sup>) (M<sup>2</sup> U) (M<sup>2</sup>)"
+      - number: 4 
+        description: 'Swap adjacent edges in parallel.' 
+        algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U) (M' U<sup>2</sup>) (M<sup>2</sup> U<sup>2</sup>) (M' U<sup>2</sup>)"
+  - number: 'c'
+    title: "Four pieces not oriented."
+    description: 'Swap two edges and two corners.'
+    cases:
+      - number: 1 
+        description: 'Swap two corners on the back and swap left and back edges.' 
+        algorithm: "(R' U L') U<sup>2</sup> (R U' R') U<sup>2</sup> (L R U')"
+      - number: 2 
+        description: 'Swap two corners on the right and swap right and front edges.' 
+        algorithm: "(R U R' F') (R U R' U') (R' F) (R<sup>2</sup> U') (R' U')"
+      - number: 3 
+        description: 'Swap two corners on the right and swap right and left edges.' 
+        algorithm: "(R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
+      - number: 4 
+        description: 'Swap two corners on the back and swap right and front edges.' 
+        algorithm: "(R' U<sup>2</sup>) (R U<sup>2</sup>) (R' F R U R' U') (R' F' R<sup>2</sup> U')"
+      - number: 5 
+        description: 'Swap two corners on the right and swap left and back edges.' 
+        algorithm: "(R U R' F') (R U<sup>2</sup> R' U<sup>2</sup>) (R' F) (R U) (R U<sup>2</sup> R' U')"
+      - number: 6 
+        description: 'Swap two corners on the right and swap front and back edges.' 
+        algorithm: "R' U' F' (R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' U R)"
+  - number: 'd'
+    title: "Only two pieces oriented."
+    description: 'Cycle three corners and three edges.'
+    cases:
+      - number: 1 
+        description: 'Cycle corners clockwise and edges anticlockwise.' 
+        algorithm: "(R<sup>2</sup> Uw) (R' U R' U' R Uw') R<sup>2</sup> y' (R' U R)"
+      - number: 2 
+        description: 'Cycle corners anticlockwise and edges clockwise.' 
+        algorithm: "(R' U' R) y (R<sup>2</sup> Uw R' U) (R U' R Uw' R<sup>2</sup>)"
+      - number: 3 
+        description: 'Cycle corners anticlockwise and edges clockwise.' 
+        algorithm: "(R<sup>2</sup> Uw' R U') (R U R' Uw R<sup>2</sup>) (Fw R' Fw')"
+      - number: 4 
+        description: 'Cycle corners anticlockwise and edges clockwise.' 
+        algorithm: "(R U R') y' (R<sup>2</sup> Uw' R U') (R' U R' Uw R<sup>2</sup>)"
+  - number: 'e'
+    title: "Diagonal corner swap."
+    description: 'Swap two diagonal corners and two edges.'
+    cases:
+      - number: 1 
+        description: 'Swap two edges and corners parallel diagonally.' 
+        algorithm: "(R' U R' Dw') (R' F' R<sup>2</sup> U') (R' U R' F) (R F)"
+      - number: 2 
+        description: 'Swap two corners diagonally. Swap two opposite edges.' 
+        algorithm: "z U (R' D) (R<sup>2</sup> U' R D' U) (R' D) (R<sup>2</sup> U' R D') R"
+      - number: 3 
+        description: 'Swap two corners diagonally. Swap two opposite edges.' 
+        algorithm: "z D' (R U') (R<sup>2</sup> D R' U D') (R U') (R<sup>2</sup> D R' U) R'"
+      - number: 4 
+        description: 'Swap two edges and corners perpendicular diagonally.' 
+        algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

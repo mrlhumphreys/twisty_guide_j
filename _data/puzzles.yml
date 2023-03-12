@@ -5,7 +5,7 @@
     - title: "3x3 - Beginner's Method"
       url: 'guides/3x3x3-beginners'
     - title: '3x3 - CFOP/Fridrich Method'
-      url: 'guides/3x3x3-cfop-fridrich'
+      url: 'guides/3x3x3-cfop-fridrich-phase-1'
 - name: "2x2x2"
   title: "2x2 Cube"
   image_url: 'svgs/puzzle/2x2x2.svg'
@@ -17,13 +17,13 @@
   image_url: 'svgs/puzzle/4x4x4.svg'
   guides: 
     - title: '4x4 - Reduction Method'
-      url: 'guides/4x4x4-reduction'
+      url: 'guides/4x4x4-reduction-phase-1'
 - name: '5x5x5'
   title: "5x5 Cube"
   image_url: 'svgs/puzzle/5x5x5.svg'
   guides: 
     - title: '5x5 - Reduction Method'
-      url: 'guides/5x5x5-reduction'
+      url: 'guides/5x5x5-reduction-phase-1'
 - name: 'pyraminx'
   title: 'Pyraminx'
   image_url: 'svgs/puzzle/pyraminx.svg'
@@ -35,7 +35,7 @@
   image_url: 'svgs/puzzle/megaminx.svg'
   guides: 
     - title: "Megaminx - Beginner's Method"
-      url: 'guides/megaminx-beginners'
+      url: 'guides/megaminx-beginners-phase-1'
 - name: 'skewb'
   title: 'Skewb'
   image_url: 'svgs/puzzle/skewb.svg'
@@ -65,7 +65,7 @@
   image_url: 'svgs/puzzle/3x4x5.svg'
   guides: 
     - title: '3x4x5 Cuboid'
-      url: 'guides/3x4x5-cuboid'
+      url: 'guides/3x4x5-cuboid-phase-1'
 - name: 'pocket-cube'
   title: "Meffert's Pocket Cube"
   image_url: 'svgs/puzzle/pocket-cube.svg'
