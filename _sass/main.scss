@@ -5,7 +5,7 @@ $background-focus: #c0c0c0;
 $content-main: #400000;
 $content-secondary: #606060;
 $content-focus: #ff4500;
-
+$content-disabled: #c0c0c0;
 
 * {
   margin: 0;
@@ -261,31 +261,24 @@ footer p {
   font-weight: bold;
 }
 
+.guide_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
 
-.notation_link {
+.guide_footer a {
   display: block;
-  margin: 0em auto 1em;
-  padding: 1em 0;
-  width: 300px;
+  margin: 0 10px;
+  padding: 1em 10px;
   text-align: center;
   color: $content-focus;
   background-color: $background-main;
   color: $content-focus;
 }
 
-.next_page {
-  display: block;
-  margin: 2em auto;
-  width: 300px;
-  text-align: center;
-  background-color: $content-focus;
-  color: $background-main;
-  padding: 1em 0;
-  border: solid 1px $content-focus;
-}
-
-.next_page:hover {
-  color: $content-focus;
-  background-color: $background-main;
+.guide_footer a.disabled {
+  color: $content-disabled;
+  pointer-events: none;
 }
 

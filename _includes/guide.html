@@ -3,9 +3,21 @@
   {% if page.phases.size > 0 %}
     {% include phase_selector.html phases=page.phases current_phase=page.current_phase %}
   {% endif %}
-  <a href="{{ include.notation_url | relative_url }}" class="notation_link">Notation Reference</a>
   {% for section in include.sections %}
     {% include section.html title=section.title number=section.number description=section.description cases=section.cases guide_name=include.name %}
   {% endfor %}
+  <footer class="guide_footer">
+    {% if include.previous_url %}
+      <a href="{{ include.previous_url | relative_url }}" class="navigation_link">Previous</a>
+    {% else %}
+      <a href="#" class="navigation_link disabled">Previous</a>
+    {% endif %}
+    <a href="{{ include.notation_url | relative_url }}" class="notation_link">Notation</a>
+    {% if include.next_url %}
+      <a href="{{ include.next_url | relative_url }}" class="navigation_link">Next</a>
+    {% else %}
+      <a href="#" class="navigation_link disabled">Next</a>
+    {% endif %}
+  </footer>
 </article>
 

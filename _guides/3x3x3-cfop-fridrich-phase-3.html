@@ -6,6 +6,8 @@ puzzle: '3x3x3'
 title: '3x3 - CFOP/Fridrich Method'
 description: ''
 notation_url: 'notations/cubic'
+previous_url: 'guides/3x3x3-cfop-fridrich-phase-2'
+next_url: 'guides/3x3x3-cfop-fridrich-phase-4'
 current_phase: 3 
 phases:
   - number: 1
@@ -249,5 +251,4 @@ sections:
         description: 'Z shape with two pieces facing right.' 
         algorithm: "(L<sup>2</sup> U' L B) (L' U) (L<sup>2</sup> U') (Rw' U' Rw)"
 ---
-{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
-
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

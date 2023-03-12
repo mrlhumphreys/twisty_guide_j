@@ -6,6 +6,8 @@ puzzle: '3x4x5'
 title: '3x4x5 Cuboid'
 description: ''
 notation_url: 'notations/cubic'
+previous_url: 'guides/3x4x5-cuboid-phase-6' 
+next_url: null 
 current_phase: 7 
 phases:
   - number: 1
@@ -107,5 +109,4 @@ sections:
         description: 'back down right correct and front up right incorrect. Swap it for correct center.'
         algorithm: "F Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r F"
 ---
-{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
-
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

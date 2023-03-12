@@ -6,6 +6,8 @@ puzzle: '3x3x3'
 title: '3x3 - CFOP/Fridrich Method'
 description: ''
 notation_url: 'notations/cubic'
+previous_url: 'guides/3x3x3-cfop-fridrich-phase-3'
+next_url: null
 current_phase: 4 
 phases:
   - number: 1
@@ -101,5 +103,4 @@ sections:
         description: 'Swap two edges and corners perpendicular diagonally.' 
         algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
 ---
-{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
-
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

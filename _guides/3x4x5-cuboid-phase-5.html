@@ -6,6 +6,8 @@ puzzle: '3x4x5'
 title: '3x4x5 Cuboid'
 description: ''
 notation_url: 'notations/cubic'
+previous_url: 'guides/3x4x5-cuboid-phase-4' 
+next_url: 'guides/3x4x5-cuboid-phase-6'
 current_phase: 5 
 phases:
   - number: 1
@@ -102,5 +104,4 @@ sections:
         description: 'down layer edges incorrect. Swap edges.'
         algorithm: "F Rw u<sup>2</sup> Rw u F u<sup>2</sup> Rw u F u<sup>2</sup> F Rw u"
 ---
-{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
-
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

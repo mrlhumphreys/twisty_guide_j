@@ -6,6 +6,8 @@ puzzle: 'megaminx'
 title: "Megaminx - Beginner's Method"
 description: ''
 notation_url: 'notations/dodecahedral'
+previous_url: 'guides/megaminx-beginners-phase-1' 
+next_url: 'guides/megaminx-beginners-phase-3'
 current_phase: 2 
 phases:
   - number: 1
@@ -35,4 +37,4 @@ sections:
         description: 'Move edge to the left of the corner.'
         algorithm: "F' R' F'<sup>2</sup> R F" 
 ---
-{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
