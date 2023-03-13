@@ -12,24 +12,24 @@ sections:
     description: ''
     cases:
       - number: null 
-        description: 'Use any 3x3 method to solve the cube.'
+        description: null
         algorithm: "-"
   - number: 'b'
     title: 'Rotate centers'
     description: 'Rotate centers until oriented correctly.'
     cases:
       - number: 1 
-        description: 'Rotate top center 180 degrees.'
+        description: null
         algorithm: "(U R L U<sup>2</sup> R' L') (U R L U<sup>2</sup> R' L')"
       - number: 2 
-        description: 'Rotate top center anti-clockwise and left center clockwise.'
+        description: null
         algorithm: "(M E' M' U) (M' E M U')"
   - number: 'c'
     title: 'Rotational Equivalency'
     description: 'False parity case where only 1 edge appears flipped.'
     cases:
       - number: null 
-        description: 'Flip an edge that looks the same flipped.'
+        description: null
         algorithm: "(R U<sup>2</sup> R' U) (R U<sup>2</sup> R' U) F' U' F"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

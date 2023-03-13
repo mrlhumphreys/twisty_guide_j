@@ -12,46 +12,46 @@ sections:
     description: 'Rotate tips until they line up with the piece next to them.'
     cases:
       - number: null
-        description: ''
+        description: null 
         algorithm: 'r, l, u and/or b'
   - number: 'b'
     title: 'Solve Centers'
     description: 'Rotate centers until each face has three matching centers.'
     cases:
       - number: null
-        description: ''
+        description: null 
         algorithm: 'R, L, U and/or B'
   - number: 'c'
     title: 'Solve First Layer'
     description: 'Move three edge pieces into one layer.'
     cases:
       - number: 1 
-        description: 'Move edge to first layer.'
+        description: null 
         algorithm: "R' D R"
       - number: 2 
-        description: 'Move edge to first layer.'
+        description: null 
         algorithm: "L D' L'"
       - number: 3 
-        description: 'Rotate edge in first layer.'
+        description: null 
         algorithm: "L D L' D' R' D R"
   - number: 'd'
     title: 'Solve Last Layer'
     description: 'Flip the puzzle. Then position and orient last layer edge pieces.'
     cases:
       - number: 1 
-        description: 'Swap two edges on last layer.'
+        description: null 
         algorithm: "R U' R' U R' L R L'"
       - number: 2 
-        description: 'Cycle three edges on last layer anti-clockwise.'
+        description: null 
         algorithm: "R U R' U R U R'"
       - number: 3 
-        description: 'Cycle three edges on last layer clockwise.'
+        description: null 
         algorithm: "R U' R' U' R U' R'"
       - number: 4 
-        description: 'Cycle three edges and rotate two edges on last layer anti-clockwise.'
+        description: null 
         algorithm: "L R U R' U' L'"
       - number: 5 
-        description: 'Cycle three edges and rotate two edges on last layer clockwise.'
+        description: null 
         algorithm: "R' L' U' L U R"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

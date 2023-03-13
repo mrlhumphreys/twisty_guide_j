@@ -24,23 +24,23 @@ sections:
     description: 'Slot the remaining corners in the third layer, similar to the first layer.'
     cases:
       - number: 1 
-        description: 'Down edge facing right.'
+        description: null 
         algorithm: "R U R'"
       - number: 2 
-        description: 'Down edge facing front.'
+        description: null 
         algorithm: "F' U' F" 
       - number: 3 
-        description: 'Down edge facing up.'
+        description: null 
         algorithm: "R U' R' U<sup>2</sup> R U R'" 
   - number: 'b'
     title: "Fourth Layer Edges"
     description: 'Slot the edges in the fourth layer, similar to the second layer.'
     cases:
       - number: 1 
-        description: 'Edge needs to be rotated clockwise around center.'
+        description: null 
         algorithm: "(U R U' R') (U' F' U F)"
       - number: 2 
-        description: 'Edge needs to be rotated anti-clockwise around center.'
+        description: null 
         algorithm: "(U' F' U F) (U R U' R')" 
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

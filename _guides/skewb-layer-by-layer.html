@@ -12,30 +12,30 @@ sections:
     description: 'Pick a face and match corners with it.'
     cases:
       - number: 1 
-        description: 'Rotate last corner clockwise.'
+        description: null 
         algorithm: "L' F' L F"
       - number: 2 
-        description: 'Rotate last corner anti-clockwise.'
+        description: null 
         algorithm: "R F R' F'"
   - number: 'b'
     title: 'Solve Remaining Faces'
     description: 'Cycle three faces at a time until faces are positioned right.'
     cases:
       - number: 1 
-        description: 'Rotate three faces (Left, Right & Down) clockwise.'
+        description: null 
         algorithm: "(R' B' R B) (L B L' B')"
       - number: 2 
-        description: 'Rotate three faces (Right, Left & Down) anti-clockwise.'
+        description: null 
         algorithm: "(L B L' B') (R' B' R B)"
   - number: 'c'
     title: 'Solve Last Layer Corners'
     description: 'Cycle and rotate corners until fully solved.'
     cases:
       - number: 1 
-        description: 'Two corners are correctly facing down and two corners are facing back. Rotate other corners.'
+        description: null 
         algorithm: "(L' D L D') x 4"
       - number: 2 
-        description: 'Two corners are incorrectly facing right. Rotate all corners.'
+        description: null 
         algorithm: "(L' D L D') x 2"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

@@ -12,66 +12,66 @@ sections:
     description: 'Pick a colour and move all pieces so that the bottom face has that colour.'
     cases:
       - number: 1
-        description: 'Corner facing front. Move to bottom right corner facing down.'
+        description: null
         algorithm: "F' U' F"
       - number: 2
-        description: 'Corner facing right. Move to bottom right corner facing down.'
+        description: null
         algorithm: "R U R'"
       - number: 3
-        description: 'Corner facing up. Move to bottom right corner facing down.'
+        description: null
         algorithm: "U R<sup>2</sup> U' R<sup>2</sup>"
   - number: 'b'
     title: 'Orient Last Layer'
     description: 'Do the same for the top face with the opposite colour.'
     cases:
       - number: 1
-        description: ''
+        description: null
         algorithm: "F (R U R' U') F'"
       - number: 2
-        description: ''
+        description: null
         algorithm: "(R U R' U') (R' F R F')"
       - number: 3
-        description: ''
+        description: null
         algorithm: "F (R U') (R' U' R U) (R' F')"
       - number: 4
-        description: ''
+        description: null
         algorithm: "(R U R' U) (R U<sup>2</sup> R')"
       - number: 5
-        description: ''
+        description: null
         algorithm: "(R U<sup>2</sup> R' U') (R U' R')"
       - number: 6
-        description: ''
+        description: null
         algorithm: "F (R U R' U') (R U R' U') F'"
       - number: 7
-        description: ''
+        description: null
         algorithm: "R<sup>2</sup> U<sup>2</sup> R U<sup>2</sup> R<sup>2</sup>"
   - number: 'c'
     title: 'Permutate Both Layers'
     description: 'Move the pieces of both layers into their proper positions.'
     cases:
       - number: 1
-        description: ''
+        description: null
         algorithm: "(R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
       - number: 2
-        description: ''
+        description: null
         algorithm: "x<sup>2</sup> (R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
       - number: 3
-        description: ''
+        description: null
         algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
       - number: 4
-        description: ''
+        description: null
         algorithm: "z2y (F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
       - number: 5
-        description: ''
+        description: null
         algorithm: "(R<sup>2</sup> U' R<sup>2</sup>) (U<sup>2</sup> y) (R<sup>2</sup> U' R<sup>2</sup>)"
       - number: 6
-        description: ''
+        description: null
         algorithm: "(R U' R) F<sup>2</sup> (R' U R')"
       - number: 7
-        description: ''
+        description: null
         algorithm: "(L D' L) F<sup>2</sup> (L' D L')"
       - number: 8
-        description: ''
+        description: null
         algorithm: "R<sup>2</sup> F<sup>2</sup> R<sup>2</sup>"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

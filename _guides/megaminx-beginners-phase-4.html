@@ -24,37 +24,37 @@ sections:
     description: 'Match up the edges on the last layer and make a star shape.'
     cases:
       - number: 1 
-        description: 'Two adjacent edges facing out.'
+        description: null 
         algorithm: "F (U R U' R') F'" 
       - number: 2 
-        description: 'Two opposite edges facing out.'
+        description: null 
         algorithm: "F (R U R' U') F'" 
   - number: 'b'
     title: "Fifth Layer Position Edges"
     description: 'Cycle the edges around until they are in the right place.'
     cases:
       - number: 1 
-        description: 'Cycle three edges clockwise.'
+        description: null 
         algorithm: "(R U R' U) (R U<sup>3</sup> R' U)" 
       - number: 2 
-        description: 'Cycle three edges anti-clockwise.'
+        description: null 
         algorithm: "(U' R U<sup>2</sup> R') (U' R U' R')" 
   - number: 'c'
     title: "Fifth Layer Position Corners"
     description: 'Cycle the corners around until they are in the right place.'
     cases:
       - number: 1 
-        description: 'Cycle three corners clockwise.'
+        description: null 
         algorithm: "(L' U<sup>2</sup> R U'<sup>2</sup>) (L U<sup>2</sup> R' U'<sup>2</sup>)" 
       - number: 2 
-        description: 'Cycle three corners anti-clockwise.'
+        description: null 
         algorithm: "(R U'<sup>2</sup> L' U<sup>2</sup>) (R' U'<sup>2</sup> L U<sup>2</sup>)" 
   - number: 'd'
     title: "Fifth Layer Orient Corners"
     description: 'Run an algorithm to rotate each of the corners until they face the right way.'
     cases:
       - number: null 
-        description: 'Corner rotating algorithm.'
+        description: null 
         algorithm: "R' D' R D"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

@@ -24,231 +24,230 @@ sections:
     description: 'Flip edges.'
     cases:
       - number: 1 
-        description: 'Flip left and back edges.'
+        description: null 
         algorithm: "(M' U M) U<sup>2</sup> (M' U M)"
       - number: 2 
-        description: 'Flip front and back edges.'
+        description: null 
         algorithm: "(R U R' U') (M' U R U') Rw'"
       - number: 3 
-        description: 'Flip all edges.'
+        description: null 
         algorithm: "Rw' (R U) (R U R' U' Rw<sup>2</sup>) (R<sup>2</sup>) U) (R U') Rw'"
   - number: 'b'
     title: "Edges are correct, but corners aren't facing up."
     description: 'Flip edges.'
     cases:
       - number: 1 
-        description: 'Two corners facing front.'
+        description: null 
         algorithm: "(R<sup>2</sup> D) (R' U<sup>2</sup>) (R D') (R' U<sup>2</sup> R')"
       - number: 2 
-        description: 'Two corners facing out.'
+        description: null 
         algorithm: "(Lw' U') (L U) (R U') (Rw' F)"
       - number: 3 
-        description: 'Two opposite corners facing out.'
+        description: null 
         algorithm: "(R' F) (R B') (R' F') (R B)"
       - number: 4 
-        description: 'Three corners facing out.'
+        description: null 
         algorithm: "(R U R' U) (R U<sup>2</sup> R')"
       - number: 5 
-        description: 'Three corners facing out.'
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R' U' R U' R')"
       - number: 6 
-        description: 'Two corners facing left, two corners facing out.'
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> U') (R<sup>2</sup> U') (R<sup>2</sup> U<sup>2</sup> R)"
       - number: 7 
-        description: 'Two corners facing back, two corners facing front.'
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R' U' R U R' U' R U' R')"
   - number: 'c'
     title: "All edges flipped."
     description: 'Flip edges.'
     cases:
       - number: 1 
-        description: 'Only one corner facing up.'
+        description: null 
         algorithm: "Fw (R U R' U') Fw' U' F (R U R' U') F'"
       - number: 2 
-        description: 'Only one corner facing up.'
+        description: null 
         algorithm: "Fw (R U R' U') Fw' U F (R U R' U') F'"
       - number: 3 
-        description: 'Two opposite corners facing up.'
+        description: null 
         algorithm: "(R U R' U) (R' F R F') U<sup>2</sup> (R' F R F')"
       - number: 4 
-        description: 'Two corners on one side facing up.'
+        description: null 
         algorithm: "Rw' (R U) (R U R' U' Rw) x (R<sup>2</sup> U) (R U')"
       - number: 5 
-        description: 'Two corners on one side facing up.'
+        description: null 
         algorithm: "F (R U R' U) y' (R' U<sup>2</sup>) (R' F R F')"
       - number: 6 
-        description: 'No corners facing up.'
+        description: null 
         algorithm: "F (R U R' U') S (R U R' U') Fw'"
       - number: 7 
-        description: 'No corners facing up.'
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> F R F') U<sup>2</sup> (R' F R F')"
   - number: 'd'
     title: "T Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Incorrect pieces facing front and back.'
+        description: null 
         algorithm: "(R U R' U') (R' F R F')"
       - number: 2 
-        description: 'Incorrect pieces facing front, back and side.'
+        description: null 
         algorithm: "F (R U R' U') F'"
   - number: 'e'
     title: "P Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'd shape on right, opposite side pieces facing left.' 
+        description: null 
         algorithm: "Fw (R U R' U') Fw'"
       - number: 2 
-        description: 'b shape on left, opposite side pieces facing right.' 
+        description: null 
         algorithm: "Fw' (L' U' L U) Fw"
       - number: 3 
-        description: 'd shape on right, only one piece opposite facing left.' 
+        description: null 
         algorithm: "(R Dw) (L' Dw') (R' U) (Lw U Lw')"
       - number: 4 
-        description: 'q shape on right, only one piece opposite facing left.' 
+        description: null 
         algorithm: "(R' U') F (U R U' R') F' R"
   - number: 'f'
     title: "W Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Two pieces on the side facing right on the front.' 
+        description: null 
         algorithm: "(R U R' U) (R U' R' U') (R' F R F')"
       - number: 2 
-        description: 'Two pieces on the side facing left on the front.' 
+        description: null 
         algorithm: "(L' U' L U') (L' U L U) (L F' L' F)"
   - number: 'g'
     title: "L Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Left side pieces facing left. Right side pieces facing right.' 
+        description: null 
         algorithm: "(Rw U) (R' U) (R U') (R' U) (R U<sup>2</sup> Rw')"
       - number: 2 
-        description: 'Left side pieces facing left. Right side pieces facing right.' 
+        description: null 
         algorithm: "(Rw' U') (R U') (R' U) (R U') (R' U<sup>2</sup> Rw)"
       - number: 3 
-        description: 'Left side pieces facing left. Two pieces facing back.' 
+        description: null 
         algorithm: "(R B' R B R<sup>2</sup>) U<sup>2</sup> (F R' F' R)"
       - number: 4 
-        description: 'Left side pieces facing left. Two pieces facing front.' 
+        description: null 
         algorithm: "(R' F R' F' R<sup>2</sup>) U<sup>2</sup> y (R' F R F')"
       - number: 5 
-        description: 'Two pieces facing left. Two pieces facing front.' 
+        description: null 
         algorithm: "F (R U R' U') (R U R' U') F'"
       - number: 6 
-        description: 'Two pieces facing right. Two pieces facing front.' 
+        description: null 
         algorithm: "F' (L' U' L U) (L' U' L U) F"
   - number: 'h'
     title: "Big S/Z Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Two pieces facing back on the back left.' 
+        description: null 
         algorithm: "(L F') (L' U' L U) F U' L'"
       - number: 2 
-        description: 'Two pieces facing back on the back right.' 
+        description: null 
         algorithm: "(R' F) (R U R' U') F' U R"
   - number: 'i'
     title: "C Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Three pieces on one side facing different directions.' 
+        description: null 
         algorithm: "(R U R<sup>2</sup> U') (R' F) (R U) (R U') F'"
       - number: 2 
-        description: 'Three pieces on one side facing the same directions' 
+        description: null 
         algorithm: "(R' U') (R' F R F') (U R)"
   - number: 'j'
     title: "Square Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Opposite corner of square shape facing back.' 
+        description: null 
         algorithm: "(Rw' U<sup>2</sup>) (R U R' U Rw)"
       - number: 2 
-        description: 'Opposite corner of square shape facing front.' 
+        description: null 
         algorithm: "(Rw U<sup>2</sup>) (R' U' R U' Rw')"
   - number: 'k'
     title: "Small S/Z Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Two pieces facing right and two pieces facing front.' 
+        description: null 
         algorithm: "(Rw U R' U) (R U<sup>2</sup> Rw')"
       - number: 2 
-        description: 'Two pieces facing back on the left.' 
+        description: null 
         algorithm: "(M U<sup>2</sup>) (R' U' R U') (R' U<sup>2</sup> R) U M'"
       - number: 3 
-        description: 'Two pieces facing right and two pieces facing back.' 
+        description: null 
         algorithm: "(Rw' U' R U') (R' U<sup>2</sup> Rw)"
       - number: 4 
-        description: 'Two pieces facing back on the right.' 
+        description: null 
         algorithm: "Rw' (R<sup>2</sup> U R' U R U<sup>2</sup> R') U M'"
   - number: 'l'
     title: "Fish Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Big square with pairs of pieces facing out.' 
+        description: null 
         algorithm: "F (R U') (R' U' R U) (R' F')"
       - number: 2 
-        description: 'Big square with individual pieces facing out.' 
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R<sup>2</sup>) F) (R F' R U<sup>2</sup> R')"
       - number: 3 
-        description: 'L shape on the left with two pieces facing back.' 
+        description: null 
         algorithm: "(R U R' U) (R' F R F') (R U<sup>2</sup> R')"
       - number: 4 
-        description: 'L shape on the left with two pieces facing front.' 
+        description: null 
         algorithm: "(R U R' U' R' F) (R<sup>2</sup> U R' U' F')"
   - number: 'm'
     title: "I Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'Two pieces facing back and two pieces facing front.' 
+        description: null 
         algorithm: "Fw (R U R' U') (R U R' U') Fw'"
       - number: 2 
-        description: 'Three pieces facing right, one piece facing left.' 
+        description: null 
         algorithm: "(R U R' U R Dw') (R U' R' F')"
       - number: 3 
-        description: 'No pairs of pieces facing out.' 
-        algorithm: "Fw (R U R' U') Fw' F (R U R' U') (R U R' U') F'"
+        description: null 
       - number: 4 
-        description: 'Three pieces facing left and three pieces facing right.' 
+        description: null 
         algorithm: "(R U<sup>2</sup>) (R<sup>2</sup> U' R U' R' U<sup>2</sup>) (F R F')"
   - number: 'n'
     title: "Knight Move Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'L Shape with two pieces facing front and two pieces facing back.' 
+        description: null 
         algorithm: "(Rw U' Rw' U') (Rw U Rw') y' (R' U R)"
       - number: 2 
-        description: 'L Shape with two pieces facing front.' 
+        description: null 
         algorithm: "(Rw U Rw') (R U R' U') (Rw U' Rw')"
       - number: 3 
-        description: 'Backwards L Shape with two pieces facing front and back.' 
+        description: null 
         algorithm: "(R' F) (R U R' F' R) y' (R U' R')"
       - number: 4 
-        description: 'Backwards L Shape with two pieces facing front.' 
+        description: null 
         algorithm: "(Lw' U' Lw) (L' U' L U) (Lw' U Lw)"
   - number: 'o'
     title: "Glider Shape"
     description: 'Flip corners and edges.'
     cases:
       - number: 1 
-        description: 'S shape with pieces facing out.' 
+        description: null 
         algorithm: "(R U') (R' U<sup>2</sup>) (R U) y (R U') (R' U' F')"
       - number: 2 
-        description: 'S shape with two pieces facing left.' 
+        description: null 
         algorithm: "(R<sup>2</sup> U R' B') (R U') (R<sup>2</sup> U) (Lw U Lw')"
       - number: 3 
-        description: 'Z shape with pieces facing out.' 
+        description: null 
         algorithm: "(L' U) (L U<sup>2</sup>) (L' U') y' (L' U) (L U F)"
       - number: 4 
-        description: 'Z shape with two pieces facing right.' 
+        description: null 
         algorithm: "(L<sup>2</sup> U' L B) (L' U) (L<sup>2</sup> U') (Rw' U' Rw)"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
