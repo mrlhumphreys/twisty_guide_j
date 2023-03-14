@@ -4,7 +4,6 @@
   {% else %}
     <h3>Only Case</h3> 
   {% endif %}
-  <p class="description">{{ include.description }}</p>
   {% assign arr = "" | split: ',' %}
   {% assign arr = arr | push: include.phase_number %}
   {% assign arr = arr | push: include.section_number %}

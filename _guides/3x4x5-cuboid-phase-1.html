@@ -30,178 +30,140 @@ sections:
     description: 'Ensure that two or less bars stick out of top layer.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: '-'
       - number: 3
-        description: null 
         algorithm: '-'
       - number: 4
-        description: null 
         algorithm: 'U'
       - number: 5 
-        description: null 
         algorithm: 'U'
   - number: 'b'
     title: null
     description: 'Ensure that two or less bars stick out of bottom layer.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2 
-        description: null 
         algorithm: '-'
       - number: 3 
-        description: null 
         algorithm: '-'
       - number: 4
-        description: null 
         algorithm: 'D'
       - number: 5
-        description: null 
         algorithm: 'D'
   - number: 'c'
     title: null
     description: 'Ensure that corner bars only face the front on the top and bottom layers' 
     cases:
       - number: 1
-        description: null 
         algorithm: 'Combination of B, D, Lw'
       - number: 2
-        description: null
         algorithm: 'Combination of B D Lw, then U'
   - number: 'd'
     title: null
     description: 'Rotate corners so that they do not stick out of the top layer.' 
     cases:
       - number: null
-        description: null 
         algorithm: "Rw U' B U B U"
   - number: 'e'
     title: null
     description: 'Move edge that sticks out to the top layer.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: 'F, U and/or B'
   - number: 'f'
     title: null
     description: 'Move sunken edge to top layer on the left.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: 'Rw, Lw and/or D'
   - number: 'g'
     title: null
     description: 'Swap sunken and edge that sticks out.' 
     cases:
       - number: null
-        description: null
         algorithm: "Lw D' Lw F Rw U" 
   - number: 'h'
     title: null
     description: 'Repeat steps E-G until no edges stick out of U and D Layers.'
     cases:
       - number: null
-        description: null 
         algorithm: '-' 
   - number: 'i'
     title: null
     description: 'Ensure that two or less bars stick out of u layer.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: '-'
       - number: 3
-        description: null 
         algorithm: '-'
       - number: 4
-        description: null 
         algorithm: 'u'
       - number: 5
-        description: null 
         algorithm: 'u'
   - number: 'j'
     title: null
     description: 'Ensure that two or less bars stick out of d layer.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2 
-        description: null 
         algorithm: '-'
       - number: 3 
-        description: null 
         algorithm: '-'
       - number: 4 
-        description: null 
         algorithm: 'd'
       - number: 5 
-        description: null 
         algorithm: 'd'
   - number: 'k'
     title: null
     description: 'Move corners that stick out face the front.' 
     cases:
       - number: 1
-        description: null 
         algorithm: 'Combination of B, d, Lw'
       - number: 2
-        description: null
         algorithm: 'Combination of B d Lw, then u'
   - number: 'l'
     title: null
     description: 'Rotate corners so that they do not stick out.' 
     cases:
       - number: null
-        description: null 
         algorithm: "Rw u' B u B u"
   - number: 'm'
     title: null
     description: 'Move edge that stick out to the u layer.' 
     cases:
       - number: 1 
-        description: null 
         algorithm: '-'
       - number: 2 
-        description: null
         algorithm: 'F, u and/or B'
   - number: 'n'
     title: null
     description: 'Move sunken edge to u layer facing left.' 
     cases:
       - number: 1 
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: 'Rw, Lw and/or d'
   - number: 'o'
     title: null
     description: 'Edge sticking out of back and sunken edge on left. Swap edges.'
     cases:
       - number: null
-        description: null 
         algorithm: "Lw d' Lw F Rw u"
   - number: 'p'
     title: null
     description: 'Repeat steps M-O until no edges stick out of u and d Layers.'
     cases:
       - number: null
-        description: null 
         algorithm: '-'
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

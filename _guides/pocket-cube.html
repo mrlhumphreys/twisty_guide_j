@@ -12,43 +12,34 @@ sections:
     description: 'Make moves to return the puzzle to a cube shape.'
     cases:
       - number: 1 
-        description: null 
         algorithm: "-"
       - number: 2 
-        description: null 
         algorithm: "(R F R' F') (R' D R D') (F D R')"
       - number: 3 
-        description: null 
         algorithm: "(L' F' L' F) (L D' L' D) (F' D' L)"
   - number: 'b'
     title: 'Orient Corner'
     description: 'Orient the corner to match the centers. Repeat algorithm until they match.'
     cases:
       - number: 1 
-        description: null 
         algorithm: "-"
       - number: 2 
-        description: null 
         algorithm: "(L B' U' L') (B D L' F') (D' L B D') R' y (R F R' F') (R' D R D') (F D R')"
   - number: 'c'
     title: 'Orient One Edge'
     description: 'Orient one edge to match the corner and centers. Repeat algorithm until at least one edge matches a center.'
     cases: 
       - number: 1 
-        description: null 
         algorithm: "-"
       - number: 2 
-        description: null 
         algorithm: "(L B' U' B) (L<sup>2</sup> D F<sup>2</sup> D') (L D L' F') (L' F' L F) (L D' L' D) (F' D' L')"
   - number: 'd'
     title: 'Orient Last Two Edges'
     description: 'Orient last two edges to solve. Perform algorithm two times to flip two edges.'
     cases:
       - number: 1 
-        description: null 
         algorithm: "-"
       - number: 2 
-        description: null 
         algorithm: "(L B' U' L ') (B D L' F') (D' L B D') (R' B' D)"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

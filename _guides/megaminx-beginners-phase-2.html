@@ -24,17 +24,14 @@ sections:
     description: 'Move the matching corners above the previously inserted edges.'
     cases:
       - number: null 
-        description: null 
         algorithm: '-'
   - number: 'b'
     title: "Third Layer Edges"
     description: 'Position the edges around each of the previously inserted corners.'
     cases:
       - number: 1 
-        description: null 
         algorithm: "F L F<sup>2</sup> L' F'"
       - number: 2 
-        description: null 
         algorithm: "F' R' F'<sup>2</sup> R F" 
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

@@ -30,78 +30,60 @@ sections:
     description: 'Move edge to up back left.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: '-'
       - number: 2  
-        description: null 
         algorithm: 'u<sup>2</sup>'
       - number: 3  
-        description: null 
         algorithm: 'F u<sup>2</sup> F'
       - number: 4  
-        description: null 
         algorithm: 'L d<sup>2</sup> L'
   - number: 'b'
     title: null
     description: 'Move edge to up front left.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: '-'
       - number: 2  
-        description: null 
         algorithm: 'F d<sup>2</sup> F'
       - number: 3  
-        description: null 
         algorithm: 'd<sup>2</sup> F d<sup>2</sup> F'
       - number: 4  
-        description: null 
         algorithm: 'R d<sup>2</sup> R F d<sup>2</sup> F.'
   - number: 'c'
     title: null
     description: 'Move edge to up back right.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: '-'
       - number: 2  
-        description: null 
         algorithm: 'R d<sup>2</sup> R'
       - number: 3  
-        description: null 
         algorithm: 'd<sup>2</sup> R d<sup>2</sup> R'
   - number: 'd'
     title: null
     description: 'Move edge to up front right.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: '-'
       - number: 2  
-        description: null 
         algorithm: "F Rw d' Rw u F u<sup>2</sup> Rw d Rw u"
       - number: 3  
-        description: null 
         algorithm: "d<sup>2</sup> F Rw d' Rw u F u<sup>2</sup> Rw d Rw u d<sup>2</sup>"
   - number: 'e'
     title: null
     description: 'Move edge to down front right.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: "-"
       - number: 2  
-        description: null 
         algorithm: "d<sup>2</sup>"
   - number: 'f'
     title: null
     description: 'Ensure down layer edges match.' 
     cases:
       - number: 1  
-        description: null 
         algorithm: "-"
       - number: 2  
-        description: null 
         algorithm: "F Rw u<sup>2</sup> Rw u F u<sup>2</sup> Rw u F u<sup>2</sup> F Rw u"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

@@ -30,68 +30,52 @@ sections:
     description: 'Move edge to up back left.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: "r U<sup>2</sup> r U<sup>2</sup>"
       - number: 3
-        description: null 
         algorithm: 'l'
       - number: 4
-        description: null 
         algorithm: "D<sup>2</sup> l D<sup>2</sup>"
   - number: 'b'
     title: null
     description: "Move edge to up front left" 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: 'F r F'
       - number: 3
-        description: null 
         algorithm: 'r F r F'
       - number: 4
-        description: null 
         algorithm: "D<sup>2</sup> r F r F D<sup>2</sup>"
   - number: 'c'
     title: null
     description: "Move edge to up back right" 
     cases:
       - number: 1
-        description: null 
         algorithm: '-' 
       - number: 2 
-        description: null 
         algorithm: 'r'
       - number: 3
-        description: null 
         algorithm: "D<sup>2</sup> r D<sup>2</sup>"
   - number: 'd'
     title: null
     description: 'Move edge to up front right.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: "Lw D Rw U' Lw U Rw D' r D Rw U' Lw U Rw D' Lw r" 
       - number: 3
-        description: null 
         algorithm: "D<sup>2</sup> Lw D Rw U' Lw U Rw D' r D Rw U' Lw U Rw D' Lw r D<sup>2</sup>"
   - number: 'e'
     title: null
     description: 'Ensure edges on down layer are correct.' 
     cases:
       - number: 1
-        description: null 
         algorithm: '-'
       - number: 2
-        description: null 
         algorithm: "r D<sup>2</sup> r D<sup>2</sup> r"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

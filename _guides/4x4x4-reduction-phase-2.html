@@ -24,27 +24,22 @@ sections:
     description: 'Pair up one set of edge pieces.'
     cases: 
       - number: 1 
-        description: null
         algorithm: "d R F' U R' F d'"
       - number: 2 
-        description: null
         algorithm: "u'"
   - number: 'b'
     title: "Store the edge."
     description: 'Move the pair into the up or down layer. Then repeat pairing and storing for first eight edges.'
     cases:
       - number: null 
-        description: null
         algorithm: "R U' R'"
   - number: 'c'
     title: "Solve Last Four Edges"
     description: 'Pair up the last edge pieces using some algorithms.'
     cases: 
       - number: 1 
-        description: null
         algorithm: "d R F' U R' F d'"
       - number: 2 
-        description: null
         algorithm: "(R F' U R' F) (d R F' U R' F d')"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

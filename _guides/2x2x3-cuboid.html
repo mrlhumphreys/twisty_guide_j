@@ -12,42 +12,32 @@ sections:
     description: 'Orienting one face will solve the other'
     cases: 
       - number: 1
-        description: null
         algorithm: '-'
       - number: 2 
-        description: null
         algorithm: "D' R<sup>2</sup> D R<sup>2</sup>"
       - number: 3 
-        description: null
         algorithm: 'R<sup>2</sup>'
       - number: 4 
-        description: null
         algorithm: 'R<sup>2</sup> y D<sup>2</sup> R<sup>2</sup>'
   - number: 'b'
     title: 'Permutate Top and Bottom Layers' 
     description: 'Putting the top and bottom corners in the right place.'
     cases: 
       - number: 1 
-        description: null
         algorithm: "(R<sup>2</sup> U' R<sup>2</sup>) (U<sup>2</sup> y) (R<sup>2</sup> U' R<sup>2</sup>)"
       - number: 2 
-        description: null
         algorithm: 'R<sup>2</sup> F<sup>2</sup> R<sup>2</sup>'
       - number: 3 
-        description: null
         algorithm: "(R<sup>2</sup> U R<sup>2</sup> U') (R<sup>2</sup> F<sup>2</sup>) (U' F<sup>2</sup> U F<sup>2</sup>)"
   - number: 'c'
     title: 'Solve Middle Layer' 
     description: 'Puttin the middle edge pieces in the right place.'
     cases:
       - number: 1 
-        description: null
         algorithm: 'R<sup>2</sup> H<sup>2</sup> R<sup>2</sup>'
       - number: 2 
-        description: null
         algorithm: 'R<sup>2</sup> Uw<sup>2</sup> R<sup>2</sup> U<sup>2</sup> R<sup>2</sup> D<sup>2</sup>'
       - number: 3 
-        description: null
         algorithm: 'R<sup>2</sup> H<sup>2</sup> R<sup>2</sup>'
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

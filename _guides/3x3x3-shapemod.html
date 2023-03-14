@@ -12,24 +12,20 @@ sections:
     description: ''
     cases:
       - number: null 
-        description: null
         algorithm: "-"
   - number: 'b'
     title: 'Rotate centers'
     description: 'Rotate centers until oriented correctly.'
     cases:
       - number: 1 
-        description: null
         algorithm: "(U R L U<sup>2</sup> R' L') (U R L U<sup>2</sup> R' L')"
       - number: 2 
-        description: null
         algorithm: "(M E' M' U) (M' E M U')"
   - number: 'c'
     title: 'Rotational Equivalency'
     description: 'False parity case where only 1 edge appears flipped.'
     cases:
       - number: null 
-        description: null
         algorithm: "(R U<sup>2</sup> R' U) (R U<sup>2</sup> R' U) F' U' F"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

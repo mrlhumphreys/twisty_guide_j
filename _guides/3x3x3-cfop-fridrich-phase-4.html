@@ -24,83 +24,62 @@ sections:
     description: 'Rotate corners around.'
     cases:
       - number: 1 
-        description: null
         algorithm: "x (R' U R') D<sup>2</sup> (R U' R') D<sup>2</sup> R<sup>2</sup>"
       - number: 2 
-        description: null
         algorithm: "x R<sup>2</sup> D<sup>2</sup> (R U R') D<sup>2</sup> (R U' R)"
       - number: 3 
-        description: null
         algorithm: "x' (R U') (R' D) (R U R' D') (R U R' D) (R U') (R' D')"
   - number: 'b'
     title: "Only edges not oriented."
     description: 'Rotate edges around.'
     cases:
       - number: 1 
-        description: null
         algorithm: "(R U' R U) (R U) (R U') (R' U' R<sup>2</sup>)"
       - number: 2 
-        description: null
         algorithm: "(R<sup>2</sup> U) (R U R' U') (R' U') (R' U R')"
       - number: 3 
-        description: null
         algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U<sup>2</sup>) (M<sup>2</sup> U) (M<sup>2</sup>)"
       - number: 4 
-        description: null
         algorithm: "(M<sup>2</sup> U) (M<sup>2</sup> U) (M' U<sup>2</sup>) (M<sup>2</sup> U<sup>2</sup>) (M' U<sup>2</sup>)"
   - number: 'c'
     title: "Four pieces not oriented."
     description: 'Swap two edges and two corners.'
     cases:
       - number: 1 
-        description: null
         algorithm: "(R' U L') U<sup>2</sup> (R U' R') U<sup>2</sup> (L R U')"
       - number: 2 
-        description: null
         algorithm: "(R U R' F') (R U R' U') (R' F) (R<sup>2</sup> U') (R' U')"
       - number: 3 
-        description: null
         algorithm: "(R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' F')"
       - number: 4 
-        description: null
         algorithm: "(R' U<sup>2</sup>) (R U<sup>2</sup>) (R' F R U R' U') (R' F' R<sup>2</sup> U')"
       - number: 5 
-        description: null
         algorithm: "(R U R' F') (R U<sup>2</sup> R' U<sup>2</sup>) (R' F) (R U) (R U<sup>2</sup> R' U')"
       - number: 6 
-        description: null
         algorithm: "R' U' F' (R U R' U') (R' F) (R<sup>2</sup> U') (R' U' R U) (R' U R)"
   - number: 'd'
     title: "Only two pieces oriented."
     description: 'Cycle three corners and three edges.'
     cases:
       - number: 1 
-        description: null
         algorithm: "(R<sup>2</sup> Uw) (R' U R' U' R Uw') R<sup>2</sup> y' (R' U R)"
       - number: 2 
-        description: null
         algorithm: "(R' U' R) y (R<sup>2</sup> Uw R' U) (R U' R Uw' R<sup>2</sup>)"
       - number: 3 
-        description: null
         algorithm: "(R<sup>2</sup> Uw' R U') (R U R' Uw R<sup>2</sup>) (Fw R' Fw')"
       - number: 4 
-        description: null
         algorithm: "(R U R') y' (R<sup>2</sup> Uw' R U') (R' U R' Uw R<sup>2</sup>)"
   - number: 'e'
     title: "Diagonal corner swap."
     description: 'Swap two diagonal corners and two edges.'
     cases:
       - number: 1 
-        description: null
         algorithm: "(R' U R' Dw') (R' F' R<sup>2</sup> U') (R' U R' F) (R F)"
       - number: 2 
-        description: null
         algorithm: "z U (R' D) (R<sup>2</sup> U' R D' U) (R' D) (R<sup>2</sup> U' R D') R"
       - number: 3 
-        description: null
         algorithm: "z D' (R U') (R<sup>2</sup> D R' U D') (R U') (R<sup>2</sup> D R' U) R'"
       - number: 4 
-        description: null
         algorithm: "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
