@@ -27,86 +27,86 @@ phases:
 sections:
   - number: 'a'
     title: null
-    description: null 
+    description: 'Ensure at least one middle center on the front layer match.' 
     cases:
       - number: 1  
-        description: 'one or both of front and back middle centers are not correct. Go to Step B.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'Both front and back middle centers are incorrect. Swap centers.'
+        description: null 
         algorithm: "u<sup>2</sup> Rw Lw d<sup>2</sup> Rw Lw"
   - number: 'b'
     title: null
-    description: null 
+    description: 'Rotate the puzzle if back down middle center is incorrect.' 
     cases:
       - number: 1  
-        description: 'back down middle center is correct. Go to Step C.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'back down middle center is incorrect. Rotate guide until it is correct.'
+        description: null 
         algorithm: "x<sup>2</sup> or y<sup>2</sup>"
   - number: 'c'
     title: null
-    description: null 
+    description: 'Ensure front up middle center is correct.' 
     cases:
       - number: 1  
-        description: 'front up middle center is correct. Go to Step D.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'front up middle center is incorrect. Swap it for correct center.'
+        description: null 
         algorithm: "F Rw u<sup>2</sup> Rw F Rw u<sup>2</sup> Rw"
   - number: 'd'
     title: null
-    description: null 
+    description: 'Ensure front down middle center is correct.' 
     cases:
       - number: 1  
-        description: 'front down middle center is correct. Go to Step E.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'front down middle center is incorrect. Swap it for correct center.'
+        description: null 
         algorithm: "Rw u<sup>2</sup> Rw F Rw u<sup>2</sup> Rw F"
   - number: 'e'
     title: null
-    description: null 
+    description: 'Ensure front up left center is correct.' 
     cases:
       - number: 1  
-        description: 'front up left center is correct. Go to Step F.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'front up left center is incorrect. Swap it for correct center.'
+        description: null 
         algorithm: "r u<sup>2</sup> r u<sup>2</sup> (1x or 2x)"
   - number: 'f'
     title: null
-    description: null 
+    description: 'Ensure front down right center is correct.' 
     cases:
       - number: 1  
-        description: 'front down right center is correct. Go to Step G.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'front down right center is incorrect. Swap it for correct center.'
+        description: null 
         algorithm: "r d<sup>2</sup> r d<sup>2</sup> (1x or 2x)"
   - number: 'g'
     title: null
-    description: null 
+    description: 'Ensure front up right center and front down left centers are correct.' 
     cases:
       - number: 1  
-        description: 'one or both of front up right center and front down left center are incorrect. Go to Step H.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'front up right center and front down left centers are both incorrect. Swap them for correct centers.'
+        description: null 
         algorithm: "F r u<sup>2</sup> r u<sup>2</sup> F r u<sup>2</sup> r u<sup>2</sup>"
   - number: 'h'
     title: null
-    description: null 
+    description: 'Ensure front down left and front up right are correct.' 
     cases:
       - number: 1  
-        description: 'All centers correct. Puzzle solved.'
+        description: null
         algorithm: "-"
       - number: 2  
-        description: 'back down right correct and front down left incorrect. Swap it for correct center.'
+        description: null
         algorithm: "Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r"
       - number: 3  
-        description: 'back down right correct and front up right incorrect. Swap it for correct center.'
+        description: null
         algorithm: "F Lw d Rw u' Lw u Rw d' r d Rw u' Lw u Rw d' Lw r F"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

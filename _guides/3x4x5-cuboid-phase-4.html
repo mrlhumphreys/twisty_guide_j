@@ -27,81 +27,81 @@ phases:
 sections:
   - number: 'a'
     title: null
-    description: null 
+    description: 'Move edge to down back.' 
     cases:
       - number: 1
-        description: 'Down Back Edge at Down Back. Go to step B.'
+        description: null 
         algorithm: '-'
       - number: 2
-        description: 'Down Back Edge at Down Front. Move to Down Back.'
+        description: null 
         algorithm: 'D<sup>2</sup> Rw D<sup>2</sup> Rw D<sup>2</sup> Rw'
       - number: 3
-        description: 'Down Back Edge at Up Back. Move to Down Back.'
+        description: null 
         algorithm: 'B Rw Lw F Rw Lw'
       - number: 4
-        description: 'Down Back Edge at Up Front. Move to Down Back.'
+        description: null 
         algorithm: 'U<sup>2</sup> B Rw Lw F Rw Lw U<sup>2</sup>'
   - number: 'b'
     title: null
-    description: null 
+    description: 'Move edge to down front.' 
     cases:
       - number: 1 
-        description: 'Down Front Edge at Down Front. Go to step C.'
+        description: null 
         algorithm: '-'
       - number: 2 
-        description: 'Down Front Edge at Up Back. Move to Down Front.'
+        description: null 
         algorithm: 'Rw F Rw U<sup>2</sup> Rw F Rw U<sup>2</sup>'
       - number: 3 
-        description: 'Down Front Edge at Up Front. Move to Down Front.'
+        description: null 
         algorithm: 'U<sup>2</sup> Rw F Rw U<sup>2</sup> Rw F Rw'
   - number: 'c'
     title: null
-    description: null 
+    description: 'Ensure edges on up layer match.' 
     cases:
       - number: 1 
-        description: 'Up Front Edge and Up Back are in right place. Go to Step D.'
+        description: null 
         algorithm: '-'
       - number: 2  
-        description: 'Up Front Edge and Up Back are incorrect. Swap Edges.'
+        description: null 
         algorithm: 'U<sup>2</sup> Rw U<sup>2</sup> Rw U<sup>2</sup> Rw'
   - number: 'd'
     title: null
-    description: null 
+    description: 'Move edge to down left.' 
     cases:
       - number: 1  
-        description: 'Down Left Edge at Down Left. Go to Step E.'
+        description: null 
         algorithm: '-'
       - number: 2  
-        description: 'Down Left Edge at Down Right. Move to Down Left.'
+        description: null 
         algorithm: 'D<sup>2</sup> F D<sup>2</sup> F D<sup>2</sup> F'
       - number: 3  
-        description: 'Down Left Edge at Up Left. Move to Down Left.'
+        description: null 
         algorithm: 'Lw F B Rw F B'
       - number: 4  
-        description: 'Down Left Edge at Up Right. Move to Down Left.'
+        description: null 
         algorithm: 'U<sup>2</sup> Lw F B Rw F B U<sup>2</sup>'
   - number: 'e'
     title: null
-    description: null 
+    description: 'Move edge to down right.' 
     cases:
       - number: 1  
-        description: 'Down Right Edge at Down Right. Go to Step F.'
+        description: null 
         algorithm: '-'
       - number: 2  
-        description: 'Down Right Edge at Up Left. Move to Down Right.'
+        description: null 
         algorithm: 'F Rw F U<sup>2</sup> F Rw F U<sup>2</sup>'
       - number: 3  
-        description: 'Down Right Edge at Up Right. Move to Down Right.'
+        description: null 
         algorithm: 'U<sup>2</sup> F Rw F U<sup>2</sup> F Rw F'
   - number: 'f'
     title: null
-    description: null 
+    description: 'Ensure edges on up layer match.' 
     cases:
       - number: 1  
-        description: 'Up Left and Up Right Edges are correct. Go to Step G.'
+        description: null 
         algorithm: '-'
       - number: 2  
-        description: 'Up Left and Up Right Edges are incorrect. Swap edges.'
+        description: null 
         algorithm: 'U<sup>2</sup> F U<sup>2</sup> F U<sup>2</sup> F'
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

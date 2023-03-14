@@ -27,91 +27,91 @@ phases:
 sections:
   - number: 'a'
     title: null
-    description: null 
+    description: 'Move corner to up back left.' 
     cases:
       - number: 1 
-        description: 'Up Back Left Corner at Up Back Left. Go to step B.'
+        description: null 
         algorithm: '-'
       - number: 2 
-        description: 'Up Back Left Corner at Down Front Left. Move to Up Back Left.'
+        description: null 
         algorithm: 'L'
       - number: 3 
-        description: 'Up Back Left Corner at Up Front Right. Move to Up Back Left.'
+        description: null 
         algorithm: 'R D<sup>2</sup> L'
       - number: 4 
-        description: 'Up Back Left Corner at Down Back Right. Move to Up Back Left.'
+        description: null 
         algorithm: 'D<sup>2</sup> L'
   - number: 'b'
     title: null
-    description: null 
+    description: 'Move corner to up front left.' 
     cases:
       - number: 1 
-        description: 'Up Front Left Corner at Up Front Left. Go to Step C.'
+        description: null 
         algorithm: '-'
       - number: 2 
-        description: 'Up Front Left Corner at Down Back Left. Move to Up Front Left.'
+        description: null 
         algorithm: 'D<sup>2</sup> F'
       - number: 3 
-        description: 'Up Front Left Corner at Up Back Right. Move to Up Front Left.'
+        description: null 
         algorithm: 'R F'
       - number: 4 
-        description: 'Up Front Left Corner at Down Front Right. Move to Up Front Left.'
+        description: null 
         algorithm: 'F'
   - number: 'c'
     title: null
-    description: null 
+    description: 'Move corner to up back right.' 
     cases:
       - number: 1 
-        description: 'Up Back Right Corner at Up Back Right. Go to step D.'
+        description: null 
         algorithm: 'R and/or D2'
       - number: 2 
-        description: 'Up Back Right Corner at Down Back Left. Move to Up Back Right.'
+        description: null 
         algorithm: 'D<sup>2</sup> R'
       - number: 3 
-        description: 'Up Back Right Corner at Down Front Right. Move to Up Back Right.'
+        description: null 
         algorithm: 'R'
   - number: 'd'
     title: null
-    description: null 
+    description: 'Move corner to up front right.' 
     cases:
       - number: 1
-        description: 'Up Front Right Corner at Up Front Right. Go to step E.' 
+        description: null 
         algorithm: '-'
       - number: 2
-        description: 'Up Front Right Corner at Down Back Left. Move to Up Front Right.'
+        description: null 
         algorithm: "D<sup>2</sup> F Rw D' Rw U F U<sup>2</sup> Rw D Rw U"
       - number: 3
-        description: 'Up Front Right Corner at Down Front Right. Move to Up Front Right.'
+        description: null 
         algorithm: "F Rw D' Rw U F U<sup>2</sup> Rw D Rw U"
   - number: 'e'
     title: null
-    description: null 
+    description: 'Ensure corners on up layer match each other.' 
     cases:
       - number: 1
-        description: 'Up Right Corners and Up Left Corners match faces. Go to Step F.'
+        description: null 
         algorithm: '-' 
       - number: 2
-        description: "Up Right Corners and Up Left Corners don't match faces. Swap Corners."
+        description: null 
         algorithm: 'R F R'
   - number: 'f'
     title: null
-    description: null 
+    description: 'Ensure corners on down layer match each other.' 
     cases:
       - number: 1
-        description: 'Down Right Corners and Down Left Corners match faces. Go to Step G.'
+        description: null 
         algorithm:  '-' 
       - number: 2
-        description: "Down Right Corners and Down Left Corners don't match faces. Swap Corners."
+        description: null 
         algorithm: "Rw U<sup>2</sup> F U Rw F U<sup>2</sup> F U F U<sup>2</sup> Rw U"
   - number: 'g'
     title: null
-    description: null 
+    description: 'Ensure corners on up layer match down layer.' 
     cases:
       - number: 1
-        description: "All Corners Match. Go to Phase 3."
+        description: null 
         algorithm: '-'
       - number: 2
-        description: "Top Corners don't match bottom corners. Rotate Down Layer."
+        description: null 
         algorithm: "D<sup>2</sup>"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

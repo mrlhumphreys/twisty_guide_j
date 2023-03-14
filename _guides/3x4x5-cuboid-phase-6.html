@@ -27,35 +27,35 @@ phases:
 sections:
   - number: 'a'
     title: null
-    description: null 
+    description: 'Move centers on up and down layers.' 
     cases:
       - number: 1  
-        description: 'Both up left and up right centers are correct. Go to Step B.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'both up left and up right centers are not correct. Swap centers.'
+        description: null 
         algorithm: "r F B l F B"
       - number: 3  
-        description: 'up left and down right centers are not correct. Swap centers.'
+        description: null 
         algorithm: "F r F U<sup>2</sup> F r F U<sup>2</sup>"
       - number: 4  
-        description: 'up right and down right centers are not correct. Swap centers.'
+        description: null 
         algorithm: "U<sup>2</sup> F r F U<sup>2</sup> F r F"
   - number: 'b'
     title: null
-    description: null 
+    description: 'Move centers on left and right layers.' 
     cases:
       - number: 1  
-        description: 'both left centers and right centers are correct. Go to Phase 7.'
+        description: null 
         algorithm: "-"
       - number: 2  
-        description: 'both left centers and right centers are not correct. Swap centers.'
+        description: null 
         algorithm: "u<sup>2</sup> F B d<sup>2</sup> F B"
       - number: 3  
-        description: 'left up center and right up center are not correct. Swap centers.'
+        description: null 
         algorithm: "R F u<sup>2</sup> F R F u<sup>2</sup> F"
       - number: 4  
-        description: 'left up center and right down center are not correct. Swap centers.'
+        description: null 
         algorithm: "F u<sup>2</sup> F R F u<sup>2</sup> F R"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
