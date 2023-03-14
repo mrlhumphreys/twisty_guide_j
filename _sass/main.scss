@@ -5,6 +5,7 @@ $background-focus: #c0c0c0;
 $content-main: #400000;
 $content-secondary: #606060;
 $content-focus: #ff4500;
+$content-focus-secondary: #a0a0ff;
 $content-disabled: #c0c0c0;
 
 * {
@@ -174,13 +175,18 @@ footer p {
 }
 
 .section_header {
+  background-color: $content-focus-secondary;
+  color: $content-main;
   padding: 0.5em 10px;
-  text-align: center;
+  margin: 1em 10px 0em;
+  text-align: left;
 }
 
 .section_description {
-  padding: 0em 10px 1em;
-  text-align: center;
+  background-color: $background-secondary;
+  padding: 1em 10px;
+  margin: 0 10px 1em;
+  text-align: left;
 }
 
 .cases {
