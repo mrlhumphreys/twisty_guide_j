@@ -4,4 +4,8 @@ width: 160
 height: 160
 ---
 {% iso_view 20|20|20|-,-,-\n-,-,-\n-,-,B|-,-,W\n-,-,-\n-,B,-|R,-,-\n-,-,-\n-,R,- %}
+{% arrow_def black %}
+{% arrow_def white %}
+{% arrow 90|84|90|125|forward|black|6 %}
+{% arrow 90|85|90|125|forward|white|4 %}
 
