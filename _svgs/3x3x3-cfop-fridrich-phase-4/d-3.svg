@@ -4,10 +4,14 @@ width: 130
 height: 130
 ---
 {% facing_grid 20|20|30|Y,y,y\nY,y,Y\nY,Y,Y %}
-{% horizontal_arrow 35|57|39|forward|medium %}
-{% diagonal_down_arrow 42|72|12|backward|medium %}
-{% diagonal_up_arrow 71|66|12|backward|medium %}
-{% horizontal_arrow 35|87|39|forward %}
-{% vertical_arrow 27|35|39|forward %}
-{% diagonal_down_arrow 40|40|45|backward %}
+
+{% arrow_def white %}
+{% arrow 40|95|90|95|forward|white|4 %}
+{% arrow 35|40|35|90|forward|white|4 %}
+{% arrow 85|85|45|45|forward|white|4 %}
+
+{% arrow_def grey %}
+{% arrow 40|65|90|65|forward|grey|4 %}
+{% arrow 57|87|43|73|forward|grey|4 %}
+{% arrow 87|73|73|87|forward|grey|4 %}
 

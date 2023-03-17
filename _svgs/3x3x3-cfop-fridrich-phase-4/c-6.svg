@@ -4,6 +4,9 @@ width: 130
 height: 130
 ---
 {% facing_grid 20|20|30|y,Y,Y\ny,y,y\ny,Y,Y %}
-{% vertical_arrow 57|33|47|bi|medium %}
-{% vertical_arrow 87|33|47|bi %}
+
+{% arrow_def grey %}
+{% arrow 65|95|65|35|both|grey|4 %}
+{% arrow_def white %}
+{% arrow 95|95|95|35|both|white|4 %}
 
