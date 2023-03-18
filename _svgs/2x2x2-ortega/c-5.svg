@@ -5,5 +5,7 @@ height: 100
 ---
 {% facing_grid 20|20|30|Y,Y\nY,Y %}
 {% facing_grid 110|20|30|W,W\nW,W %}
-{% horizontal_arrow 120|58|24|bi %}
-{% horizontal_arrow 30|58|24|bi %}
+
+{% arrow_def white %}
+{% arrow 35|65|65|65|both|white|4 %}
+{% arrow 125|65|155|65|both|white|4 %}
