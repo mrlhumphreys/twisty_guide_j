@@ -3,7 +3,7 @@ layout: svg
 width: 172 
 height: 188 
 ---
-{% pyraminx_face 12|28|50|B\nB,B,R\nB,B,G,B,B|0.75|0.666 %}
-{% pyraminx_face 12|28|50|R\nR,R,R\nR,R,B,R,R|0.25|0.333 %}
+{% pyraminx_face 12|28|50|b\nb,b,R\nb,b,G,b,b|0.75|0.666 %}
+{% pyraminx_face 12|28|50|r\nR,r,r\nr,r,B,r,r|0.25|0.333 %}
 
 

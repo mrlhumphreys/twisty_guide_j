@@ -3,5 +3,5 @@ layout: svg
 width: 190
 height: 170 
 ---
-{% pyraminx_face 20|20|50|Y\n-,Y,-\nY,Y,-,Y,Y|0|0.333 %}
-{% pyraminx_face 20|20|50|-\n-,-,B\nB,B,-,B,B|0.5|0.666 %}
+{% pyraminx_face 20|20|50|y\n-,y,-\ny,y,-,y,y|0|0.333 %}
+{% pyraminx_face 20|20|50|-\n-,-,B\nb,b,-,b,b|0.5|0.666 %}
