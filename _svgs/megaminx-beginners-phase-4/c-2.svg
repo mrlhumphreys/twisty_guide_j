@@ -6,6 +6,6 @@ height: 240
 {% megaminx_face_projection 20|20|20|gr,BR,gr,O,gr,S,gr,gr,gr,gr,gr|s,s,s,s,s,S,s,GR,s,s,s|br,br,br,br,br,BR,br,GR,br,br,br|pi,pi,pi,pi,pi,pi,pi,GR,pi,pi,pi|g,g,g,g,g,g,g,g,g,g,g|o,o,o,o,o,PI,o,o,o,o,o %}
 
 {% arrow_def white %}
-{% arrow 145|150|120|80|forward|white|4 %}
-{% arrow 130|75|160|100|forward|white|4 %}
-{% arrow 165|110|155|150|forward|white|4 %}
+{% arrow 120|80|145|150|forward|white|4 %}
+{% arrow 160|100|130|75|forward|white|4 %}
+{% arrow 155|150|165|110|forward|white|4 %}
