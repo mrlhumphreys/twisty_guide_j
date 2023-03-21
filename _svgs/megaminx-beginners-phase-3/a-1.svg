@@ -5,3 +5,5 @@ height: 240
 ---
 {% megaminx_face_projection 20|20|20|pi,PI,-,-,pi,pi,pi,-,-,-,-|br,-,-,br,br,-,-,R,-,-,-|r,r,r,r,r,r,r,-,r,r,r|b,b,b,b,b,-,b,b,b,b,b|g,-,-,-,-,-,-,-,g,g,-|-,-,-,-,-,BR,-,-,-,-,-|0.1 %}
 
+{% arrow_def white %}
+{% arrow 150|85|165|130|forward|white|4 %}

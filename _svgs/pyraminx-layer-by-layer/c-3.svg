@@ -6,3 +6,6 @@ height: 170
 {% pyraminx_face 20|20|50|y\n-,y,-\ny,y,b,y,y|0|0.333 %}
 {% pyraminx_face 20|20|50|-\n-,-,-\nb,b,Y,b,b|0.5|0.666 %}
 
+{% arrow_def white %}
+{% arrow 95|75|95|60|both|white|4 %}
+

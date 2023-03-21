@@ -6,3 +6,5 @@ height: 300
 {% square_one_face 20|20|40|e0Y,c0w,e3F,c3w,e6F,c6w,e9F,c9w %}
 {% square_one_face 20|160|40|e0F,c0y,e3W,c3y,e6F,c6y,e9F,c9y|back %}
 
+{% arrow_def white %}
+{% arrow 80|40|120|220|both|white|4 %}

@@ -4,5 +4,4 @@ width: 172
 height: 188 
 ---
 {% pyraminx_face 12|28|50|b\nb,b,G\nb,b,R,b,b|0.75|0.666 %}
-{% pyraminx_face 12|28|50|r\nR,r,r\nr,r,B,r,r|0.25|0.333 %}
-
+{% pyraminx_face 12|28|50|r\nr,r,r\nr,r,B,r,r|0.25|0.333 %}

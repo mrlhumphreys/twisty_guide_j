@@ -7,3 +7,7 @@ height: 200
 {% left_skewb_grid 100|20|20|b,-,b\n-,R,-\n-,-,- %} 
 {% top_skewb_grid 20|100|20|-,-,-\n-,B,-\n-,-,- %} 
 
+{% arrow_def white %}
+{% arrow 130|80|70|80|forward|white|4 %}
+{% arrow 60|100|90|140|forward|white|4 %}
+{% arrow 110|140|140|100|forward|white|4 %}

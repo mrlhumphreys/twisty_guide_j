@@ -3,6 +3,10 @@ layout: svg
 width: 160
 height: 300
 ---
-{% square_one_face 20|20|40|e0W,c0w,e3W,c3w,e6W,c6w,e9W,c9w %}
+{% square_one_face 20|20|40|e0W,c0w,e3W,c3w,e6w,c6w,e9W,c9w %}
 {% square_one_face 20|160|40|e0y,c0y,e3y,c3y,e6y,c6y,e9y,c9y|back %}
 
+{% arrow_def white %}
+{% arrow 85|40|120|80|forward|white|4 %}
+{% arrow 100|80|60|80|forward|white|4 %}
+{% arrow 40|80|75|40|forward|white|4 %}

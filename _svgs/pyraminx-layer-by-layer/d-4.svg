@@ -6,3 +6,6 @@ height: 188
 {% pyraminx_face 12|28|50|b\nb,b,b\nb,b,R,b,b|0.75|0.666 %}
 {% pyraminx_face 12|28|50|r\nB,r,r\nr,r,G,r,r|0.25|0.333 %}
 
+{% arrow_def white %}
+{% arrow 70|70|95|90|forward|white|4 %}
+{% arrow 115|90|130|65|forward|white|4 %}
