@@ -12,7 +12,9 @@
     {% else %}
       <a href="#" class="navigation_link disabled">Previous</a>
     {% endif %}
-    <a href="{{ include.notation_url | relative_url }}" class="notation_link">Notation</a>
+    {% if include.notation_url %}
+      <a href="{{ include.notation_url | relative_url }}" class="notation_link">Notation</a>
+    {% endif %}
     {% if include.next_url %}
       <a href="{{ include.next_url | relative_url }}" class="navigation_link">Next</a>
     {% else %}

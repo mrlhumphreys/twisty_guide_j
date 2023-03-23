@@ -48,6 +48,12 @@
   guides: 
     - title: 'Square-1 - Vanderbergh Method'
       url: 'guides/square-1-vanderbergh'
+- name: 'clock'
+  title: 'Clock'
+  image_url: 'svgs/puzzle/clock.svg'
+  guides:
+    - title: "Clock - Beginner's Method"
+      url: 'guides/clock-beginners'
 - name: '3x3x3-shapemod'
   title: '3x3 Shapemod'
   image_url: 'svgs/puzzle/3x3x3-shapemod.svg'

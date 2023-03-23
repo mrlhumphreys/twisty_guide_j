@@ -1,0 +1,65 @@
+---
+layout: default
+permalink: /guides/clock-beginners
+name: 'clock-beginners'
+puzzle: 'clock'
+title: "Clock - Beginner's Method"
+description: ''
+notation_url: null 
+sections:
+  - number: 'a'
+    title: 'Match center with one edge face' 
+    description: 'The button closest to the moving corner should be pressed up. All others should be pressed down. Move corner closest to the button until center matches one edge face.' 
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'b'
+    title: 'Match center and first edge face with second edge face'
+    description: 'The button between the center and the edge face matched previously should be pressed up. All others should be pressed down. Move corner closest to the button until the two matched faces match the adjacent edge face.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'c'
+    title: 'Match center and first two edge faces with third edge face'
+    description: 'The button between the center and the two edge faces matched previously should be pressed up. All other should be pressed down. Move corner closest to the button until the three matched faces matches another edge face.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'd'
+    title: 'Match center and first three edge faces with last edge face'
+    description: 'The two buttons on the side of the 4 matched faces should be pressed up. All others should be pressed down. Move any corner on the matched side until the faces on that side match the opposite edge face.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'e'
+    title: 'Move center and all edge faces to 12 position'
+    description: 'All buttons should be pressed up. Move corner until center and all edge faces are in the 12 position.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'f'
+    title: 'Repeat for other side'
+    description: 'Repeat the above steps for the other side.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'g' 
+    title: 'Match first corner'
+    description: 'The button closest to and two buttons adjacent to the turning corner should be pressed up. Turn it until the edge and center faces match the opposite corner.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'h' 
+    title: 'Match other corners'
+    description: 'Repeat the above process for other corners.'
+    cases:
+      - number: null
+        algorithm: '-'
+  - number: 'i'
+    title: 'Move all faces to the the 12 position'
+    description: 'All buttons should be pressed up. Move corner until all faces are in the 12 position. This solves the other side at the same time.'
+    cases:
+      - number: null
+        algorithm: '-'
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
