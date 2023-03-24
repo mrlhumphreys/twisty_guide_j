@@ -13,10 +13,21 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, squares = @input.split('|')
-      bordered_grid = GridGenerator.bordered_grid(x: x.to_i, y: y.to_i, units: units.to_i, squares: squares)
-
+      args = parse_input(@input)
+      bordered_grid = GridGenerator.bordered_grid(**args)
       render_grid(bordered_grid)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, squares = input.split('|')
+      {
+        x: x.to_i,
+        y: y.to_i,
+        units: units.to_i,
+        squares: squares
+      }
     end
 
     def render_grid(grid)

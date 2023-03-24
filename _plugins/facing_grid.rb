@@ -13,10 +13,21 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, squares = @input.split('|')
-      facing_grid = GridGenerator.facing_grid(x: x.to_i, y: y.to_i, units: units.to_i, squares: squares)
-
+      args = parse_input(@input)
+      facing_grid = GridGenerator.facing_grid(**args)
       render_grid(facing_grid)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, squares = input.split('|')
+      { 
+        x: x.to_i, 
+        y: y.to_i,
+        units: units.to_i,
+        squares: squares
+      }
     end
 
     def render_grid(grid)

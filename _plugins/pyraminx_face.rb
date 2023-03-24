@@ -13,10 +13,23 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, elements, rotation_angle, vertical_scale = @input.split('|')
-      pyraminx_face = GridGenerator.pyraminx_face(x: x.to_i, y: y.to_i, units: units.to_i, elements: elements.strip, rotation_angle: (rotation_angle ? Math::PI * 2 * rotation_angle.to_f : 0), vertical_scale: (vertical_scale ? vertical_scale.to_f : 1))
-
+      args = parse_input(@input)
+      pyraminx_face = GridGenerator.pyraminx_face(**args)
       render_face(pyraminx_face)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, elements, rotation_angle, vertical_scale = input.split('|')
+      {
+        x: x.to_i, 
+        y: y.to_i, 
+        units: units.to_i, 
+        elements: elements.strip, 
+        rotation_angle: (rotation_angle ? Math::PI * 2 * rotation_angle.to_f : 0),
+        vertical_scale: (vertical_scale ? vertical_scale.to_f : 1)
+      }
     end
 
     def render_face(face)

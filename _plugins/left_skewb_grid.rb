@@ -11,9 +11,21 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, elements = @input.split('|')
-      left_skewb_grid = GridGenerator.left_skewb_grid(x: x.to_i, y: y.to_i, units: units.to_i, elements: elements)
+      args = parse_input(@input)
+      left_skewb_grid = GridGenerator.left_skewb_grid(**args)
       render_grid(left_skewb_grid)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, elements = input.split('|')
+      {
+        x: x.to_i,
+        y: y.to_i,
+        units: units.to_i,
+        elements: elements
+      }
     end
 
     def render_grid(grid)

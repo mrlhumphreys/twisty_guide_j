@@ -13,10 +13,23 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, elements, axis_direction = @input.split('|')
-      square_one_face = GridGenerator.square_one_face(x: x.to_i, y: y.to_i, units: units.to_i, elements: elements.strip, axis_direction: (axis_direction ? axis_direction.strip.to_sym : nil ))
+      args = parse_input(@input)
+      square_one_face = GridGenerator.square_one_face(**args)
 
       render_face(square_one_face)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, elements, axis_direction = input.split('|')
+      {
+        x: x.to_i, 
+        y: y.to_i, 
+        units: units.to_i, 
+        elements: elements.strip, 
+        axis_direction: (axis_direction ? axis_direction.strip.to_sym : nil )
+      }
     end
 
     def render_face(face)

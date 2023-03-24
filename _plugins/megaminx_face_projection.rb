@@ -13,8 +13,16 @@ module Jekyll
     end
 
     def render(context)
-      x, y, units, front_face_elements, top_right_face_elements, right_face_elements, down_face_elements, left_face_elements, top_left_face_elements, rotation_offset = @input.split('|')
-      megaminx_projection = GridGenerator.megaminx_face_projection(
+      args = parse_input(@input)
+      megaminx_projection = GridGenerator.megaminx_face_projection(**args)
+      render_projection(megaminx_projection)
+    end
+
+    private
+
+    def parse_input(input)
+      x, y, units, front_face_elements, top_right_face_elements, right_face_elements, down_face_elements, left_face_elements, top_left_face_elements, rotation_offset = input.split('|')
+      { 
         x: x.to_i, 
         y: y.to_i, 
         units: units.to_i, 
@@ -25,9 +33,7 @@ module Jekyll
         left_face_elements: left_face_elements.to_s.strip,
         top_left_face_elements: top_left_face_elements.to_s.strip,
         rotation_offset: rotation_offset && 2 * Math::PI * rotation_offset.to_f || 0
-      )
-
-      render_projection(megaminx_projection)
+      } 
     end
 
     def render_projection(projection)

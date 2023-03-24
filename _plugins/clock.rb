@@ -45,33 +45,46 @@ module Jekyll
     end
    
     def render(context)
-      x_string, y_string, face_string, button_string, reverse_string = @input.split('|')
-      x = x_string.to_i
-      y = y_string.to_i
-      faces = face_string.strip.split('\n').map { |row| row.split(',') }
-      buttons = button_string.strip.split('\n').map { |row| row.split(',') }
-      reverse = reverse_string&.strip == '1'
+      args = parse_input(@input)
+      render_clock(args)
+    end
 
-      if reverse
+    private
+
+    def parse_input(input)
+      x_string, y_string, face_string, button_string, reverse_string = @input.split('|')
+
+      if reverse_string&.strip == '1' 
         primary = COLOURS[:light_blue] 
         secondary = COLOURS[:blue] 
       else
         primary = COLOURS[:blue] 
         secondary = COLOURS[:light_blue] 
       end
-      hand_colour = COLOURS[:yellow]
 
-      output = render_back(x, y, primary)
+      {
+        x: x_string.to_i,
+        y: y_string.to_i,
+        faces: face_string.strip.split('\n').map { |row| row.split(',') },
+        buttons: button_string.strip.split('\n').map { |row| row.split(',') },
+        primary: primary,
+        secondary: secondary,
+        hand_colour: COLOURS[:yellow]
+      }
+    end
 
-      faces.each_with_index do |row, row_index|
+    def render_clock(args)
+      output = render_back(args[:x], args[:y], args[:primary])
+
+      args[:faces].each_with_index do |row, row_index|
         row.each_with_index do |column, column_index|
-          output += render_face(x, y, row_index, column_index, column, primary, secondary, hand_colour)
+          output += render_face(args[:x], args[:y], row_index, column_index, column, args[:primary], args[:secondary], args[:hand_colour])
         end
       end
 
-      buttons.each_with_index do |row, row_index|
+      args[:buttons].each_with_index do |row, row_index|
         row.each_with_index do |column, column_index|
-          output += render_button(x, y, row_index, column_index, column, secondary)
+          output += render_button(args[:x], args[:y], row_index, column_index, args[:column], args[:secondary])
         end
       end
 

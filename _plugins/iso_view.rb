@@ -13,17 +13,32 @@ module Jekyll
     end
 
     def render(context)
+      args = parse_input(@input)
+      iso_view = GridGenerator.iso_view(**args)
+      render_view(iso_view)
+    end
+
+    private
+
+    def parse_input(input)
       x, y, units, top_squares, front_squares, right_squares = @input.split('|')
-      iso_view = GridGenerator.iso_view(x: x.to_i, y: y.to_i, units: units.to_i, top_squares: top_squares.strip, front_squares: front_squares.strip, right_squares: right_squares.strip)
-       
+      {
+        x: x.to_i,
+        y: y.to_i,
+        units: units.to_i,
+        top_squares: top_squares.strip,
+        front_squares: front_squares.strip,
+        right_squares: right_squares.strip
+      }
+    end
+
+    def render_view(iso_view)
       output = render_grid(iso_view.top)
       output += render_grid(iso_view.front)
       output += render_grid(iso_view.right)
 
       output
     end
-
-    private
 
     def render_grid(grid)
       output = "<polygon points=\"#{grid.points_string}\" style=\"fill:#{COLOURS[:fill]};stroke:#{COLOURS[:stroke]};stroke-width:1\" />"
