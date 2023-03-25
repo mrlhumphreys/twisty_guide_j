@@ -34,18 +34,18 @@ sections:
     description: 'Solve the middle row of one of the last two faces.'
     cases: 
       - number: null 
-        algorithm: "3U F' 2U' F E'"
+        algorithm: "M' F M"
   - number: 'd'
     title: "Solve Last Two Centers - Edge Center Pieces"
-    description: 'Put the edge center pieces in place for top and bottom rows.'
+    description: 'Put the edge center pieces in place for left row. Repeat for right row.'
     cases: 
       - number: null 
-        algorithm: "2U F<sup>2</sup> 2U'"
+        algorithm: "r' F<sup>2</sup> r"
   - number: 'e'
     title: "Solve Last Two Centers - Corner Center Pieces"
-    description: 'Put the corner center pieces in place for top and bottom rows.'
+    description: 'Put the corner center pieces in place.'
     cases: 
       - number: null 
-        algorithm: "(2U F 2U' F) (2U F<sup>2</sup> 2U')"
+        algorithm: "(r' F' r F') (r' F<sup>2</sup> r)"
 ---
 {% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
