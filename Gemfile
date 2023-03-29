@@ -3,4 +3,4 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "grid_generator", "0.3.1"
+gem "grid_generator", "0.3.2"

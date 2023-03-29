@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /guides/cube-parity/
+name: 'cube-parity'
+puzzle: 'cube'
+title: 'Cube - Parity'
+description: ''
+notation_url: 'notations/cubic'
+previous_url: null 
+next_url: null 
+current_phase: null 
+phases: []
+sections: 
+  - number: 'a'
+    title: "Parity issues"
+    description: 'Sometimes some odd cases can appear. Edges might need twisted around.'
+    cases: 
+      - number: 1 
+        algorithm: "(r<sup>2</sup> B<sup>2</sup> U<sup>2</sup> l) (U<sup>2</sup> r' U<sup>2</sup> r) (U<sup>2</sup> F<sup>2</sup> r F<sup>2</sup>) (l' B2 r<sup>2</sup>)"
+      - number: 2 
+        algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup>"
+      - number: 3 
+        algorithm: "L<sup>2</sup> D Fw<sup>2</sup> Lw<sup>2</sup> F<sup>2</sup> l<sup>2</sup> F<sup>2</sup> Lw<sup>2</sup> Fw<sup>2</sup> D' L<sup>2</sup>"
+      - number: 4 
+        algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup> F' U' F U F R' F<sup>2</sup> U F U F' U' F R"
+      - number: 5 
+        algorithm: "Uw<sup>2</sup> Lw<sup>2</sup> U<sup>2</sup> l<sup>2</sup> U<sup>2</sup> Lw<sup>2</sup> Uw<sup>2</sup> R U' L U<sup>2</sup> R' U R L' U' L U<sup>2</sup> R' U L' U"
+---
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}

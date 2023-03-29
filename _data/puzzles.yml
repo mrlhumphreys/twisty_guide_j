@@ -18,12 +18,16 @@
   guides: 
     - title: '4x4 - Reduction Method'
       url: 'guides/4x4x4-reduction-phase-1'
+    - title: 'Cube - Parity'
+      url: 'guides/cube-parity'
 - name: '5x5x5'
   title: "5x5 Cube"
   image_url: 'svgs/puzzle/5x5x5.svg'
   guides: 
-    - title: '5x5 - Reduction Method'
-      url: 'guides/5x5x5-reduction-phase-1'
+    - title: '5x5 - Last Two Centers'
+      url: 'guides/5x5x5-last-two-centers'
+    - title: 'Cube - Parity'
+      url: 'guides/cube-parity'
 - name: 'pyraminx'
   title: 'Pyraminx'
   image_url: 'svgs/puzzle/pyraminx.svg'
