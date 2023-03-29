@@ -28,6 +28,14 @@
       url: 'guides/5x5x5-last-two-centers'
     - title: 'Cube - Parity'
       url: 'guides/cube-parity'
+- name: '6x6x6'
+  title: "6x6 Cube"
+  image_url: 'svgs/puzzle/6x6x6.svg'
+  guides: 
+    - title: '6x6 - Last Two Centers'
+      url: 'guides/6x6x6-last-two-centers'
+    - title: 'Cube - Parity'
+      url: 'guides/cube-parity'
 - name: 'pyraminx'
   title: 'Pyraminx'
   image_url: 'svgs/puzzle/pyraminx.svg'

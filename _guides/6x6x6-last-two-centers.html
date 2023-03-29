@@ -1,0 +1,43 @@
+---
+layout: default
+permalink: /guides/6x6x6-last-two-centers/
+name: '6x6x6-last-two-centers'
+puzzle: '6x6x6'
+title: '6x6 - Last Two Centers'
+description: ''
+notation_url: 'notations/cubic'
+previous_url: null 
+next_url: null 
+current_phase: null 
+phases: []
+sections:
+  - number: 'a'
+    title: "Solve Last Two Centers - Inner corners"
+    description: 'Move inner corners. Repeat until they all match.'
+    cases: 
+      - number: null 
+        algorithm: "(3R' F' 3R F') (3R' F<sup>2</sup> 3R)"
+  - number: 'b'
+    title: "Solve Last Two Centers - Inner Column Edges"
+    description: 'Move inner row edges. Repeat until they all match and inner columns are solved.'
+    cases: 
+      - number: 1 
+        algorithm: "(3R' 2R' F' 2R) (F 3R)"
+      - number: 2 
+        algorithm: "(3R' 2R' F 2R) (F' 3R)"
+  - number: 'c'
+    title: "Solve Last Two Centers - Outer Column Edges"
+    description: 'Move outer column edges. Repeat until they all match.'
+    cases: 
+      - number: 1 
+        algorithm: "(3R' 2R' F' 3R F 2R) (F' 3R' F 3R)"
+      - number: 2 
+        algorithm: "(3R' 2R' F 3R F' 2R) (F 3R' F' 3R)"
+  - number: 'd'
+    title: "Solve Last Two Centers - Outer Corners"
+    description: 'Move outer corners. Repeat until they all match and the centers are completely solved.'
+    cases: 
+      - number: null 
+        algorithm: "(2R' F' 2R) (F' 2R' F<sup>2</sup> 2R)"
+---
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
