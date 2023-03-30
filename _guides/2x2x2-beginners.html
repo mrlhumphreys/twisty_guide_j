@@ -1,0 +1,34 @@
+---
+layout: default
+permalink: /guides/2x2x2-beginners/
+name: '2x2x2-beginners'
+puzzle: '2x2x2'
+title: "2x2 - Beginner's Method"
+description: ''
+notation_url: 'notations/cubic'
+sections: 
+  - number: 'a'
+    title: 'Solve First Layer'
+    description: 'Pick a colour and move corners so that the bottom face is completely solved.'
+    cases:
+      - number: 1
+        algorithm: "F' U' F"
+      - number: 2
+        algorithm: "R U R'"
+      - number: 3
+        algorithm: "U R<sup>2</sup> U' R<sup>2</sup>"
+  - number: 'b'
+    title: 'Last Layer Corner Orientation'
+    description: 'Put the last layer corners in the right place by cycling three edges. Repeat as necessary.'
+    cases: 
+      - number: null 
+        algorithm: "U R U' L' U R' U' L" 
+  - number: 'c'
+    title: 'Permutate Top Layer Corners'
+    description: 'Apply the algorithm and repeat until a corner is correct. If there are more incorrect corners, move that corner into the top front right place and repeat.'
+    cases:
+      - number: null 
+        algorithm: "R' D' R D" 
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+

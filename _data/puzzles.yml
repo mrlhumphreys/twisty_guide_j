@@ -10,6 +10,8 @@
   title: "2x2 Cube"
   image_url: 'svgs/puzzle/2x2x2.svg'
   guides: 
+    - title: "2x2 - Beginner's Method"
+      url: 'guides/2x2x2-beginners'
     - title: '2x2 - Ortega Method'
       url: 'guides/2x2x2-ortega'
 - name: '4x4x4'
