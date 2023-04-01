@@ -1,0 +1,7 @@
+---
+layout: svg
+width: 130 
+height: 175 
+---
+{% iso_view 20|20|30|B,B|W,W\nW,W\nW,W|R\nO\nR %}
+

@@ -80,6 +80,12 @@
   guides: 
     - title: '2x2x3 Cuboid'
       url: 'guides/2x2x3-cuboid'
+- name: '1x2x3'
+  title: '1x2x3 Cuboid'
+  image_url: 'svgs/puzzle/1x2x3.svg'
+  guides: 
+    - title: '1x2x3 Cuboid'
+      url: 'guides/1x2x3-cuboid'
 - name: '3x4x5'
   title: '3x4x5 Cuboid'
   image_url: 'svgs/puzzle/3x4x5.svg'

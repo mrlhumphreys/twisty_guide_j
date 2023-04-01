@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /guides/1x2x3-cuboid/
+name: '1x2x3-cuboid'
+puzzle: '1x2x3'
+title: '1x2x3 Cuboid'
+description: ''
+notation_url: 'notations/cubic'
+sections:
+  - number: 'a'
+    title: 'Solve top layer'
+    description: 'Match top corners'
+    cases:
+      - number: 1
+        algorithm: "-"
+      - number: 2
+        algorithm: "R"
+      - number: 3
+        algorithm: "D R"
+  - number: 'b'
+    title: 'Solve bottom layer'
+    description: 'Match bottom corners'
+    cases:
+      - number: 1
+        algorithm: "-"
+      - number: 2
+        algorithm: "D"
+  - number: 'c'
+    title: 'Solve middle layer'
+    description: 'Match middle edges'
+    cases:
+      - number: 1
+        algorithm: "-"
+      - number: 2
+        algorithm: "R E R"
+      - number: 3 
+        algorithm: "R U R U R U"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
+
