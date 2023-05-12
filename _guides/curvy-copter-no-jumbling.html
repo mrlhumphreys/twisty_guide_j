@@ -1,0 +1,77 @@
+---
+layout: default
+permalink: /guides/curvy-copter-no-jumbling
+name: 'curvy-copter-no-jumbling'
+puzzle: 'curvy-copter'
+title: "Curvy Copter (No Jumbling)"
+description: ''
+notation_url: null 
+sections: 
+  - number: 'a'
+    title: 'First Layer Edges'
+    description: 'Rotate edges on the first layer until they match each other.'
+    cases:
+      - number: null 
+        algorithm: 'F, R, L or B'
+  - number: 'b'
+    title: 'First Layer Middles'
+    description: 'Move middles into the first layer.'
+    cases:
+      - number: 1 
+        algorithm: 'FL F FL F'
+      - number: 2 
+        algorithm: 'FR F FR F'
+      - number: 3 
+        algorithm: 'L FL L'
+      - number: 4 
+        algorithm: 'R FR R'
+  - number: 'c'
+    title: 'First Layer Corners'
+    description: 'Move and align corners into the first layer.'
+    cases:
+      - number: 1
+        algorithm: 'FR'
+      - number: 2 
+        algorithm: 'F L B R FR'
+      - number: 3 
+        algorithm: 'R B L F FR'
+  - number: 'd'
+    title: 'Second Layer Middles'
+    description: 'Move middles into the second layer.'
+    cases:
+      - number: 1 
+        algorithm: 'FR F R F FR'
+      - number: 2 
+        algorithm: 'FR R F R FR'
+  - number: 'e'
+    title: 'Third Layer Edges'
+    description: 'Rotate edges in the third layer so they match the bottom layer corners.'
+    cases:
+      - number: null 
+        algorithm: 'FR F R FR R F FR'
+  - number: 'f'
+    title: 'Fourth Layer Middles'
+    description: 'Move middles into the fourth layer. Match 2 on one side to an edge, followed by matching 2 on the opposite with its edge. The other 2 sides and top will be solved.'
+    cases:
+      - number: 1 
+        algorithm: 'R F R F'
+      - number: 2 
+        algorithm: 'L F L F'
+  - number: 'g'
+    title: 'Position last layer corners'
+    description: 'Move 3 corners around.'
+    cases:
+      - number: 1 
+        algorithm: '(R B R F) x2'
+      - number: 2 
+        algorithm: '(F R B R) x2'
+  - number: 'h'
+    title: 'Rotate last layer corners'
+    description: 'Rotate 2 corners.'
+    cases:
+      - number: 1 
+        algorithm: '(R L B R L F) x2'
+      - number: 2 
+        algorithm: '(F R L B R L) x2'
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

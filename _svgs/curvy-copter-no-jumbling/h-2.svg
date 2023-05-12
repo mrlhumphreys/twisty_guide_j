@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 160
+height: 160
+---
+{% top_curvy_copter_grid 20|20|20|Y,Y,Y\nY,Y\nY,Y\nY,Y\nB,Y,B %}
+{% left_curvy_copter_grid 20|50|20|O,B,R\nB,B\nB,B\nB,B\nB,B,B %}
+{% right_curvy_copter_grid 80|50|20|Y,R,R\nR,R\nR,R\nR,R\nR,R,R %}
