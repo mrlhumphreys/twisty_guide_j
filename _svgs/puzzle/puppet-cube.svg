@@ -1,0 +1,12 @@
+---
+layout: svg
+width: 200
+height: 200
+---
+{% iso_view 20|20|40|Y,Y\nY,Y|O,O\nO,O|B,B\nB,B %}
+
+{% square 80|40|top|20|Y %}
+{% square 80|60|top|20|Y %}
+
+{% square 120|100|right|20|B %}
+{% square 140|110|right|20|B %}

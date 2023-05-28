@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /guides/puppet-cube-phase-1
+name: 'puppet-cube-phase-1'
+puzzle: 'puppet-cube'
+title: 'Puppet Cube (1 & 2)'
+description: ''
+notation_url: 'notations/cubic'
+previous_url: null
+next_url: 'guides/puppet-cube-phase-2'
+current_phase: 1
+phases:
+  - number: 1
+    url: 'guides/puppet-cube-phase-1'
+  - number: 2 
+    url: 'guides/puppet-cube-phase-2'
+  - number: 3 
+    url: 'guides/puppet-cube-phase-3'
+  - number: 4 
+    url: 'guides/puppet-cube-phase-4'
+sections:
+  - number: 'a'
+    title: '3 Ls on Top'
+    description: 'Return to cube shape.'
+    cases:
+      - number: 1 
+        algorithm: "R' U' R U"
+      - number: 2 
+        algorithm: "L U L' U'"
+  - number: 'b'
+    title: '2 Ls opposite in same row'
+    description: 'Return to cube shape.'
+    cases:
+      - number: 1 
+        algorithm: "R' U R U"
+      - number: 2 
+        algorithm: "L U' L' U'"
+  - number: 'c'
+    title: '2 Ls adjacent'
+    description: 'Return to cube shape'
+    cases:
+      - number: 1 
+        algorithm: "R' U' R"
+      - number: 2 
+        algorithm: "L U L'"
+      - number: 3 
+        algorithm: "R' U<sup>2</sup> R U"
+      - number: 4 
+        algorithm: "L U<sup>2</sup> L' U"
+  - number: 'd'
+    title: '2 Ls opposite in different rows'
+    description: 'Return to cube shape.'
+    cases:
+      - number: 1 
+        algorithm: "U' L' U R U' L U R'"
+      - number: 2 
+        algorithm: "U R U' L' U R' U' L"
+      - number: 3 
+        algorithm: "F R U R' U' F'"
+      - number: 4 
+        algorithm: "F' L' U' L U F"
+---
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
+

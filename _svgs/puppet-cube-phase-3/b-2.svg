@@ -1,0 +1,23 @@
+---
+layout: svg
+width: 300 
+height: 270
+---
+<!-- Outer Cube -->
+{% iso_view 200|20|20|Y,Y\nY,Y|G,G\nG,G|O,O\nO,O %}
+{% square 220|35|top|10|FU %}
+{% square 240|35|top|10|FU %}
+
+<!-- Inner Cube -->
+{% iso_view 60|70|30|BL,-,BL\n-,Y,-\nBL,-,BL|BL,-,BL\n-,G,-\nBL,-,BL|BL,-,BL\n-,O,-\nBL,-,BL %}
+
+{% text 143|60|U %}
+{% text 80|255|F %}
+{% text 200|255|R %}
+
+{% arrow_def white %}
+{% arrow 80|165|100|155|forward|white|4 %}
+{% arrow 100|205|80|175|forward|white|4 %}
+{% arrow 215|180|115|210|forward|white|4 %}
+{% arrow 140|190|215|165|forward|white|4 %}
+{% arrow 115|165|130|190|forward|white|4 %}

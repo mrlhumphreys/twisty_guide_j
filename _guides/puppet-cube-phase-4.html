@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /guides/puppet-cube-phase-4
+name: 'puppet-cube-phase-4'
+puzzle: 'puppet-cube'
+title: 'Puppet Cube (2)'
+description: ''
+notation_url: 'notations/cubic'
+previous_url: 'guides/puppet-cube-phase-3' 
+next_url: null 
+current_phase: 4 
+phases:
+  - number: 1
+    url: 'guides/puppet-cube-phase-1'
+  - number: 2 
+    url: 'guides/puppet-cube-phase-2'
+  - number: 3 
+    url: 'guides/puppet-cube-phase-3'
+  - number: 4 
+    url: 'guides/puppet-cube-phase-4'
+sections:
+  - number: 'a'
+    title: 'Move 3 Edges'
+    description: 'Move 3 edges around.'
+    cases:
+      - number: 1 
+        algorithm: "(M<sup>2</sup> U' M') U<sup>2</sup> (M U' M<sup>2</sup>)"
+      - number: 2 
+        algorithm: "(M<sup>2</sup> U M') U<sup>2</sup> (M U M<sup>2</sup>)"
+      - number: 3 
+        algorithm: "(M' U' M) U<sup>2</sup> (M' U M)"
+      - number: 4 
+        algorithm: "(M' U M) U<sup>2</sup> (M' U M)"
+---
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
+

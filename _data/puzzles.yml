@@ -98,10 +98,15 @@
   guides: 
     - title: 'Pocket Cube'
       url: 'guides/pocket-cube'
+- name: 'Puppet Cube'
+  title: "Puppet Cube"
+  image_url: 'svgs/puzzle/puppet-cube.svg'
+  guides:
+    - title: 'Puppet Cube'
+      url: 'guides/puppet-cube-phase-1'
 - name: 'curvy-copter'
   title: "Curvy Copter"
   image_url: 'svgs/puzzle/curvy-copter.svg'
   guides:
     - title: 'Curvy Copter (No Jumbling)'
       url: 'guides/curvy-copter-no-jumbling'
-

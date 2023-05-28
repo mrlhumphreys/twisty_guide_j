@@ -1,0 +1,48 @@
+---
+layout: svg
+width: 200
+height: 220
+---
+<!-- Behind Squares --> 
+{% square 60|40|front|40|FF %}
+
+{% square 60|120|top|40|FU %}
+{% square 100|100|top|40|FU %}
+
+{% square 80|90|front|40|FF %}
+
+{% square 100|40|right|40|FR %}
+
+<!-- Top Squares -->
+{% square 60|20|top|40|FU %}
+{% square 40|50|top|40|FU %}
+
+{% square 20|70|top|20|FU %}
+{% square 80|70|top|40|FU %}
+
+<!-- Front Squares -->
+{% square 20|80|front|20|FF %}
+
+{% square 40|70|front|40|FF %}
+{% square 40|90|front|20|FF %}
+
+{% square 20|100|front|20|FF %}
+{% square 40|110|front|20|FF %}
+{% square 60|120|front|20|FF %}
+
+{% square 20|120|front|40|FF %}
+{% square 40|130|front|20|FF %}
+
+{% square 60|140|front|40|FF %}
+
+<!-- Right Squares -->
+
+<!-- Different path to make l shape -->
+<polygon points="80,90 120,70 120,90 100,100 100,120 80,130" style="fill:{{ site.data.colours.right }};stroke:{{ site.data.colours.stroke }};stroke-width:1;opacity:1"/>
+
+{% square 80|120|right|20|FR %}
+
+{% square 120|90|right|40|FR %}
+
+{% square 100|140|right|40|FR %}
+{% square 140|120|right|40|FR %}

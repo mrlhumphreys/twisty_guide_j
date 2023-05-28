@@ -1,0 +1,116 @@
+---
+layout: default
+permalink: /guides/puppet-cube-phase-3
+name: 'puppet-cube-phase-3'
+puzzle: 'puppet-cube'
+title: 'Puppet Cube (1)'
+description: ''
+notation_url: 'notations/cubic'
+previous_url: 'guides/puppet-cube-phase-2' 
+next_url: 'guides/puppet-cube-phase-4'
+current_phase: 3 
+phases:
+  - number: 1
+    url: 'guides/puppet-cube-phase-1'
+  - number: 2 
+    url: 'guides/puppet-cube-phase-2'
+  - number: 3 
+    url: 'guides/puppet-cube-phase-3'
+  - number: 4 
+    url: 'guides/puppet-cube-phase-4'
+sections:
+  - number: 'a'
+    title: 'Move 3 to 5 Edges'
+    description: 'Move 3 to 5 edges around. Used as sub-algorithms in next sections.'
+    cases:
+      - number: 1 
+        algorithm: "(R U R' U') (R' U' R' U) (R U)"
+      - number: 2 
+        algorithm: "(L' U' L U) (L U L U') (L' U')"
+      - number: 3 
+        algorithm: "(R U R U') (R' U' R' U') (R U)"
+      - number: 4 
+        algorithm: "(L' U' L' U) (L U L U) (L' U')"
+      - number: 5 
+        algorithm: "(R U R U) (R U' R' U') (R' U')"
+      - number: 6 
+        algorithm: "(L' U' L' U') (L' U L U) (L U)"
+      - number: 7 
+        algorithm: "(R U R<sup>2</sup> U') (F' U' L' B<sup>2</sup>) (L F)"
+      - number: 8 
+        algorithm: "(L' U' L<sup>2</sup> U) (F U R B<sup>2</sup>) (R' F')"
+  - number: 'b'
+    title: 'Move 3 to 5 Edges - Reverse'
+    description: 'Move 3 to 5 edges around. Reverse of the above. Used as sub-algorithms in next sections.'
+    cases:
+      - number: 1 
+        algorithm: "(U' R') (U' R U R) (U R U' R')"
+      - number: 2 
+        algorithm: "(U L) (U L' U' L') (U' L' U L)"
+      - number: 3 
+        algorithm: "(U' R') (U R U R) (U R' U' R')"
+      - number: 4 
+        algorithm: "(U L) (U' L' U' L') (U' L U L)"
+      - number: 5 
+        algorithm: "(U R) (U R U R') (U' R' U' R')"
+      - number: 6 
+        algorithm: "(U' L') (U' L' U' L) (U L U L)"
+      - number: 7 
+        algorithm: "(F' L') (B<sup>2</sup> L U F) (U R<sup>2</sup> U' R')"
+      - number: 8 
+        algorithm: "(F R) (B<sup>2</sup> R' U' F') (U' L<sup>2</sup> U L)"
+  - number: 'c'
+    title: 'Move 3 Edges'
+    description: 'Move 3 edges on the same face. Uses first section algorithms.'
+    cases:
+      - number: 1 
+        algorithm: "(5) (7) (5')"
+      - number: 2 
+        algorithm: "(5) Y' (8) Y (5')"
+      - number: 3 
+        algorithm: "Y X (7) Z X' (5) (7) (5') Z' (8) Z"
+      - number: 4 
+        algorithm: "Y X (7) Z X' (5) Y' (8) Y (5') Z' (8) Z"
+      - number: 5 
+        algorithm: "(6) Y (7) Y' (6')"
+      - number: 6 
+        algorithm: "(6) (8) (6')"
+      - number: 7 
+        algorithm: "Z Y' (8) Y Z (6) Y (7) Y' (6') Z (7) Z'"
+      - number: 8 
+        algorithm: "Z Y' (8) Y Z' (6) (8) (6') Z (7) Z'"
+  - number: 'd'
+    title: 'Swap 2 Edges'
+    description: 'Swap 2 edges. Uses first section algorithms.'
+    cases:
+      - number: 1 
+        algorithm: "1 5 1 5"
+      - number: 2 
+        algorithm: "2 6 2 6"
+      - number: 3 
+        algorithm: "5 1 5 1"
+      - number: 4 
+        algorithm: "6 2 6 2"
+  - number: 'e'
+    title: 'Swap 2 Edges - Extra'
+    description: 'Swap 2 edges. Uses first section algorithms.'
+    cases:
+      - number: 1 
+        algorithm: "(1 5 1 5) (5 1 5 1)"
+      - number: 2 
+        algorithm: "(2 6 2 6) (2 6 2 6)"
+      - number: 3 
+        algorithm: "(1) (1 5 1 5) (5 1 5 1) (1')"
+      - number: 4 
+        algorithm: "(2) (2 6 2 6) (6 2 6 2) (2')"
+      - number: 5 
+        algorithm: "X Y (3) (1 5 1 5) (5 1 5 1) (3')"
+      - number: 6 
+        algorithm: "Y' X (4) (2 6 2 6) (2 6 2 6) (4')"
+      - number: 7 
+        algorithm: "(3') (1 5 1 5) (5 1 5 1) (3)"
+      - number: 8 
+        algorithm: "(1) Y' (2 6 2 6) (2 6 2 6) Y (1')"
+---
+{% include guide.html title=page.title notation_url=page.notation_url previous_url=page.previous_url next_url=page.next_url sections=page.sections name=page.name %}
+

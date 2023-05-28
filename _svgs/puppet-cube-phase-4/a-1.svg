@@ -1,0 +1,15 @@
+---
+layout: svg
+width: 220 
+height: 255
+---
+{% iso_view 20|40|30|BL,Y,BL\nY,Y,Y\nBL,Y,BL|BL,G,BL\n-,O,-\nBL,-,BL|BL,O,BL\n-,B,-\nBL,-,BL %}
+
+{% text 103|30|U %}
+{% text 40|225|F %}
+{% text 160|225|R %}
+
+{% arrow_def white %}
+{% arrow 90|70|140|95|forward|white|4 %}
+{% arrow 135|105|85|105|forward|white|4 %}
+{% arrow 85|95|85|75|forward|white|4 %}
