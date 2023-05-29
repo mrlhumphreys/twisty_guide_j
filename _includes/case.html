@@ -12,8 +12,14 @@
   {% assign prefix = "svgs/" | append: include.guide_name | append: '/' %} 
   {% assign suffix = ".svg" %}
   <img src="{{ image_name | prepend: prefix | append: suffix | relative_url }}" class="diagram" />
-  <p class="algorithm">
+  <div class="algorithm">
     <span class="text">{{ include.algorithm }}</span>
-    <span class="show hidden">Show</span>
-  </p>
+    {% if include.algorithm_list %}
+      <ul class="algorithm_list">
+        {% for algorithm in include.algorithm_list %}
+          <li>{{ algorithm }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
 </div>

@@ -222,19 +222,27 @@ footer p {
 .case .algorithm {
   background-color: $background-focus;
   color: $content-main;
-  height: 2em;
   padding: 1em 0;
   width: 100%;
   text-align: center;
-  font-weight: bold;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.algorithm .hidden {
-  display: none;
+.algorithm span {
+  font-weight: bold;
+}
+
+.case .algorithm_list {
+  list-style: none;
+  background-color: $background-focus;
+  padding-top: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .moves {

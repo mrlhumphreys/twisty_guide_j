@@ -11,7 +11,7 @@
     <div class="cases">
   {% endif %}
   {% for case in include.cases %}
-    {% include case.html number=case.number description=case.description guide_name=include.guide_name phase_number=include.phase_number section_number=include.number algorithm=case.algorithm %}
+    {% include case.html number=case.number description=case.description guide_name=include.guide_name phase_number=include.phase_number section_number=include.number algorithm=case.algorithm algorithm_list=case.algorithm_list %}
   {% endfor %}
   {% if include.cases.size > 1 %}
     </div>
