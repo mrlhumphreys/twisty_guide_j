@@ -219,10 +219,9 @@ footer p {
   padding-bottom: 1em;
 }
 
-.case .algorithm {
+.algorithm {
   background-color: $background-focus;
   color: $content-main;
-  padding: 1em 0;
   width: 100%;
   text-align: center;
   display: flex;
@@ -230,19 +229,36 @@ footer p {
   justify-content: center;
 }
 
-.algorithm span {
+.algorithm > .algorithm_line {
   font-weight: bold;
+  display: block;
+  padding: 1em 0;
 }
 
-.case .algorithm_list {
+.algorithm .algorithm_list {
   list-style: none;
   background-color: $background-focus;
-  padding-top: 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.algorithm_list .algorithm_line {
+  padding: 0.5em 0;
+}
+
+.algorithm_list .algorithm_line:last-child {
+  padding-bottom: 1em;
+}
+
+.algorithm .algorithm_line {
+  width: 100%;
+}
+
+.algorithm .algorithm_line:hover {
+  background-color: $content-focus;
 }
 
 .moves {

@@ -13,11 +13,11 @@
   {% assign suffix = ".svg" %}
   <img src="{{ image_name | prepend: prefix | append: suffix | relative_url }}" class="diagram" />
   <div class="algorithm">
-    <span class="text">{{ include.algorithm }}</span>
+    <p class="algorithm_line">{{ include.algorithm }}</span>
     {% if include.algorithm_list %}
       <ul class="algorithm_list">
         {% for algorithm in include.algorithm_list %}
-          <li>{{ algorithm }}</li>
+          <li class="algorithm_line">{{ algorithm }}</li>
         {% endfor %}
       </ul>
     {% endif %}
