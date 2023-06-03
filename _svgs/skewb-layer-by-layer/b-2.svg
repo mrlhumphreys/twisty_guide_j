@@ -3,9 +3,9 @@ layout: svg
 width: 200
 height: 200
 ---
-{% right_skewb_grid 20|20|20|r,-,r\n-,B,-\n-,-,- %} 
-{% left_skewb_grid 100|20|20|b,-,b\n-,Y,-\n-,-,- %} 
-{% top_skewb_grid 20|100|20|-,-,-\n-,R,-\n-,-,- %} 
+{% right_skewb_grid 20|20|20|r,r\nB\n-,- %} 
+{% left_skewb_grid 100|20|20|b,b\nY\n-,- %} 
+{% top_skewb_grid 20|100|20|-,-\nR\n-,- %} 
 
 {% arrow_def white %}
 {% arrow 70|80|130|80|forward|white|4 %}
