@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: /guides/dino-cube
+name: 'dino-cube'
+puzzle: 'dino-cube'
+title: "Dino Cube"
+description: ''
+notation_url: null 
+sections: 
+  - number: 'a'
+    title: 'Solve Bottom Layer'
+    description: 'Match pieces on one layer.'
+    cases:
+      - number: 1 
+        algorithm: "F D F' F'"
+      - number: 2 
+        algorithm: "F' D' F D"
+  - number: 'b'
+    title: 'Solve Side Edges'
+    description: 'Move side edges into place.'
+    cases:
+      - number: 1 
+        algorithm: "F"
+      - number: 2 
+        algorithm: "F'"
+  - number: 'c'
+    title: 'Solve 1 edge on top layer'
+    description: 'No edges are solved. Use Algorithm once to solve one edge.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+  - number: 'd'
+    title: 'Solve last 3 edges on top layer'
+    description: 'One edge is solved. Use algorithm on other 3 edge. Repeat if necessary.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

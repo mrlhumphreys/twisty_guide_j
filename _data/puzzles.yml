@@ -104,6 +104,12 @@
   guides:
     - title: 'Puppet Cube'
       url: 'guides/puppet-cube-phase-1'
+- name: 'dino-cube'
+  title: "Dino Cube"
+  image_url: 'svgs/puzzle/dino-cube.svg'
+  guides:
+    - title: 'Dino Cube'
+      url: 'guides/dino-cube'
 - name: 'curvy-copter'
   title: "Curvy Copter"
   image_url: 'svgs/puzzle/curvy-copter.svg'

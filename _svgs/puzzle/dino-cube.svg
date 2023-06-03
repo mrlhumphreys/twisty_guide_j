@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 160
+height: 160
+---
+{% dino_cube_top_grid 20|20|60|Y\nY,Y\nY %}
+{% dino_cube_left_grid 20|50|60|B\nB,B\nB %}
+{% dino_cube_right_grid 80|50|60|R\nR,R\nR %}
