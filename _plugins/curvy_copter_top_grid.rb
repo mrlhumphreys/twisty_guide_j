@@ -1,5 +1,5 @@
 module Jekyll
-  class TopCurvyCopterGrid < Liquid::Tag
+  class CurvyCopterTopGrid < Liquid::Tag
     def initialize(tag_name, input, tokens)
       super
       @input = input
@@ -25,4 +25,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('top_curvy_copter_grid', Jekyll::TopCurvyCopterGrid)
+Liquid::Template.register_tag('curvy_copter_top_grid', Jekyll::CurvyCopterTopGrid)

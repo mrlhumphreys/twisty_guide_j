@@ -3,7 +3,7 @@ layout: svg
 width: 200
 height: 200
 ---
-{% right_skewb_grid 20|20|20|r,r\nr\nG,R %} 
-{% left_skewb_grid 100|20|20|b,b\nb\nB,O %} 
-{% top_skewb_grid 20|100|20|Y,B\nY\nR,Y %} 
+{% skewb_right_grid 20|20|20|r,r\nr\nG,R %} 
+{% skewb_left_grid 100|20|20|b,b\nb\nB,O %} 
+{% skewb_top_grid 20|100|20|Y,B\nY\nR,Y %} 
 

@@ -1,15 +1,14 @@
 module Jekyll
-  class RightSkewbGrid < Liquid::Tag
+  class SkewbTopGrid < Liquid::Tag
     def initialize(tag_name, input, tokens)
       super
       @input = input
     end
 
     def render(context)
-      x, y, units, elements = @input.split('|')
       args = parse_input(@input)
-      right_skewb_grid = GridGenerator.right_skewb_grid(**args)
-      right_skewb_grid.to_svg
+      top_skewb_grid = GridGenerator.skewb_top_grid(**args)
+      top_skewb_grid.to_svg
     end
 
     private
@@ -26,6 +25,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('right_skewb_grid', Jekyll::RightSkewbGrid)
-
-
+Liquid::Template.register_tag('skewb_top_grid', Jekyll::SkewbTopGrid)

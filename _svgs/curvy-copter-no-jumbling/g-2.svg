@@ -3,6 +3,6 @@ layout: svg
 width: 160
 height: 160
 ---
-{% top_curvy_copter_grid 20|20|20|O,Y,Y\nY,Y\nY,Y\nY,Y\nR,Y,Y %}
-{% left_curvy_copter_grid 20|50|20|B,B,G\nB,B\nB,B\nB,B\nB,B,B %}
-{% right_curvy_copter_grid 80|50|20|O,R,R\nR,R\nR,R\nR,R\nR,R,R %}
+{% curvy_copter_top_grid 20|20|20|O,Y,Y\nY,Y\nY,Y\nY,Y\nR,Y,Y %}
+{% curvy_copter_left_grid 20|50|20|B,B,G\nB,B\nB,B\nB,B\nB,B,B %}
+{% curvy_copter_right_grid 80|50|20|O,R,R\nR,R\nR,R\nR,R\nR,R,R %}

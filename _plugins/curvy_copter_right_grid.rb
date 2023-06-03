@@ -1,5 +1,5 @@
 module Jekyll
-  class LeftCurvyCopterGrid < Liquid::Tag
+  class CurvyCopterRightGrid < Liquid::Tag
     def initialize(tag_name, input, tokens)
       super
       @input = input
@@ -7,8 +7,8 @@ module Jekyll
 
     def render(context)
       args = parse_input(@input)
-      left_curvy_copter_grid = GridGenerator.curvy_copter_left_grid(**args)
-      left_curvy_copter_grid.to_svg
+      right_curvy_copter_grid = GridGenerator.curvy_copter_right_grid(**args)
+      right_curvy_copter_grid.to_svg
     end
 
     private
@@ -25,4 +25,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('left_curvy_copter_grid', Jekyll::LeftCurvyCopterGrid)
+Liquid::Template.register_tag('curvy_copter_right_grid', Jekyll::CurvyCopterRightGrid)
