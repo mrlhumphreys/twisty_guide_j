@@ -3,7 +3,7 @@ layout: svg
 width: 235
 height: 240 
 ---
-{% megaminx_face_projection 20|20|20|gr,BR,gr,O,gr,S,gr,gr,gr,gr,gr|s,s,s,s,s,S,s,GR,s,s,s|br,br,br,br,br,BR,br,GR,br,br,br|pi,pi,pi,pi,pi,pi,pi,GR,pi,pi,pi|g,g,g,g,g,g,g,g,g,g,g|o,o,o,o,o,PI,o,o,o,o,o %}
+{% megaminx_face_projection 20|20|20|gr,S,gr,O,gr,C,gr,gr,gr,gr,gr|c,c,c,c,c,C,c,GR,c,c,c|s,s,s,s,s,S,s,GR,s,s,s|pi,pi,pi,pi,pi,pi,pi,GR,pi,pi,pi|l,l,l,l,l,l,l,l,l,l,l|o,o,o,o,o,PI,o,o,o,o,o %}
 
 {% arrow_def white %}
 {% arrow 120|80|145|150|forward|white|4 %}

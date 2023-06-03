@@ -3,5 +3,5 @@ layout: svg
 width: 235
 height: 240 
 ---
-{% megaminx_face_projection 20|20|20|gr,gr,gr,BR,gr,BR,gr,gr,gr,gr,gr|s,s,s,s,s,GR,s,s,s,s,s|br,br,br,br,br,PI,br,S,br,br,br|pi,pi,pi,pi,pi,pi,pi,GR,pi,pi,pi|g,g,g,g,g,g,g,g,g,g,g|o,o,o,o,o,o,o,o,o,o,o %}
+{% megaminx_face_projection 20|20|20|gr,gr,gr,S,gr,S,gr,gr,gr,gr,gr|c,c,c,c,c,GR,c,c,c,c,c|s,s,s,s,s,PI,s,C,s,s,s|pi,pi,pi,pi,pi,pi,pi,GR,pi,pi,pi|l,l,l,l,l,l,l,l,l,l,l|o,o,o,o,o,o,o,o,o,o,o %}
 
