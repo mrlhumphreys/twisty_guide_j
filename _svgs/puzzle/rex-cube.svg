@@ -1,0 +1,8 @@
+---
+layout: svg
+width: 160
+height: 160
+---
+{% rex_cube_top_grid 20|20|20|Y\nY,Y\nY,Y,Y\nY,Y\nY %}
+{% rex_cube_left_grid 20|50|20|B\nB,B\nB,B,B\nB,B\nB %}
+{% rex_cube_right_grid 80|50|20|R\nR,R\nR,R,R\nR,R\nR %}

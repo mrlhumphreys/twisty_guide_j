@@ -1,0 +1,91 @@
+---
+layout: default
+permalink: /guides/rex-cube
+name: 'rex-cube'
+puzzle: 'rex-cuve'
+title: "Rex Cube"
+description: ''
+notation_url: null 
+sections: 
+  - number: 'a'
+    title: 'Solve Bottom Layer'
+    description: 'Match pieces on one layer.'
+    cases:
+      - number: 1 
+        algorithm: "F D F' F'"
+      - number: 2 
+        algorithm: "F' D' F D"
+  - number: 'b'
+    title: 'Solve Side Edges'
+    description: 'Move side edges into place.'
+    cases:
+      - number: 1 
+        algorithm: "F"
+      - number: 2 
+        algorithm: "F'"
+  - number: 'c'
+    title: 'Solve 1 edge on top layer'
+    description: 'No edges are solved. Use Algorithm once to solve one edge.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+  - number: 'd'
+    title: 'Solve last 3 edges on top layer'
+    description: 'One edge is solved. Use algorithm on other 3 edge. Repeat if necessary.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+  - number: 'e'
+    title: 'Useful Algorithm - Rotate Three Slices'
+    description: 'Rotate 3 slices around a corner.'
+    cases:
+      - number: 1 
+        algorithm: "R L' R' L"
+      - number: 2 
+        algorithm: "L' R L R'"
+  - number: 'f'
+    title: 'Useful Algorithm - Flip Two Slices'
+    description: 'Flip 2 slices.'
+    cases:
+      - number: null 
+        algorithm: "(R L' R' L) Z (L' R L R') Z'"
+  - number: 'g'
+    title: 'Move center'
+    description: 'Move center into correct position.'
+    cases:
+      - number: 1 
+        algorithm: "R L' R' L"
+      - number: 2 
+        algorithm: "L' R L R'"
+  - number: 'h'
+    title: 'Move petal into position on top face'
+    description: 'Move petal to back or right position on top face.'
+    cases:
+      - number: 1 
+        algorithm: "Y<sup>2</sup> Z (R L' R' L) Z (L' R L R') Z Y<sup>2</sup>"
+      - number: 2 
+        algorithm: "Y Z (R L' R' L) Z (L' R L R') Z Y'"
+  - number: 'i'
+    title: 'Move first two petals from top face to left face'
+    description: 'Move petals into bottom two positions on left face.'
+    cases:
+      - number: 1 
+        algorithm: "F Y<sup>2</sup> Z (R L' R' L) Z (L' R L R') Z Y<sup>2</sup> F' Z' (R L' R' L) Z (L' R L R')"
+      - number: 2 
+        algorithm: "L' Y Z' (R L' R' L) Z (L' R L R') Y' L Y' (R L' R' L) Z (L' R L R') Z' Y"
+  - number: 'j'
+    title: 'Move last two petals from top face to left face'
+    description: 'Move petals into top two positions on left face.'
+    cases:
+      - number: 1 
+        algorithm: "F Y<sup>2</sup> Z (R L' R' L) Z (L' R L R') Z Y<sup>2</sup> F'"
+      - number: 2 
+        algorithm: "L' Y Z' (R L' R' L) Z (L' R L R') Y' L"
+  - number: 'k'
+    title: 'Solve petals for other faces'
+    description: 'Repeat the above petal movements for the other faces.'
+    cases:
+      - number: null 
+        algorithm: ""
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}

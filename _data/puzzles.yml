@@ -110,6 +110,12 @@
   guides:
     - title: 'Dino Cube'
       url: 'guides/dino-cube'
+- name: 'rex-cube'
+  title: "Rex Cube"
+  image_url: 'svgs/puzzle/rex-cube.svg'
+  guides:
+    - title: 'Rex Cube'
+      url: 'guides/rex-cube'
 - name: 'curvy-copter'
   title: "Curvy Copter"
   image_url: 'svgs/puzzle/curvy-copter.svg'
