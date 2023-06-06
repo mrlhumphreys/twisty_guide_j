@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /guides/redi-cube
+name: 'redi-cube'
+puzzle: 'redi-cube'
+title: "Redi Cube"
+description: ''
+notation_url: null 
+sections: 
+  - number: 'a'
+    title: 'Solve Bottom Corners'
+    description: 'Rotate corners on the bottom layer until they match each other.'
+    cases:
+      - number: null 
+        algorithm: "-"
+  - number: 'b'
+    title: 'Solve Bottom Edges'
+    description: 'Move edges into place on the bottom layer.'
+    cases:
+      - number: 1 
+        algorithm: "D F' D"
+      - number: 2 
+        algorithm: "D' F D'"
+  - number: 'c'
+    title: 'Solve Middle Edges'
+    description: 'Move edges into place on the middle layer, while matching them with their adjacent corners.'
+    cases:
+      - number: 1 
+        algorithm: "L F L' F'"
+      - number: 2 
+        algorithm: "R' F' R F"
+  - number: 'd'
+    title: 'Solve One Last Layer Edge'
+    description: 'Move last layer edges around until one is solved.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+  - number: 'e'
+    title: 'Solve Last Three Last Layer Edges'
+    description: 'Move last layer edges around until all are solved.'
+    cases:
+      - number: null 
+        algorithm: "R' F R F'"
+---
+{% include guide.html title=page.title notation_url=page.notation_url sections=page.sections name=page.name %}
